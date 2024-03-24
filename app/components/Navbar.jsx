@@ -5,6 +5,7 @@ import NavLink from './NavLink'
 import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './MenuOverlay'
+import Image from 'next/image'
 
 const navLinks = [
 	{ title: 'About', path: '#about' },
@@ -20,7 +21,12 @@ export default function Navbar() {
 				<Link
 					href='/'
 					className='text-2xl md:text-5xl text-white font-semibold'>
-					Brian Shimkus
+					<Image
+						src='/images/logo.png'
+						alt='hero image'
+						width={40}
+						height={40}
+					/>
 				</Link>
 				<div className='mobile-menu block md:hidden'>
 					{!navbarOpen ? (

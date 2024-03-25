@@ -24,17 +24,25 @@ export default function HeroSection() {
 					</div>
 				</div>
 				<div className='col-span-7 place-self-center text-center sm:text-left'>
-					<h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
+					<h1 className='mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
 						<span className={tealGradient}>{`Hello, I'm Brian`}</span>
 					</h1>
-					<p className='text-[#ADB7BE] text-xl sm:text-lg mb-6 lg:text-2xl'>
+					<p className='text-xl sm:text-lg mb-6 lg:text-2xl'>
 						A full-stack developer with over 10 years of experience based in
 						Chicago, IL.
 					</p>
 					<div>
-						<button className={pinkGradientButton}>Contact Me</button>
+						<button className={pinkGradientButton}>
+							<a href='mailto:brian@brianshimkus.com'>Contact Me</a>
+						</button>
 						<button className={blackGradientButton}>
-							<span className={blackGradientButtonText}>View Resume</span>
+							<a
+								className={blackGradientButtonText}
+								href='Resume-BrianShimkus.pdf'
+								target='_blank'
+								rel='noopener noreferrer'>
+								View Resume
+							</a>
 						</button>
 					</div>
 				</div>

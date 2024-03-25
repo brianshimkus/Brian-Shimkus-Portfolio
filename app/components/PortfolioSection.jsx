@@ -10,6 +10,22 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
 const projects = [
 	{
+		title: 'Shim AI',
+		thumbnail: '/images/shim-ai.jpg',
+		description: 'SAAS app focused on AI',
+		githubLink: 'https://github.com/brianshimkus/Shim-AI',
+		keywords: [
+			'AI',
+			'MySQL',
+			'Stripe',
+			'NextJS',
+			'Prisma',
+			'Tailwind',
+			'Clerk',
+			'Shadcn UI',
+		],
+	},
+	{
 		title: 'Shimfin',
 		thumbnail: '/images/shimfin.jpg',
 		description: 'A real estate app',
@@ -46,20 +62,24 @@ export default function PortfolioSection() {
 						className='bg-zinc-800 border-2 border-zinc-700 rounded-md  transition ease-in-out duration-300 h-full px-4 py-6'>
 						<div className='flex mb-4'>
 							<div className='flex flex-grow'></div>
-							<a
-								href={project.appLink}
-								target='_blank'
-								className={`${portfolioLink} ${pinkGradientBackground} flex`}>
-								<span className='mr-1'>App</span>{' '}
-								<FaExternalLinkAlt className='text-xs pt-1' />
-							</a>
-							<a
-								href={project.githubLink}
-								target='_blank'
-								className={`${portfolioLink} ${pinkGradientBackground} flex`}>
-								<span className='mr-1'>Code</span>{' '}
-								<FaExternalLinkAlt className='text-xs pt-1' />
-							</a>
+							{project.appLink?.length > 0 && (
+								<a
+									href={project.appLink}
+									target='_blank'
+									className={`${portfolioLink} ${pinkGradientBackground} flex`}>
+									<span className='mr-1'>App</span>{' '}
+									<FaExternalLinkAlt className='text-xs pt-1' />
+								</a>
+							)}
+							{project.githubLink?.length > 0 && (
+								<a
+									href={project.githubLink}
+									target='_blank'
+									className={`${portfolioLink} ${pinkGradientBackground} flex`}>
+									<span className='mr-1'>Code</span>{' '}
+									<FaExternalLinkAlt className='text-xs pt-1' />
+								</a>
+							)}
 						</div>
 						<h2
 							className={`${tealGradient} text-2xl font-bold tracking-wider flex-grow mt-6 mb-4`}>
@@ -69,8 +89,8 @@ export default function PortfolioSection() {
 							className='rounded-md'
 							src={project.thumbnail}
 							alt={project.title}
-							width={600}
-							height={400}
+							width={800}
+							height={500}
 						/>
 						<div className='min-h-18'>
 							<p className='mt-4 mb-8'>{project.description}</p>

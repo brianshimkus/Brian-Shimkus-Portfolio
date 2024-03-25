@@ -5,10 +5,27 @@ import {
 	portfolioKeyword,
 	portfolioLink,
 	tealGradient,
+	tealGradientBackground,
 } from '../utils'
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const projects = [
+	{
+		title: 'Pro Shop',
+		thumbnail: '/images/pro-shop.jpg',
+		description: 'E-commerce app built with the MERN stack & Redux Toolkit',
+		githubLink: 'https://github.com/brianshimkus/Pro-Shop',
+		keywords: [
+			'MongoDB',
+			'Express',
+			'React',
+			'NodeJS',
+			'Redux',
+			'JWT',
+			'E-Commerce',
+		],
+		comingSoon: true,
+	},
 	{
 		title: 'Shim AI',
 		thumbnail: '/images/shim-ai.jpg',
@@ -24,6 +41,7 @@ const projects = [
 			'Clerk',
 			'Shadcn UI',
 		],
+		comingSoon: true,
 	},
 	{
 		title: 'Shimfin',
@@ -62,6 +80,12 @@ export default function PortfolioSection() {
 						className='bg-zinc-800 border-2 border-zinc-700 rounded-md  transition ease-in-out duration-300 h-full px-4 py-6'>
 						<div className='flex mb-4'>
 							<div className='flex flex-grow'></div>
+							{project.comingSoon && (
+								<span
+									className={`${tealGradientBackground} text-black rounded-full px-3 uppercase text-sm pt-1 font-bold mr-2`}>
+									Launching Soon
+								</span>
+							)}
 							{project.appLink?.length > 0 && (
 								<a
 									href={project.appLink}

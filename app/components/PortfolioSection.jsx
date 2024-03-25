@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import SectionTitle from './SectionTitle'
-import { portfolioKeyword, portfolioLink, tealGradient } from '../utils'
+import {
+	pinkGradientBackground,
+	portfolioKeyword,
+	portfolioLink,
+	tealGradient,
+} from '../utils'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
 const projects = [
@@ -38,20 +43,20 @@ export default function PortfolioSection() {
 				{projects.map((project, index) => (
 					<div
 						key={index}
-						className='bg-zinc-800 border-2 border-zinc-400 rounded-md  transition ease-in-out duration-300 h-full px-4 py-6'>
+						className='bg-zinc-800 border-2 border-zinc-700 rounded-md  transition ease-in-out duration-300 h-full px-4 py-6'>
 						<div className='flex mb-4'>
 							<div className='flex flex-grow'></div>
 							<a
 								href={project.appLink}
 								target='_blank'
-								className={`${portfolioLink} flex flex`}>
+								className={`${portfolioLink} ${pinkGradientBackground} flex`}>
 								<span className='mr-1'>App</span>{' '}
 								<FaExternalLinkAlt className='text-xs pt-1' />
 							</a>
 							<a
 								href={project.githubLink}
 								target='_blank'
-								className={`${portfolioLink} flex`}>
+								className={`${portfolioLink} ${pinkGradientBackground} flex`}>
 								<span className='mr-1'>Code</span>{' '}
 								<FaExternalLinkAlt className='text-xs pt-1' />
 							</a>

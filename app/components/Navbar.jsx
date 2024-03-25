@@ -9,9 +9,9 @@ import Image from 'next/image'
 import SocialLinks from './SocialLinks'
 
 const navLinks = [
-	{ title: 'About', path: '#about' },
-	{ title: 'Portfolio', path: '#portfolio' },
-	{ title: 'Fun Facts', path: '#funfacts' },
+	// { title: 'About', path: '#about' },
+	// { title: 'Portfolio', path: '#portfolio' },
+	// { title: 'Fun Facts', path: '#funfacts' },
 ]
 
 export default function Navbar() {
@@ -52,7 +52,7 @@ export default function Navbar() {
 							</li>
 						))}
 						<SocialLinks
-							styles={`h-6 w-6 text-rose-400 hover:text-teal-400 cursor-pointer`}
+							styles={`h-6 w-6 text-rose-400 hover:text-cyan-400 cursor-pointer`}
 						/>
 					</ul>
 				</div>

@@ -9,6 +9,9 @@ export const tealGradientBackground =
 export const pinkGradient =
 	'text-transparent bg-clip-text bg-gradient-to-br from-pink-400 via-rose-400 to-rose-500 font-bold tracking-wide'
 
+export const pinkGradientBackground =
+	'bg-gradient-to-br from-pink-400 via-rose-400 to-rose-500 tracking-wide hover:from-teal-500 hover:via-cyan-400 hover:to-sky-500 transition ease-in-out duration-300'
+
 export const pinkGradientButton =
 	'text-black bg-gradient-to-br from-pink-400 via-rose-400 to-rose-500 px-6 py-3 w-full sm:w-fit rounded-full mr-4 font-semibold uppercase tracking-wider hover:from-teal-500 hover:via-cyan-400 hover:to-sky-500 transition ease-in-out'
 

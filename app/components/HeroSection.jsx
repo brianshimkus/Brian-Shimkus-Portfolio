@@ -28,8 +28,8 @@ export default function HeroSection() {
 						<span className={tealGradient}>{`Hello, I'm Brian`}</span>
 					</h1>
 					<p className='text-xl sm:text-lg mb-6 lg:text-2xl'>
-						A full-stack developer with over 10 years of experience based in
-						Chicago, IL.
+						{`I'm a full-stack developer with over 10 years of experience based in
+						Chicago, IL.`}
 					</p>
 					<div>
 						<button className={pinkGradientButton}>

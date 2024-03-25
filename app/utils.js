@@ -14,3 +14,9 @@ export const blackGradientButton =
 
 export const blackGradientButtonText =
 	'block bg-[#121212] rounded-full px-5 py-2'
+
+export const portfolioLink =
+	'text-black text-sm bg-rose-400 px-2 mr-2 rounded-full font-semibold uppercase tracking-wider text-wrap hover:bg-cyan-400 transition ease-in-out duration-300 pt-1 h-7'
+
+export const portfolioKeyword =
+	'text-gray-400 text-xs bg-zinc-900 px-2 py-1 mr-1 w-fit rounded-full font-semibold uppercase tracking-wider text-wrap'

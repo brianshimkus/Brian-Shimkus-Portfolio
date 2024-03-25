@@ -31,24 +31,6 @@ export default function SocialLinks({ styles }) {
 					<FaLinkedin className={styles} />
 				</a>
 			</li>
-			<li>
-				<a
-					href='https://www.instagram.com/brianshimkus.me'
-					target='_blank'
-					rel='noopener noreferrer'
-					alt='Instagram'>
-					<FaInstagram className={styles} />
-				</a>
-			</li>
-			<li>
-				<a
-					href='https://twitter.com/BrianShimkus'
-					target='_blank'
-					rel='noopener noreferrer'
-					alt='Twitter'>
-					<FaXTwitter className={styles} />
-				</a>
-			</li>
 		</ul>
 	)
 }

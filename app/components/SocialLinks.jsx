@@ -1,18 +1,16 @@
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
-const iconStyle = `h-6 w-6 text-rose-400 hover:text-teal-400 cursor-pointer`
-
-export default function SocialLinks() {
+export default function SocialLinks({ styles }) {
 	return (
-		<ul className='flex space-x-8 md:space-x-3 my-8 md:my-2'>
+		<ul className='flex space-x-4 md:space-x-3 my-4 md:my-2'>
 			<li>
 				<a
 					href='mailto:Brian@BrianShimkus.com'
 					target='_blank'
 					rel='noopener noreferrer'
 					alt='Email'>
-					<FaEnvelope className={iconStyle} />
+					<FaEnvelope className={styles} />
 				</a>
 			</li>
 			<li>
@@ -21,7 +19,7 @@ export default function SocialLinks() {
 					target='_blank'
 					rel='noopener noreferrer'
 					alt='GitHub'>
-					<FaGithub className={iconStyle} />
+					<FaGithub className={styles} />
 				</a>
 			</li>
 			<li>
@@ -30,7 +28,7 @@ export default function SocialLinks() {
 					target='_blank'
 					rel='noopener noreferrer'
 					alt='LinkedIn'>
-					<FaLinkedin className={iconStyle} />
+					<FaLinkedin className={styles} />
 				</a>
 			</li>
 			<li>
@@ -39,7 +37,7 @@ export default function SocialLinks() {
 					target='_blank'
 					rel='noopener noreferrer'
 					alt='Instagram'>
-					<FaInstagram className={iconStyle} />
+					<FaInstagram className={styles} />
 				</a>
 			</li>
 			<li>
@@ -48,7 +46,7 @@ export default function SocialLinks() {
 					target='_blank'
 					rel='noopener noreferrer'
 					alt='Twitter'>
-					<FaXTwitter className={iconStyle} />
+					<FaXTwitter className={styles} />
 				</a>
 			</li>
 		</ul>

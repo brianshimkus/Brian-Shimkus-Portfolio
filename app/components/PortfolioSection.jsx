@@ -57,7 +57,7 @@ export default function PortfolioSection() {
 							</a>
 						</div>
 						<h2
-							className={`${tealGradient} text-2xl font-bold tracking-wider flex-grow mb-4`}>
+							className={`${tealGradient} text-2xl font-bold tracking-wider flex-grow mt-6 mb-4`}>
 							{project.title}
 						</h2>
 						<Image
@@ -67,7 +67,7 @@ export default function PortfolioSection() {
 							width={600}
 							height={400}
 						/>
-						<div className='min-h-24'>
+						<div className='min-h-18'>
 							<p className='mt-4 mb-8'>{project.description}</p>
 						</div>
 						<ul className='flex flex-wrap'>

@@ -1,4 +1,5 @@
 import AboutSection from './components/AboutSection'
+import Footer from './components/Footer'
 import FunFactsSection from './components/FunFactsSection'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
@@ -14,6 +15,7 @@ export default function Home() {
 				<PortfolioSection />
 				<FunFactsSection />
 			</div>
+			<Footer />
 		</main>
 	)
 }

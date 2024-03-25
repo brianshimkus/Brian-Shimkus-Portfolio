@@ -3,6 +3,9 @@ export const bodyTextColor = 'text-[#ADB7BE]'
 export const tealGradient =
 	'text-transparent bg-clip-text bg-gradient-to-br from-teal-500 via-cyan-400 to-sky-500 font-bold tracking-wide'
 
+export const tealGradientBackground =
+	'bg-gradient-to-br from-teal-500 via-cyan-400 to-sky-500 tracking-wide'
+
 export const pinkGradient =
 	'text-transparent bg-clip-text bg-gradient-to-br from-pink-400 via-rose-400 to-rose-500 font-bold tracking-wide'
 

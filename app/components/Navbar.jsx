@@ -51,7 +51,9 @@ export default function Navbar() {
 								<NavLink href={link.path} title={link.title} />
 							</li>
 						))}
-						<SocialLinks />
+						<SocialLinks
+							styles={`h-6 w-6 text-rose-400 hover:text-teal-400 cursor-pointer`}
+						/>
 					</ul>
 				</div>
 			</div>

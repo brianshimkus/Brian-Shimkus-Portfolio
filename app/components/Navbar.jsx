@@ -11,7 +11,7 @@ import SocialLinks from './SocialLinks'
 const navLinks = [
 	{ title: 'About', path: '#about' },
 	{ title: 'Portfolio', path: '#portfolio' },
-	{ title: 'Contact', path: 'mailto:brian@brianshimkus.com' },
+	{ title: 'Fun Facts', path: '#funfacts' },
 ]
 
 export default function Navbar() {

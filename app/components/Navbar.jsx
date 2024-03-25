@@ -6,17 +6,18 @@ import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './MenuOverlay'
 import Image from 'next/image'
+import SocialLinks from './SocialLinks'
 
 const navLinks = [
 	{ title: 'About', path: '#about' },
 	{ title: 'Portfolio', path: '#portfolio' },
-	{ title: 'Contact', path: '#contact' },
+	{ title: 'Contact', path: 'mailto:brian@brianshimkus.com' },
 ]
 
 export default function Navbar() {
 	const [navbarOpen, setNavbarOpen] = useState(false)
 	return (
-		<nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90'>
+		<nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95'>
 			<div className='flex flex-wrap items-center justify-between mx-auto p-4 container'>
 				<Link
 					href='/'
@@ -44,12 +45,13 @@ export default function Navbar() {
 					)}
 				</div>
 				<div className='menu hidden md:block md:w-auto' id='navbar'>
-					<ul className='flex p-4 md:p-0 md:flex-row md:space-x-8'>
+					<ul className='flex p-4 md:p-0 md:flex-row md:space-x-6'>
 						{navLinks.map((link, index) => (
 							<li key={index}>
 								<NavLink href={link.path} title={link.title} />
 							</li>
 						))}
+						<SocialLinks />
 					</ul>
 				</div>
 			</div>

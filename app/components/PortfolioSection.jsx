@@ -39,7 +39,7 @@ export default function PortfolioSection() {
 	return (
 		<section id='#portfolio'>
 			<SectionTitle title='Portfolio' />
-			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
+			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8'>
 				{projects.map((project, index) => (
 					<div
 						key={index}

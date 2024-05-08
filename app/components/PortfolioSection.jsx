@@ -14,6 +14,7 @@ const projects = [
 		title: 'Pro Shop',
 		thumbnail: '/images/pro-shop.jpg',
 		description: 'E-commerce app built with the MERN stack & Redux Toolkit',
+		appLink: 'https://proshop.brianshimkus.dev/',
 		githubLink: 'https://github.com/brianshimkus/Pro-Shop',
 		keywords: [
 			'MongoDB',
@@ -24,7 +25,6 @@ const projects = [
 			'JWT',
 			'E-Commerce',
 		],
-		comingSoon: true,
 	},
 	{
 		title: 'Shim AI',

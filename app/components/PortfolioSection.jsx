@@ -11,6 +11,22 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const projects = [
 	{
+		title: 'Noted',
+		thumbnail: '/images/noted.jpg',
+		description: 'SaaS notes app with light and dark mode',
+		appLink: 'https://noted.brianshimkus.dev/',
+		githubLink: 'https://github.com/brianshimkus/Noted',
+		keywords: [
+			'NextJS',
+			'Tailwind',
+			'Shadcn UI',
+			'Prisma',
+			'Stripe',
+			'Kinde',
+			'Supabase',
+		],
+	},
+	{
 		title: 'Pro Shop',
 		thumbnail: '/images/pro-shop.jpg',
 		description: 'E-commerce app built with the MERN stack & Redux Toolkit',

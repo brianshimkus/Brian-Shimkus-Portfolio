@@ -9,8 +9,8 @@ const funFacts = [
 	},
 	{
 		title: 'Mixed Martial Artist',
-		thumbnail: '/images/bjj.jpg',
-		description: 'Member of Renzo Gracie Academy',
+		thumbnail: '/images/bjj-blue.jpg',
+		description: 'BJJ blue belt at Renzo Gracie Academy',
 	},
 	{
 		title: '4-time Softball Champion',

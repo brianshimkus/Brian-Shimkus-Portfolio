@@ -27,8 +27,8 @@ export default function HeroSection() {
 					<h1 className='mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
 						<span className={tealGradient}>{`Hello, I'm Brian`}</span>
 					</h1>
-					<p className='text-xl sm:text-lg mb-6 lg:text-2xl'>
-						{`I'm a full-stack developer with over 10 years of experience based in
+					<p className='text-lg sm:text-lg mb-6 lg:text-2xl'>
+						{`I'm a Senior Front-End Developer with over 10 years of experience based in
 						Chicago, IL.`}
 					</p>
 					<div>

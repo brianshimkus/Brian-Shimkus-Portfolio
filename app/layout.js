@@ -7,9 +7,9 @@ import { bodyTextColor } from './utils'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'Brian Shimkus | Full-Stack Developer',
+	title: 'Brian Shimkus | Senior Front-End Developer',
 	description:
-		'The portfolio of Brian Shimkus, a full-stack developer with over 10 years of experience based in Chicago, IL.',
+		'The portfolio of Brian Shimkus, a Senior Front-End with over 10 years of experience based in Chicago, IL.',
 }
 
 export default function RootLayout({ children }) {

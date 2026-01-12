@@ -38,7 +38,7 @@ export default function HeroSection() {
 						<button className={blackGradientButton}>
 							<a
 								className={blackGradientButtonText}
-								href='Resume-BrianShimkus.pdf'
+								href='Resume-BrianShimkus-2026.pdf'
 								target='_blank'
 								rel='noopener noreferrer'>
 								View Resume

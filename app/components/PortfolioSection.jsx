@@ -11,6 +11,14 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const projects = [
 	{
+		title: 'Insolla',
+		thumbnail: '/images/insolla.jpg',
+		description: 'AI Consulting - Intelligent Solutions through AI',
+		appLink: 'https://insolla.ai/',
+		githubLink: 'https://github.com/brianshimkus/Insolla',
+		keywords: ['AI', 'NextJS', 'Tailwind', 'Typescript'],
+	},
+	{
 		title: 'Noted',
 		thumbnail: '/images/noted.jpg',
 		description: 'SaaS notes app with light and dark mode',

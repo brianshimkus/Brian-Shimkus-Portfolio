@@ -31,7 +31,14 @@ export default function AboutSection() {
 						senior level developers and learn about best practices as it
 						pertains to this industry.`}
 					</p>
-					<p>{`In the last 10 years I have had the pleasure of working in many different industries where I have built websites for professional sports teams, medical apps to assist doctors with their patients, onboarding tools for traders within the finance space, and much more. It's exciting working with clients and stakeholders to bring their ideas to life and I am always looking forward to the next challenge!`}</p>
+					<p className='mb-6'>
+						{`In the years since, I've had the pleasure of working across many
+						different industries, building websites for professional sports
+						teams, medical apps to assist doctors with their patients,
+						onboarding tools for traders within the finance space, and much
+						more.`}
+					</p>
+					<p>{`Seven months ago I set out to build something different: Insolla, an AI automation consultancy where I've been designing LLM-powered systems for small businesses, including automated outbound engines, CRM integrations, and agent-driven workflows across Make.com, HubSpot, and Airtable. It's been the best crash course in applied AI I could have asked for, and it's shown me where I want to go next: a role that sits between customers and working systems.`}</p>
 				</div>
 				<Image
 					className='rounded-full hidden lg:block'

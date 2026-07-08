@@ -18,12 +18,32 @@ const navLinks = [
 export default function Navbar() {
 	const [navbarOpen, setNavbarOpen] = useState(false)
 	const [scrolled, setScrolled] = useState(false)
+	const [activeSection, setActiveSection] = useState('')
 
 	useEffect(() => {
 		const onScroll = () => setScrolled(window.scrollY > 8)
 		onScroll()
 		window.addEventListener('scroll', onScroll, { passive: true })
 		return () => window.removeEventListener('scroll', onScroll)
+	}, [])
+
+	useEffect(() => {
+		const sections = navLinks
+			.map((link) => document.getElementById(link.path.slice(1)))
+			.filter(Boolean)
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const visible = entries
+					.filter((entry) => entry.isIntersecting)
+					.sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+				if (visible[0]) setActiveSection(visible[0].target.id)
+			},
+			{ rootMargin: '-45% 0px -45% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
+		)
+
+		sections.forEach((section) => observer.observe(section))
+		return () => observer.disconnect()
 	}, [])
 
 	return (
@@ -65,7 +85,11 @@ export default function Navbar() {
 					<ul className='flex items-center gap-6'>
 						{navLinks.map((link, index) => (
 							<li key={index}>
-								<NavLink href={link.path} title={link.title} />
+								<NavLink
+									href={link.path}
+									title={link.title}
+									active={activeSection === link.path.slice(1)}
+								/>
 							</li>
 						))}
 					</ul>
@@ -77,7 +101,9 @@ export default function Navbar() {
 					</a>
 				</div>
 			</div>
-			{navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+			{navbarOpen ? (
+				<MenuOverlay links={navLinks} activeSection={activeSection} />
+			) : null}
 		</nav>
 	)
 }

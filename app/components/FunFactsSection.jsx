@@ -10,7 +10,7 @@ const funFacts = [
 	{
 		title: 'Mixed Martial Artist',
 		thumbnail: '/images/bjj-blue.jpg',
-		description: 'BJJ blue belt at Renzo Gracie Academy',
+		description: 'Boxer and blue belt in jiu-jitsu',
 	},
 	{
 		title: '4-time Softball Champion',
@@ -18,9 +18,9 @@ const funFacts = [
 		description: 'Member of the Duck Boys',
 	},
 	{
-		title: 'Die-Hard Cubs Fan',
-		thumbnail: '/images/cubs.jpg',
-		description: 'Former season ticket holder',
+		title: 'Cat Dad to Cayenne',
+		thumbnail: '/images/cayenne.jpg',
+		description: 'Adopted March 28th, 2025',
 	},
 ]
 

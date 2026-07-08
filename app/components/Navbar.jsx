@@ -10,6 +10,7 @@ import SocialLinks from './SocialLinks'
 import { btnOutline } from '../utils'
 
 const navLinks = [
+	{ title: 'Intro', path: '#hero' },
 	{ title: 'About', path: '#about' },
 	{ title: 'Portfolio', path: '#portfolio' },
 	{ title: 'Fun Facts', path: '#funfacts' },
@@ -102,7 +103,11 @@ export default function Navbar() {
 				</div>
 			</div>
 			{navbarOpen ? (
-				<MenuOverlay links={navLinks} activeSection={activeSection} />
+				<MenuOverlay
+					links={navLinks}
+					activeSection={activeSection}
+					onNavigate={() => setNavbarOpen(false)}
+				/>
 			) : null}
 		</nav>
 	)

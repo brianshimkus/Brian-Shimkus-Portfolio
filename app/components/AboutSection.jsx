@@ -3,7 +3,7 @@ import SectionTitle from './SectionTitle'
 
 export default function AboutSection() {
 	return (
-		<section id='about'>
+		<section id='about' className='scroll-mt-16'>
 			<SectionTitle eyebrow='Who I Am' title='About Me' divider={false} />
 			<div className='lg:grid lg:grid-cols-2 gap-8 items-center xl:gap-16 sm:py-16 xl:py-16'>
 				<div className='leading-7 text-muted-foreground'>

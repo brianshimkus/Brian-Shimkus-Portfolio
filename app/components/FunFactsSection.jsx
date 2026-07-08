@@ -26,7 +26,7 @@ const funFacts = [
 
 export default function FunFactsSection() {
 	return (
-		<section id='funfacts'>
+		<section id='funfacts' className='scroll-mt-16'>
 			<SectionTitle eyebrow='Off the Clock' title='Fun Facts' />
 			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6'>
 				{funFacts.map((funFact, index) => (

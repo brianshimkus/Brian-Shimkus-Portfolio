@@ -5,16 +5,16 @@ import { btnCta, btnOutline, eyebrowPill, gradientText } from '../utils'
 
 export default function HeroSection() {
 	return (
-		<section id='hero'>
+		<section id='hero' className='scroll-mt-16'>
 			<div className='grid grid-cols-1 lg:grid-cols-12'>
-				<div className='col-span-5 w-full place-self-center mt-4 lg:mt-0'>
-					<div className='relative w-full aspect-square lg:w-[400px] lg:h-[400px] lg:mx-auto mb-8 lg:mb-0'>
+				<div className='hidden lg:block col-span-5 w-full place-self-center'>
+					<div className='relative lg:w-[400px] lg:h-[400px] lg:mx-auto'>
 						<Image
 							className='rounded-3xl object-cover'
 							src='/images/hero-image.jpg'
 							alt='hero image'
 							fill
-							sizes='(min-width: 1024px) 400px, 100vw'
+							sizes='400px'
 						/>
 					</div>
 				</div>
@@ -24,6 +24,15 @@ export default function HeroSection() {
 						<span className='text-foreground/60'>{`Hello, I'm`}</span>{' '}
 						<span className={gradientText}>Brian</span>
 					</h1>
+					<div className='lg:hidden relative w-full aspect-square mb-6 rounded-3xl overflow-hidden'>
+						<Image
+							className='object-cover'
+							src='/images/hero-image.jpg'
+							alt='hero image'
+							fill
+							sizes='100vw'
+						/>
+					</div>
 					<p className='text-lg sm:text-lg mb-2 lg:text-2xl text-foreground'>
 						{`AI Solutions Engineer with 12 years in software engineering, now
 						focused on LLM workflows, automation, and integrations.`}

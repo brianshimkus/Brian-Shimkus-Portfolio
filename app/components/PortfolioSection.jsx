@@ -135,7 +135,7 @@ function ProjectCard({ project }) {
 
 export default function PortfolioSection() {
 	return (
-		<section id='portfolio'>
+		<section id='portfolio' className='scroll-mt-16'>
 			<SectionTitle eyebrow='What I Build' title='Portfolio' />
 			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
 				{aiProjects.map((project, index) => (

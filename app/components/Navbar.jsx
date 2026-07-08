@@ -70,12 +70,20 @@ export default function Navbar() {
 				<div className='mobile-menu block md:hidden'>
 					{!navbarOpen ? (
 						<button
+							type='button'
+							aria-label='Open navigation menu'
+							aria-expanded={navbarOpen}
+							aria-controls='mobile-menu'
 							onClick={() => setNavbarOpen(true)}
 							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors duration-300'>
 							<Bars3Icon className='h-5 w-5' />
 						</button>
 					) : (
 						<button
+							type='button'
+							aria-label='Close navigation menu'
+							aria-expanded={navbarOpen}
+							aria-controls='mobile-menu'
 							onClick={() => setNavbarOpen(false)}
 							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors duration-300'>
 							<XMarkIcon className='h-5 w-5' />
@@ -106,6 +114,7 @@ export default function Navbar() {
 				<MenuOverlay
 					links={navLinks}
 					activeSection={activeSection}
+					open={navbarOpen}
 					onNavigate={() => setNavbarOpen(false)}
 				/>
 			) : null}

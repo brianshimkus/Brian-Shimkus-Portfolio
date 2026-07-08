@@ -1,7 +1,7 @@
 import NavLink from './NavLink'
 import SocialLinks from './SocialLinks'
 
-export default function MenuOverlay({ links, activeSection, onNavigate, open }) {
+export default function MenuOverlay({ links, onNavigate, open }) {
 	return (
 		<div
 			id='mobile-menu'
@@ -16,7 +16,6 @@ export default function MenuOverlay({ links, activeSection, onNavigate, open }) 
 						<NavLink
 							href={link.path}
 							title={link.title}
-							active={activeSection === link.path.slice(1)}
 							onClick={onNavigate}
 						/>
 					</li>

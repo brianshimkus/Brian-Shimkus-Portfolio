@@ -7,7 +7,7 @@ import PortfolioSection from './components/PortfolioSection'
 
 export default function Home() {
 	return (
-		<main className='flex min-h-screen flex-col bg-[#121212]'>
+		<main className='app-bg flex min-h-screen flex-col'>
 			<Navbar />
 			<div className='container my-24 mx-auto px-12 py-4'>
 				<HeroSection />

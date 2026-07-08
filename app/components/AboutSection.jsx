@@ -3,10 +3,10 @@ import SectionTitle from './SectionTitle'
 
 export default function AboutSection() {
 	return (
-		<section id='#about'>
+		<section id='about'>
 			<div className='lg:grid lg:grid-cols-2 gap-8 items-center xl:gap-16 sm:py-16 xl:py-16'>
-				<div className='leading-7'>
-					<SectionTitle title='About Me' />
+				<div className='leading-7 text-muted-foreground'>
+					<SectionTitle eyebrow='Who I Am' title='About Me' />
 					<p className='mb-6'>
 						{`It all started back in 2006 as a junior in high school when I dove
 						into my fascination with websites and finally taught myself how to

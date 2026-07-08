@@ -1,23 +1,69 @@
 import Image from 'next/image'
 import SectionTitle from './SectionTitle'
-import {
-	pinkGradientBackground,
-	portfolioKeyword,
-	portfolioLink,
-	tealGradient,
-	tealGradientBackground,
-} from '../utils'
+import { portfolioKeyword, portfolioLink } from '../utils'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
-const projects = [
+const aiProjects = [
 	{
 		title: 'Insolla',
 		thumbnail: '/images/insolla.jpg',
-		description: 'AI Consulting - Intelligent Solutions through AI',
+		description: 'AI automation consultancy — intelligent solutions through AI',
 		appLink: 'https://insolla.ai/',
 		githubLink: 'https://github.com/brianshimkus/Insolla',
 		keywords: ['AI', 'NextJS', 'Tailwind', 'Typescript'],
 	},
+	{
+		title: 'Salesforce Intelligence',
+		thumbnail: '/images/salesforce-rag.jpg',
+		description:
+			'RAG over live Salesforce data — ask natural-language questions about accounts, cases, and escalations',
+		appLink:
+			'https://insolla-salesforce-rag-kjfm8hmmbzqm6j3hmyjeth.streamlit.app/',
+		keywords: ['RAG', 'OpenAI', 'LangChain', 'Pinecone', 'Streamlit'],
+	},
+	{
+		title: 'Workflow Analyzer',
+		thumbnail: '/images/workflow-analyzer.jpg',
+		description:
+			'Upload a process doc or SOP and get exactly what to automate, which tools to use, and hours saved',
+		appLink: 'https://www.insolla.ai/workflow-analyzer',
+		keywords: ['AI', 'NextJS', 'Automation'],
+	},
+	{
+		title: 'List Enricher',
+		thumbnail: '/images/list-enricher.jpg',
+		description:
+			'Enrich any spreadsheet in plain English — describe the columns you want, get researched data back per row',
+		appLink: 'https://www.insolla.ai/products/list-enricher',
+		keywords: ['AI', 'NextJS', 'Sales Tools'],
+	},
+	{
+		title: 'SOP Generator',
+		thumbnail: '/images/sop-generator.jpg',
+		description:
+			'Turn tribal knowledge into documented, structured Standard Operating Procedures',
+		appLink: 'https://www.insolla.ai/products/sop-generator',
+		keywords: ['AI', 'NextJS', 'Docs'],
+	},
+	{
+		title: 'Meeting Notes Analyzer',
+		thumbnail: '/images/meeting-notes.jpg',
+		description:
+			'Turn meeting notes and transcripts into action items, decisions, and open questions',
+		appLink: 'https://www.insolla.ai/products/meeting-notes',
+		keywords: ['AI', 'NextJS', 'Productivity'],
+	},
+	{
+		title: 'Contract Analyzer',
+		thumbnail: '/images/contract-analyzer.jpg',
+		description:
+			'Plain-English contract summaries, key dates, and severity-flagged risks in 30 seconds',
+		appLink: 'https://www.insolla.ai/products/contract-analyzer',
+		keywords: ['AI', 'NextJS', 'Legal Tech'],
+	},
+]
+
+const otherProjects = [
 	{
 		title: 'Noted',
 		thumbnail: '/images/noted.jpg',
@@ -93,64 +139,70 @@ const projects = [
 	},
 ]
 
+function ProjectCard({ project }) {
+	return (
+		<div className='card card-interactive group flex flex-col'>
+			<div className='relative w-full aspect-[4/3] rounded-t-2xl overflow-hidden'>
+				<Image
+					src={project.thumbnail}
+					alt={project.title}
+					fill
+					sizes='(min-width: 1280px) 400px, (min-width: 768px) 50vw, 100vw'
+					className='object-cover object-top transition-transform duration-500 group-hover:scale-105'
+				/>
+				{project.comingSoon && (
+					<span className='absolute top-3 left-3 inline-flex items-center rounded-full bg-brand/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-light ring-1 ring-inset ring-brand/30 backdrop-blur-sm'>
+						Launching Soon
+					</span>
+				)}
+			</div>
+			<div className='p-6 flex flex-col flex-1'>
+				<h3 className='text-lg font-semibold tracking-tight mb-2 font-display group-hover-gradient'>
+					{project.title}
+				</h3>
+				<p className='text-sm text-muted-foreground leading-relaxed flex-1'>
+					{project.description}
+				</p>
+				<ul className='flex flex-wrap gap-2 mt-4 mb-4'>
+					{project.keywords.map((keyword, index) => (
+						<li key={index} className={portfolioKeyword}>
+							{keyword}
+						</li>
+					))}
+				</ul>
+				<div className='flex items-center gap-3 pt-4 border-t border-white/5'>
+					{project.appLink?.length > 0 && (
+						<a href={project.appLink} target='_blank' rel='noopener noreferrer' className={portfolioLink}>
+							App <FaExternalLinkAlt className='text-[10px]' />
+						</a>
+					)}
+					{project.githubLink?.length > 0 && (
+						<a href={project.githubLink} target='_blank' rel='noopener noreferrer' className={portfolioLink}>
+							Code <FaExternalLinkAlt className='text-[10px]' />
+						</a>
+					)}
+				</div>
+			</div>
+		</div>
+	)
+}
+
 export default function PortfolioSection() {
 	return (
-		<section id='#portfolio'>
-			<SectionTitle title='Portfolio' />
-			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8'>
-				{projects.map((project, index) => (
-					<div
-						key={index}
-						className='bg-zinc-800 border-2 border-zinc-700 rounded-md  transition ease-in-out duration-300 h-full px-4 py-6'>
-						<div className='flex mb-4'>
-							<div className='flex flex-grow'></div>
-							{project.comingSoon && (
-								<span
-									className={`${tealGradientBackground} text-black rounded-full px-3 uppercase text-sm pt-1 font-bold mr-2`}>
-									Launching Soon
-								</span>
-							)}
-							{project.appLink?.length > 0 && (
-								<a
-									href={project.appLink}
-									target='_blank'
-									className={`${portfolioLink} ${pinkGradientBackground} flex`}>
-									<span className='mr-1'>App</span>{' '}
-									<FaExternalLinkAlt className='text-xs pt-1' />
-								</a>
-							)}
-							{project.githubLink?.length > 0 && (
-								<a
-									href={project.githubLink}
-									target='_blank'
-									className={`${portfolioLink} ${pinkGradientBackground} flex`}>
-									<span className='mr-1'>Code</span>{' '}
-									<FaExternalLinkAlt className='text-xs pt-1' />
-								</a>
-							)}
-						</div>
-						<h2
-							className={`${tealGradient} text-2xl font-bold tracking-wider flex-grow mt-6 mb-4`}>
-							{project.title}
-						</h2>
-						<Image
-							className='rounded-md'
-							src={project.thumbnail}
-							alt={project.title}
-							width={800}
-							height={500}
-						/>
-						<div className='min-h-18'>
-							<p className='mt-4 mb-8'>{project.description}</p>
-						</div>
-						<ul className='flex flex-wrap'>
-							{project.keywords.map((keyword, index) => (
-								<li key={index} className={`${portfolioKeyword} mb-2`}>
-									{keyword}
-								</li>
-							))}
-						</ul>
-					</div>
+		<section id='portfolio'>
+			<SectionTitle eyebrow='What I Build' title='Portfolio' />
+			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
+				{aiProjects.map((project, index) => (
+					<ProjectCard key={index} project={project} />
+				))}
+			</div>
+
+			<p className='mt-16 mb-6 text-xs uppercase tracking-wider text-foreground/40'>
+				More projects
+			</p>
+			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
+				{otherProjects.map((project, index) => (
+					<ProjectCard key={index} project={project} />
 				))}
 			</div>
 		</section>

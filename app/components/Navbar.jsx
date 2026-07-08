@@ -2,29 +2,44 @@
 
 import Link from 'next/link'
 import NavLink from './NavLink'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './MenuOverlay'
 import Image from 'next/image'
 import SocialLinks from './SocialLinks'
+import { btnOutline } from '../utils'
 
 const navLinks = [
-	// { title: 'About', path: '#about' },
-	// { title: 'Portfolio', path: '#portfolio' },
-	// { title: 'Fun Facts', path: '#funfacts' },
+	{ title: 'About', path: '#about' },
+	{ title: 'Portfolio', path: '#portfolio' },
+	{ title: 'Fun Facts', path: '#funfacts' },
 ]
 
 export default function Navbar() {
 	const [navbarOpen, setNavbarOpen] = useState(false)
+	const [scrolled, setScrolled] = useState(false)
+
+	useEffect(() => {
+		const onScroll = () => setScrolled(window.scrollY > 8)
+		onScroll()
+		window.addEventListener('scroll', onScroll, { passive: true })
+		return () => window.removeEventListener('scroll', onScroll)
+	}, [])
+
 	return (
-		<nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95'>
-			<div className='flex flex-wrap items-center justify-between mx-auto p-4 container'>
-				<Link
-					href='/'
-					className='text-2xl md:text-5xl text-white font-semibold'>
+		<nav
+			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+				navbarOpen
+					? 'border-b border-white/10 bg-background'
+					: scrolled
+					? 'border-b border-white/10 bg-white/[0.06] backdrop-blur-xl backdrop-saturate-150'
+					: 'bg-transparent'
+			}`}>
+			<div className='flex flex-wrap items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 h-16 container'>
+				<Link href='/' className='flex items-center'>
 					<Image
 						src='/images/logo.png'
-						alt='hero image'
+						alt='Brian Shimkus'
 						width={40}
 						height={40}
 					/>
@@ -33,28 +48,31 @@ export default function Navbar() {
 					{!navbarOpen ? (
 						<button
 							onClick={() => setNavbarOpen(true)}
-							className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors'>
 							<Bars3Icon className='h-5 w-5' />
 						</button>
 					) : (
 						<button
 							onClick={() => setNavbarOpen(false)}
-							className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors'>
 							<XMarkIcon className='h-5 w-5' />
 						</button>
 					)}
 				</div>
-				<div className='menu hidden md:block md:w-auto' id='navbar'>
-					<ul className='flex p-4 md:p-0 md:flex-row md:space-x-6'>
+				<div className='menu hidden md:flex md:items-center md:gap-6 md:w-auto' id='navbar'>
+					<ul className='flex items-center gap-6'>
 						{navLinks.map((link, index) => (
 							<li key={index}>
 								<NavLink href={link.path} title={link.title} />
 							</li>
 						))}
-						<SocialLinks
-							styles={`h-6 w-6 text-rose-400 hover:text-cyan-400 cursor-pointer`}
-						/>
 					</ul>
+					<SocialLinks
+						styles='h-5 w-5 text-muted-foreground hover:text-brand-light transition-colors'
+					/>
+					<a href='mailto:brian@brianshimkus.com' className={`${btnOutline} !px-4 !py-2 text-sm`}>
+						Contact Me
+					</a>
 				</div>
 			</div>
 			{navbarOpen ? <MenuOverlay links={navLinks} /> : null}

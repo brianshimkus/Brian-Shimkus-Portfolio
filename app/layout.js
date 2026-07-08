@@ -1,10 +1,16 @@
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { Inter } from 'next/font/google'
+import { Inter, Rajdhani } from 'next/font/google'
 import './globals.css'
-import { bodyTextColor } from './utils'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const rajdhani = Rajdhani({
+	subsets: ['latin'],
+	weight: ['500', '600', '700'],
+	display: 'swap',
+	variable: '--font-rajdhani',
+})
 
 export const metadata = {
 	title: 'Brian Shimkus | AI Solutions Engineer',
@@ -15,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} ${bodyTextColor}`}>
+			<body className={`${inter.className} ${rajdhani.variable}`}>
 				{children}
 				<Analytics />
 				<SpeedInsights />

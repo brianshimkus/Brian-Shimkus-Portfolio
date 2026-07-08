@@ -26,22 +26,24 @@ const funFacts = [
 
 export default function FunFactsSection() {
 	return (
-		<section id='#funfacts'>
-			<SectionTitle title='Fun Facts' />
-			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8'>
+		<section id='funfacts'>
+			<SectionTitle eyebrow='Off the Clock' title='Fun Facts' />
+			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6'>
 				{funFacts.map((funFact, index) => (
-					<div
-						key={index}
-						className='bg-zinc-800 border-2 border-zinc-700 rounded-md  transition ease-in-out duration-300 h-full px-4 py-6'>
+					<div key={index} className='card p-6'>
 						<Image
 							src={funFact.thumbnail}
 							alt={funFact.title}
-							className='rounded-md mb-4'
+							className='rounded-lg mb-4 object-cover'
 							width={400}
 							height={400}
 						/>
-						<h3 className='text-xl font-bold mb-2'>{funFact.title}</h3>
-						<p className='text-zinc-400'>{funFact.description}</p>
+						<h3 className='text-lg font-semibold tracking-tight mb-2 font-display'>
+							{funFact.title}
+						</h3>
+						<p className='text-sm text-muted-foreground'>
+							{funFact.description}
+						</p>
 					</div>
 				))}
 			</div>

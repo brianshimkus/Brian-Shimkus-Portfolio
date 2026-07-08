@@ -1,13 +1,10 @@
-import { tealGradient } from '../utils'
-
-export default function SectionTitle({ title }) {
+export default function SectionTitle({ eyebrow, title }) {
 	return (
-		<div className='mt-32 mb-8 md:mb-12'>
-			<h2
-				className={`${tealGradient} text-3xl md:text-4xl mb-4 font-extrabold`}>
+		<div className='mt-24 mb-8 md:mb-12'>
+			{eyebrow && <p className='eyebrow mb-3'>{eyebrow}</p>}
+			<h2 className='text-3xl md:text-4xl font-semibold tracking-tight font-display'>
 				{title}
 			</h2>
-			<hr className='border-rose-400 border-2 w-32' />
 		</div>
 	)
 }

@@ -7,18 +7,18 @@ export default function HeroSection() {
 	return (
 		<section id='hero'>
 			<div className='grid grid-cols-1 lg:grid-cols-12'>
-				<div className='col-span-5 place-self-center mt-4 lg:mt-0'>
-					<div className='w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mb-8 lg:mb-0'>
+				<div className='col-span-5 w-full place-self-center mt-4 lg:mt-0'>
+					<div className='relative w-full aspect-square lg:w-[400px] lg:h-[400px] lg:mx-auto mb-8 lg:mb-0'>
 						<Image
-							className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-3xl'
+							className='rounded-3xl object-cover'
 							src='/images/hero-image.jpg'
 							alt='hero image'
-							width={300}
-							height={300}
+							fill
+							sizes='(min-width: 1024px) 400px, 100vw'
 						/>
 					</div>
 				</div>
-				<div className='col-span-7 place-self-center text-center sm:text-left'>
+				<div className='col-span-7 place-self-center text-left'>
 					<span className={eyebrowPill}>Open to Work</span>
 					<h1 className='mt-4 mb-4 text-4xl sm:text-5xl lg:text-6xl font-semibold uppercase tracking-tight leading-[1.05] font-display'>
 						<span className='text-foreground/60'>{`Hello, I'm`}</span>{' '}
@@ -34,7 +34,7 @@ export default function HeroSection() {
 						Chicago, open to remote, available immediately including contract
 						work.`}
 					</p>
-					<div className='flex flex-col sm:flex-row items-center sm:items-start gap-4'>
+					<div className='flex flex-row flex-wrap items-start gap-3 sm:gap-4'>
 						<a href='mailto:brian@brianshimkus.com' className={btnCta}>
 							Contact Me
 						</a>

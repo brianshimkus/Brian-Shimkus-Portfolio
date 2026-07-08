@@ -86,13 +86,11 @@ export default function Navbar() {
 					</a>
 				</div>
 			</div>
-			{navbarOpen ? (
-				<MenuOverlay
-					links={navLinks}
-					open={navbarOpen}
-					onNavigate={() => setNavbarOpen(false)}
-				/>
-			) : null}
+			<MenuOverlay
+				links={navLinks}
+				open={navbarOpen}
+				onNavigate={() => setNavbarOpen(false)}
+			/>
 		</nav>
 	)
 }

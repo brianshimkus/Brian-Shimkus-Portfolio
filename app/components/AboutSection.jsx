@@ -5,7 +5,7 @@ export default function AboutSection() {
 	return (
 		<section id='about' className='scroll-mt-16'>
 			<SectionTitle eyebrow='Who I Am' title='About Me' divider={false} />
-			<div className='lg:grid lg:grid-cols-2 gap-8 items-center xl:gap-16 sm:pt-16 xl:pt-16'>
+			<div className='lg:grid lg:grid-cols-2 gap-8 items-center xl:gap-16'>
 				<div className='leading-7 text-muted-foreground'>
 					<p className='mb-6'>
 						{`It all started back in 2006 as a junior in high school when I dove

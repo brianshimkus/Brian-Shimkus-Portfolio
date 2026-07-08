@@ -4,9 +4,9 @@ import SectionTitle from './SectionTitle'
 export default function AboutSection() {
 	return (
 		<section id='about'>
+			<SectionTitle eyebrow='Who I Am' title='About Me' />
 			<div className='lg:grid lg:grid-cols-2 gap-8 items-center xl:gap-16 sm:py-16 xl:py-16'>
 				<div className='leading-7 text-muted-foreground'>
-					<SectionTitle eyebrow='Who I Am' title='About Me' />
 					<p className='mb-6'>
 						{`It all started back in 2006 as a junior in high school when I dove
 						into my fascination with websites and finally taught myself how to
@@ -41,7 +41,7 @@ export default function AboutSection() {
 					<p>{`Seven months ago I set out to build something different: Insolla, an AI automation consultancy where I've been designing LLM-powered systems for small businesses, including automated outbound engines, CRM integrations, and agent-driven workflows across Make.com, HubSpot, and Airtable. It's been the best crash course in applied AI I could have asked for, and it's shown me where I want to go next: a role that sits between customers and working systems.`}</p>
 				</div>
 				<Image
-					className='rounded-full hidden lg:block'
+					className='rounded-3xl hidden lg:block'
 					src='/images/desk.jpg'
 					alt='about image'
 					width={500}

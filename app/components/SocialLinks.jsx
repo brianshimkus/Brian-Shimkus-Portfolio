@@ -3,7 +3,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 export default function SocialLinks({ styles, boxed = false }) {
 	const boxStyles = boxed
-		? 'inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 hover:bg-white/20 transition-colors'
+		? 'inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 hover:bg-white/20 transition-colors duration-300'
 		: ''
 
 	return (

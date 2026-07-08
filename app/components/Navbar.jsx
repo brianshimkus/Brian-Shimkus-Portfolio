@@ -28,7 +28,7 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+			className={`sticky top-0 z-50 transition-all duration-300 ${
 				navbarOpen
 					? 'border-b border-white/10 bg-background'
 					: scrolled
@@ -38,23 +38,25 @@ export default function Navbar() {
 			<div className='flex flex-wrap items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 h-16 container'>
 				<Link href='/' className='flex items-center'>
 					<Image
-						src='/images/logo.png'
+						src='/images/Logo-Wordmark-Personal-Site-Short.png'
 						alt='Brian Shimkus'
-						width={40}
-						height={40}
+						width={336}
+						height={200}
+						priority
+						className='h-8 w-auto'
 					/>
 				</Link>
 				<div className='mobile-menu block md:hidden'>
 					{!navbarOpen ? (
 						<button
 							onClick={() => setNavbarOpen(true)}
-							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors'>
+							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors duration-300'>
 							<Bars3Icon className='h-5 w-5' />
 						</button>
 					) : (
 						<button
 							onClick={() => setNavbarOpen(false)}
-							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors'>
+							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors duration-300'>
 							<XMarkIcon className='h-5 w-5' />
 						</button>
 					)}
@@ -68,7 +70,7 @@ export default function Navbar() {
 						))}
 					</ul>
 					<SocialLinks
-						styles='h-5 w-5 text-muted-foreground hover:text-brand-light transition-colors'
+						styles='h-5 w-5 text-muted-foreground hover:text-brand-light transition-colors duration-300'
 					/>
 					<a href='mailto:brian@brianshimkus.com' className={`${btnOutline} !px-4 !py-2 text-sm`}>
 						Contact Me

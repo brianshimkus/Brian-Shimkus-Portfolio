@@ -12,7 +12,4 @@ export const btnCta = 'btn btn-cta'
 export const btnOutline = 'btn btn-outline'
 
 export const portfolioLink =
-	'inline-flex items-center gap-1 rounded-full border border-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-foreground/80 hover:border-brand/40 hover:text-brand-light transition-colors'
-
-export const portfolioKeyword =
-	'text-foreground/60 text-xs bg-white/5 border border-white/10 px-2 py-1 mr-1 w-fit rounded-full font-medium tracking-wide'
+	'inline-flex items-center gap-1 rounded-full border border-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-foreground/80 hover:border-brand/40 hover:text-brand-light transition-colors duration-300'

@@ -9,7 +9,7 @@ export default function MenuOverlay({ links }) {
 					<NavLink href={link.path} title={link.title} />
 				</li>
 			))}
-			<SocialLinks styles='h-5 w-5 text-muted-foreground hover:text-brand-light transition-colors' />
+			<SocialLinks styles='h-5 w-5 text-muted-foreground hover:text-brand-light transition-colors duration-300' />
 		</ul>
 	)
 }

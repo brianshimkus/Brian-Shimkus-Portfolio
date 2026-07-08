@@ -6,21 +6,21 @@ import { btnCta, btnOutline, eyebrowPill, gradientText } from '../utils'
 export default function HeroSection() {
 	return (
 		<section id='hero' className='scroll-mt-16'>
-			<div className='grid grid-cols-1 lg:grid-cols-12'>
+			<div className='grid grid-cols-1 lg:grid-cols-12 lg:gap-8 xl:gap-12'>
 				<div className='hidden lg:block col-span-5 w-full place-self-center'>
-					<div className='relative lg:w-[400px] lg:h-[400px] lg:mx-auto'>
+					<div className='relative w-full max-w-[400px] aspect-square lg:mx-auto'>
 						<Image
 							className='rounded-3xl object-cover'
 							src='/images/hero-image.jpg'
 							alt='hero image'
 							fill
-							sizes='400px'
+							sizes='(min-width: 1024px) 33vw, 100vw'
 						/>
 					</div>
 				</div>
-				<div className='col-span-7 place-self-center text-left'>
+				<div className='col-span-7 min-w-0 place-self-center text-left'>
 					<span className={eyebrowPill}>Open to Work</span>
-					<h1 className='mt-4 mb-4 text-4xl sm:text-5xl lg:text-6xl font-semibold uppercase tracking-tight leading-[1.05] font-display'>
+					<h1 className='mt-4 mb-4 text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-semibold uppercase tracking-tight leading-[1.05] font-display'>
 						<span className='text-foreground/60'>{`Hello, I'm`}</span>{' '}
 						<span className={gradientText}>Brian</span>
 					</h1>

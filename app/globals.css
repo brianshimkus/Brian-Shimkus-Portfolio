@@ -3,21 +3,23 @@
 @tailwind utilities;
 
 :root {
-	--background: 13 15 20;
-	--foreground: 231 231 234;
-	--charcoal: 20 23 26;
-	--muted-foreground: 156 163 175;
-	--border-rgb: 255 255 255;
-	--overlay-rgb: 255 255 255;
-}
-
-[data-theme='light'] {
 	--background: 245 245 247;
 	--foreground: 17 17 22;
 	--charcoal: 255 255 255;
 	--muted-foreground: 107 114 128;
 	--border-rgb: 0 0 0;
 	--overlay-rgb: 0 0 0;
+	--brand-text-rgb: 124 58 237;
+}
+
+[data-theme='dark'] {
+	--background: 13 15 20;
+	--foreground: 231 231 234;
+	--charcoal: 20 23 26;
+	--muted-foreground: 156 163 175;
+	--border-rgb: 255 255 255;
+	--overlay-rgb: 255 255 255;
+	--brand-text-rgb: 196 181 253;
 }
 
 html,
@@ -49,21 +51,6 @@ body {
 		inset: -10vmax;
 		background: radial-gradient(
 				800px 500px at 20% -10%,
-				rgba(34, 211, 238, 0.18),
-				transparent 55%
-			),
-			radial-gradient(
-				800px 500px at 85% 5%,
-				rgba(96, 165, 250, 0.14),
-				transparent 55%
-			);
-		opacity: 0.8;
-		pointer-events: none;
-		z-index: -2;
-	}
-	[data-theme='light'] .app-bg::before {
-		background: radial-gradient(
-				800px 500px at 20% -10%,
 				rgba(34, 211, 238, 0.14),
 				transparent 55%
 			),
@@ -73,6 +60,21 @@ body {
 				transparent 55%
 			);
 		opacity: 0.5;
+		pointer-events: none;
+		z-index: -2;
+	}
+	[data-theme='dark'] .app-bg::before {
+		background: radial-gradient(
+				800px 500px at 20% -10%,
+				rgba(34, 211, 238, 0.18),
+				transparent 55%
+			),
+			radial-gradient(
+				800px 500px at 85% 5%,
+				rgba(96, 165, 250, 0.14),
+				transparent 55%
+			);
+		opacity: 0.8;
 	}
 	.card {
 		@apply rounded-2xl border-[1.5px] border-overlay/10 bg-charcoal;
@@ -93,9 +95,9 @@ body {
 			linear-gradient(135deg, #60a5fa 0%, #8b5cf6 50%, #10b981 100%) border-box;
 		color: rgb(var(--foreground));
 		background-size: 100% 100%, 200% 200%;
-		transition: filter 300ms ease, box-shadow 300ms ease,
-			background-color 300ms ease, background-image 300ms ease,
-			background-size 300ms ease, color 300ms ease;
+		transition: filter 320ms ease, box-shadow 320ms ease,
+			background-color 320ms ease, background-image 320ms ease,
+			background-size 320ms ease, color 320ms ease;
 	}
 	.btn-outline:hover {
 		background: linear-gradient(135deg, #60a5fa 0%, #8b5cf6 50%, #10b981 100%)
@@ -113,10 +115,9 @@ body {
 			linear-gradient(135deg, #5e9ee1 0%, #8b5cf6 100%) border-box;
 		color: rgb(var(--foreground));
 		background-size: 100% 100%, 100% 100%;
-		transition: background-color 480ms ease-in-out,
-			background-image 480ms ease-in-out, background-size 480ms ease-in-out,
-			filter 320ms ease, box-shadow 320ms ease, opacity 480ms ease-in-out,
-			color 480ms ease-in-out;
+		transition: background-color 320ms ease, background-image 320ms ease,
+			background-size 320ms ease, filter 320ms ease, box-shadow 320ms ease,
+			opacity 320ms ease, color 320ms ease;
 		position: relative;
 		overflow: hidden;
 		z-index: 0;
@@ -132,7 +133,7 @@ body {
 		border-radius: inherit;
 		background: linear-gradient(135deg, #5e9ee1, #8b5cf6);
 		opacity: 0;
-		transition: opacity 500ms ease-in-out;
+		transition: opacity 320ms ease;
 		pointer-events: none;
 		z-index: -1;
 	}
@@ -174,25 +175,6 @@ body {
 		z-index: -1;
 		background: radial-gradient(
 				800px 900px at 25% 0%,
-				rgba(139, 92, 246, 0.22),
-				transparent 65%
-			),
-			radial-gradient(
-				900px 950px at 75% 0%,
-				rgba(236, 72, 153, 0.18),
-				transparent 67%
-			),
-			radial-gradient(
-				900px 700px at 50% 100%,
-				rgba(94, 158, 225, 0.1),
-				transparent 65%
-			);
-		pointer-events: none;
-		opacity: 0.7;
-	}
-	[data-theme='light'] .footer-ambient::before {
-		background: radial-gradient(
-				800px 900px at 25% 0%,
 				rgba(139, 92, 246, 0.16),
 				transparent 65%
 			),
@@ -206,27 +188,29 @@ body {
 				rgba(94, 158, 225, 0.08),
 				transparent 65%
 			);
+		pointer-events: none;
 		opacity: 0.6;
+	}
+	[data-theme='dark'] .footer-ambient::before {
+		background: radial-gradient(
+				800px 900px at 25% 0%,
+				rgba(139, 92, 246, 0.22),
+				transparent 65%
+			),
+			radial-gradient(
+				900px 950px at 75% 0%,
+				rgba(236, 72, 153, 0.18),
+				transparent 67%
+			),
+			radial-gradient(
+				900px 700px at 50% 100%,
+				rgba(94, 158, 225, 0.1),
+				transparent 65%
+			);
+		opacity: 0.7;
 	}
 	@media (max-width: 768px) {
 		.footer-ambient::before {
-			background: radial-gradient(
-					600px 700px at 25% 0%,
-					rgba(139, 92, 246, 0.22),
-					transparent 65%
-				),
-				radial-gradient(
-					700px 750px at 75% 0%,
-					rgba(236, 72, 153, 0.18),
-					transparent 67%
-				),
-				radial-gradient(
-					700px 500px at 50% 100%,
-					rgba(94, 158, 225, 0.1),
-					transparent 65%
-				);
-		}
-		[data-theme='light'] .footer-ambient::before {
 			background: radial-gradient(
 					600px 700px at 25% 0%,
 					rgba(139, 92, 246, 0.16),
@@ -243,17 +227,34 @@ body {
 					transparent 65%
 				);
 		}
-	}
-	.theme-dark-only {
-		display: block;
+		[data-theme='dark'] .footer-ambient::before {
+			background: radial-gradient(
+					600px 700px at 25% 0%,
+					rgba(139, 92, 246, 0.22),
+					transparent 65%
+				),
+				radial-gradient(
+					700px 750px at 75% 0%,
+					rgba(236, 72, 153, 0.18),
+					transparent 67%
+				),
+				radial-gradient(
+					700px 500px at 50% 100%,
+					rgba(94, 158, 225, 0.1),
+					transparent 65%
+				);
+		}
 	}
 	.theme-light-only {
+		display: block;
+	}
+	.theme-dark-only {
 		display: none;
 	}
-	[data-theme='light'] .theme-dark-only {
+	[data-theme='dark'] .theme-light-only {
 		display: none;
 	}
-	[data-theme='light'] .theme-light-only {
+	[data-theme='dark'] .theme-dark-only {
 		display: block;
 	}
 }

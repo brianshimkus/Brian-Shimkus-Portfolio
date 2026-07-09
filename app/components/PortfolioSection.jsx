@@ -104,7 +104,7 @@ function ProjectCard({ project }) {
 					className='object-cover object-top'
 				/>
 				{project.comingSoon && (
-					<span className='absolute top-3 left-3 inline-flex items-center rounded-full bg-brand/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-light ring-1 ring-inset ring-brand/30 backdrop-blur-sm'>
+					<span className='absolute top-3 left-3 inline-flex items-center rounded-full bg-brand/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-text ring-1 ring-inset ring-brand/30 backdrop-blur-sm'>
 						Launching Soon
 					</span>
 				)}

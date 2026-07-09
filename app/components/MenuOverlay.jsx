@@ -20,7 +20,7 @@ export default function MenuOverlay({ links, onNavigate, open }) {
 						/>
 					</li>
 				))}
-				<SocialLinks styles='h-5 w-5 text-muted-foreground hover:text-brand-light transition-colors duration-300' />
+				<SocialLinks styles='h-5 w-5 text-muted-foreground hover:text-brand-text transition-colors duration-300' />
 			</ul>
 		</div>
 	)

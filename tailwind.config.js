@@ -26,6 +26,7 @@ module.exports = {
 					lighter: '#DDD6FE',
 					dark: '#7C3AED',
 					foreground: '#001015',
+					text: 'rgb(var(--brand-text-rgb) / <alpha-value>)',
 				},
 				accent: {
 					DEFAULT: '#60A5FA',

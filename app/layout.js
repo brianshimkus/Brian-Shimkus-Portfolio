@@ -90,10 +90,10 @@ const personJsonLd = {
 const themeInitScript = `(function() {
 	try {
 		var stored = localStorage.getItem('theme');
-		var systemLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-		document.documentElement.dataset.theme = stored || (systemLight ? 'light' : 'dark');
+		var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		document.documentElement.dataset.theme = stored || (systemDark ? 'dark' : 'light');
 	} catch (e) {
-		document.documentElement.dataset.theme = 'dark';
+		document.documentElement.dataset.theme = 'light';
 	}
 })();`
 

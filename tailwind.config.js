@@ -8,13 +8,14 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				background: '#0D0F14',
-				foreground: '#E7E7EA',
+				background: 'rgb(var(--background) / <alpha-value>)',
+				foreground: 'rgb(var(--foreground) / <alpha-value>)',
 				muted: {
-					DEFAULT: '#9CA3AF',
-					foreground: '#9CA3AF',
+					DEFAULT: 'rgb(var(--muted-foreground) / <alpha-value>)',
+					foreground: 'rgb(var(--muted-foreground) / <alpha-value>)',
 				},
-				charcoal: '#14171A',
+				charcoal: 'rgb(var(--charcoal) / <alpha-value>)',
+				overlay: 'rgb(var(--overlay-rgb) / <alpha-value>)',
 				primary: {
 					DEFAULT: '#D946EF',
 					foreground: '#FFFFFF',
@@ -34,10 +35,10 @@ module.exports = {
 				brandPink: '#EC4899',
 				brandPurple: '#8B5CF6',
 				card: {
-					DEFAULT: 'rgba(255,255,255,0.05)',
-					foreground: '#E7E7EA',
+					DEFAULT: 'rgb(var(--overlay-rgb) / 0.05)',
+					foreground: 'rgb(var(--foreground) / <alpha-value>)',
 				},
-				border: 'rgba(255,255,255,0.08)',
+				border: 'rgb(var(--border-rgb) / 0.08)',
 			},
 			boxShadow: {
 				glow: '0 0 32px rgba(217, 70, 239, 0.38)',

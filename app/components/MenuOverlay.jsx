@@ -5,7 +5,7 @@ export default function MenuOverlay({ links, onNavigate, open }) {
 	return (
 		<div
 			id='mobile-menu'
-			className={`md:hidden overflow-hidden border-t border-white/10 bg-white/[0.06] backdrop-blur-xl backdrop-saturate-150 transition-[max-height,opacity] duration-[420ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+			className={`md:hidden overflow-hidden border-t border-overlay/10 bg-overlay/[0.06] backdrop-blur-xl backdrop-saturate-150 transition-[max-height,opacity] duration-[420ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
 				open
 					? 'max-h-[80vh] opacity-100 pointer-events-auto'
 					: 'max-h-0 opacity-0 pointer-events-none'

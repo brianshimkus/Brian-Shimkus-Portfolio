@@ -87,10 +87,21 @@ const personJsonLd = {
 	],
 }
 
+const themeInitScript = `(function() {
+	try {
+		var stored = localStorage.getItem('theme');
+		var systemLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+		document.documentElement.dataset.theme = stored || (systemLight ? 'light' : 'dark');
+	} catch (e) {
+		document.documentElement.dataset.theme = 'dark';
+	}
+})();`
+
 export default function RootLayout({ children }) {
 	return (
-		<html lang='en'>
+		<html lang='en' suppressHydrationWarning>
 			<body className={`${inter.className} ${rajdhani.variable}`}>
+				<script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
 				<script
 					type='application/ld+json'
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}

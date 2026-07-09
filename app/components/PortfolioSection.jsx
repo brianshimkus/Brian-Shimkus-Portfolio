@@ -116,7 +116,7 @@ function ProjectCard({ project }) {
 				<p className='text-sm text-muted-foreground leading-relaxed flex-1'>
 					{project.description}
 				</p>
-				<div className='flex items-center gap-3 pt-5 mt-5 border-t border-white/5'>
+				<div className='flex items-center gap-3 pt-5 mt-5 border-t border-overlay/5'>
 					{project.appLink?.length > 0 && (
 						<a href={project.appLink} target='_blank' rel='noopener noreferrer' className={portfolioLink}>
 							App <FaExternalLinkAlt className='text-[10px]' />
@@ -143,7 +143,7 @@ export default function PortfolioSection() {
 				))}
 			</div>
 
-			<div className='mt-20 pt-10 border-t border-white/10'>
+			<div className='mt-20 pt-10 border-t border-overlay/10'>
 				<p className='mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground'>
 					More projects
 				</p>

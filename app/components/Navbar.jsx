@@ -7,11 +7,13 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './MenuOverlay'
 import Image from 'next/image'
 import SocialLinks from './SocialLinks'
+import ThemeToggle from './ThemeToggle'
 import { btnOutline } from '../utils'
 
 const navLinks = [
 	{ title: 'Intro', path: '#hero' },
 	{ title: 'About', path: '#about' },
+	{ title: 'Skills', path: '#skills' },
 	{ title: 'Portfolio', path: '#portfolio' },
 	{ title: 'Fun Facts', path: '#funfacts' },
 ]
@@ -31,9 +33,9 @@ export default function Navbar() {
 		<nav
 			className={`sticky top-0 z-50 transition-all duration-300 ${
 				navbarOpen
-					? 'border-b border-white/10 bg-background'
+					? 'border-b border-overlay/10 bg-background'
 					: scrolled
-					? 'border-b border-white/10 bg-white/[0.06] backdrop-blur-xl backdrop-saturate-150'
+					? 'border-b border-overlay/10 bg-overlay/[0.06] backdrop-blur-xl backdrop-saturate-150'
 					: 'bg-transparent'
 			}`}>
 			<div className='flex flex-wrap items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 h-16 container'>
@@ -47,7 +49,8 @@ export default function Navbar() {
 						className='h-8 w-auto'
 					/>
 				</Link>
-				<div className='mobile-menu block md:hidden'>
+				<div className='mobile-menu flex items-center gap-2 md:hidden'>
+					<ThemeToggle />
 					{!navbarOpen ? (
 						<button
 							type='button'
@@ -55,7 +58,7 @@ export default function Navbar() {
 							aria-expanded={navbarOpen}
 							aria-controls='mobile-menu'
 							onClick={() => setNavbarOpen(true)}
-							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors duration-300'>
+							className='flex items-center px-3 py-2 border rounded border-overlay/15 text-muted-foreground hover:text-foreground hover:border-overlay/25 transition-colors duration-300'>
 							<Bars3Icon className='h-5 w-5' />
 						</button>
 					) : (
@@ -65,7 +68,7 @@ export default function Navbar() {
 							aria-expanded={navbarOpen}
 							aria-controls='mobile-menu'
 							onClick={() => setNavbarOpen(false)}
-							className='flex items-center px-3 py-2 border rounded border-white/15 text-muted-foreground hover:text-foreground hover:border-white/25 transition-colors duration-300'>
+							className='flex items-center px-3 py-2 border rounded border-overlay/15 text-muted-foreground hover:text-foreground hover:border-overlay/25 transition-colors duration-300'>
 							<XMarkIcon className='h-5 w-5' />
 						</button>
 					)}
@@ -81,6 +84,7 @@ export default function Navbar() {
 					<SocialLinks
 						styles='h-5 w-5 text-muted-foreground hover:text-brand-light transition-colors duration-300'
 					/>
+					<ThemeToggle />
 					<a href='mailto:brian@brianshimkus.com' className={`${btnOutline} !px-4 !py-2 text-sm`}>
 						Contact Me
 					</a>

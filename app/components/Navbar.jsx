@@ -46,7 +46,15 @@ export default function Navbar() {
 						width={336}
 						height={200}
 						priority
-						className='h-8 w-auto'
+						className='theme-dark-only h-8 w-auto'
+					/>
+					<Image
+						src='/images/Logo-Wordmark-Personal-Site-Short-Light-Mode.png'
+						alt='Brian Shimkus'
+						width={336}
+						height={200}
+						priority
+						className='theme-light-only h-8 w-auto'
 					/>
 				</Link>
 				<div className='mobile-menu flex items-center gap-2 md:hidden'>

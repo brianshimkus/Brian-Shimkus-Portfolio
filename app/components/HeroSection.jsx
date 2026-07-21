@@ -34,14 +34,17 @@ export default function HeroSection() {
 						/>
 					</div>
 					<p className='text-lg sm:text-lg mb-2 lg:text-2xl text-foreground'>
-						{`AI Solutions Engineer with 12 years in software engineering, now
-						focused on LLM workflows, automation, and integrations.`}
+						{`Pre-sales Solutions Engineer specializing in AI integration,
+						running the full technical sales motion at Insolla: discovery
+						calls, solution scoping, tailored demos, and proof-of-concept
+						builds that win engagements.`}
 					</p>
 					<p className='text-base sm:text-base mb-6 lg:text-lg text-muted-foreground'>
-						{`Seeking Solutions Engineer, Forward Deployed Engineer, or
-						AI/Automation Engineer roles (senior front-end too). Based in
-						Chicago, open to remote, available immediately including contract
-						work.`}
+						{`12 years shipping customer-facing solutions inside regulated
+						financial organizations, including OCC, TransUnion, and Marex.
+						Seeking Solutions Engineer, Forward Deployed Engineer, or
+						AI/Automation Engineer roles. Based in Chicago, open to remote,
+						available immediately including contract work.`}
 					</p>
 					<div className='flex flex-row flex-wrap items-start gap-3 sm:gap-4'>
 						<a href='mailto:brian@brianshimkus.com' className={btnCta}>

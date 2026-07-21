@@ -9,8 +9,10 @@ const toolGroups = [
 			'LangChain',
 			'Pinecone',
 			'RAG Architecture',
+			'Embeddings',
+			'Structured Outputs',
+			'Source Grounding',
 			'Prompt Design',
-			'LLM Workflow Automation',
 			'Python',
 		],
 	},
@@ -22,10 +24,11 @@ const toolGroups = [
 		category: 'Integration & Platform',
 		skills: [
 			'REST APIs',
+			'FastAPI',
+			'Salesforce API (OAuth 2.0 JWT)',
 			'Node.js',
 			'SQL (MySQL)',
 			'DocuSign API',
-			'Contentful',
 			'AWS',
 		],
 	},
@@ -33,6 +36,7 @@ const toolGroups = [
 		category: 'Front-End',
 		skills: [
 			'React',
+			'Next.js',
 			'TypeScript',
 			'JavaScript',
 			'Redux',
@@ -44,12 +48,15 @@ const toolGroups = [
 ]
 
 const deliveryGroup = {
-	category: 'Solutions Delivery',
+	category: 'Pre-Sales',
 	skills: [
 		'Technical Discovery',
-		'Stakeholder Demos & POCs',
-		'Solution Scoping',
-		'Cross-Functional Leadership',
+		'Tailored Demos',
+		'POC Scoping & Delivery',
+		'Solution Design',
+		'Objection Handling',
+		'Executive Presentations',
+		'Client Enablement',
 	],
 }
 

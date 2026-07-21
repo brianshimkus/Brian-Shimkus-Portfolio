@@ -38,7 +38,7 @@ export default function AboutSection() {
 						onboarding tools for traders within the finance space, and much
 						more.`}
 					</p>
-					<p className='mb-6'>{`Seven months ago I set out to build something different: Insolla, an AI automation consultancy where I've been designing LLM-powered systems for small businesses, including automated outbound engines, CRM integrations, and agent-driven workflows across Make.com, HubSpot, and Airtable. It's been the best crash course in applied AI I could have asked for, and it's shown me where I want to go next: a role that sits between customers and working systems.`}</p>
+					<p className='mb-6'>{`Seven months ago I set out to build something different: Insolla, an independent AI consulting practice where I run the full technical sales motion myself, discovery calls, solution scoping, tailored demos, and proof-of-concept builds that win engagements, including a source-grounded RAG assistant over live Salesforce CRM data. It's been the best crash course in applied AI I could have asked for, and it's shown me where I want to go next: a pre-sales Solutions Engineer role that sits between customers and working systems.`}</p>
 				</div>
 				<Image
 					className='rounded-3xl hidden lg:block'

@@ -15,7 +15,7 @@ const rajdhani = Rajdhani({
 const siteUrl = 'https://www.brianshimkus.dev'
 const siteTitle = 'Brian Shimkus | AI Solutions Engineer'
 const siteDescription =
-	'AI Solutions Engineer focused on LLM workflows, automation, and integrations. Based in Chicago, IL, open to remote and contract work.'
+	'Pre-sales Solutions Engineer specializing in AI integration, running the technical sales motion at Insolla: discovery calls, solution scoping, tailored demos, and proof-of-concept builds. Based in Chicago, IL, open to remote and contract work.'
 
 export const metadata = {
 	metadataBase: new URL(siteUrl),

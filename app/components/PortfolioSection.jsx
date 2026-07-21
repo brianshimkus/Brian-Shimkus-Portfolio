@@ -16,8 +16,7 @@ const aiProjects = [
 		thumbnail: '/images/salesforce-rag.jpg',
 		description:
 			'A retrieval-augmented chat assistant built on live Salesforce data, letting support and sales teams ask natural-language questions about accounts, cases, and escalations and get sourced answers instantly.',
-		appLink:
-			'https://insolla-salesforce-rag-kjfm8hmmbzqm6j3hmyjeth.streamlit.app/',
+		appLink: 'https://rag.insolla.ai',
 		githubLink: 'https://github.com/brianshimkus/Insolla-Salesforce-RAG',
 	},
 	{

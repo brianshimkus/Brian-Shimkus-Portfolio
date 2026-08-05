@@ -12,6 +12,9 @@ const description =
 export const metadata = {
 	title,
 	description,
+	alternates: {
+		canonical: '/case-studies/salesforce-intelligence',
+	},
 	openGraph: {
 		title,
 		description,
@@ -100,9 +103,27 @@ const productionWork = [
 	},
 ]
 
+const articleJsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Article',
+	headline: title,
+	description,
+	image: 'https://www.brianshimkus.dev/images/salesforce-rag.png',
+	url: 'https://www.brianshimkus.dev/case-studies/salesforce-intelligence',
+	author: {
+		'@type': 'Person',
+		name: 'Brian Shimkus',
+		url: 'https://www.brianshimkus.dev',
+	},
+}
+
 export default function SalesforceIntelligencePage() {
 	return (
 		<main className='app-bg flex min-h-screen flex-col'>
+			<script
+				type='application/ld+json'
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+			/>
 			<Navbar />
 			<div className='container mt-8 mb-24 mx-auto px-6 sm:px-12 py-4 max-w-6xl'>
 				<Link

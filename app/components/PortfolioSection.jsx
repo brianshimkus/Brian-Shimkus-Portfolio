@@ -1,15 +1,17 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import SectionTitle from './SectionTitle'
 import { portfolioLink } from '../utils'
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa'
 
 const aiProjects = [
 	{
-		title: 'Insolla',
-		thumbnail: '/images/insolla.jpg',
+		title: 'POD Recovery Assistant',
+		thumbnail: '/images/pod-recovery-assistant.jpg',
 		description:
-			'An AI automation consultancy helping small businesses design LLM-powered systems, from automated outbound engines to CRM integrations and agent-driven workflows.',
-		appLink: 'https://insolla.ai/',
+			'An independent Solutions Engineering case study: a controlled AI workflow that recovers missing proof-of-delivery documents for a freight brokerage, with SOP-grounded recommendations, human approval, and a full audit trail.',
+		badge: 'In Progress',
+		caseStudyLink: '/case-studies/pod-recovery-assistant',
 	},
 	{
 		title: 'Salesforce Intelligence',
@@ -19,6 +21,9 @@ const aiProjects = [
 		appLink: 'https://rag.insolla.ai',
 		githubLink: 'https://github.com/brianshimkus/Insolla-Salesforce-RAG',
 	},
+]
+
+const otherProjects = [
 	{
 		title: 'Workflow Analyzer',
 		thumbnail: '/images/workflow-analyzer.jpg',
@@ -56,41 +61,6 @@ const aiProjects = [
 	},
 ]
 
-const otherProjects = [
-	{
-		title: 'Noted',
-		thumbnail: '/images/noted.jpg',
-		description:
-			'A SaaS notes app with rich text editing, light and dark mode, and subscription billing built in.',
-		appLink: 'https://noted.brianshimkus.dev/',
-		githubLink: 'https://github.com/brianshimkus/Noted',
-	},
-	{
-		title: 'Shimfin',
-		thumbnail: '/images/shimfin.jpg',
-		description:
-			'A real estate listings app for browsing and searching properties with a live Firebase backend.',
-		appLink: 'https://shimfin.brianshimkus.dev/',
-		githubLink: 'https://github.com/brianshimkus/Shimfin',
-	},
-	{
-		title: 'COVID 19 Tracker',
-		thumbnail: '/images/covid-tracker.jpg',
-		description:
-			'A COVID-19 data tracker built in React, visualizing case counts and trends by country.',
-		appLink: 'https://covid.brianshimkus.dev/',
-		githubLink: 'https://github.com/brianshimkus/covid-19-tracker',
-	},
-	{
-		title: 'Github Finder',
-		thumbnail: '/images/github-finder.jpg',
-		description:
-			'A GitHub user search tool for looking up profiles, repositories, and public activity.',
-		appLink: 'https://githubfinder.brianshimkus.dev/',
-		githubLink: 'https://github.com/brianshimkus/Github-Finder',
-	},
-]
-
 function ProjectCard({ project }) {
 	return (
 		<div className='card flex flex-col'>
@@ -102,9 +72,9 @@ function ProjectCard({ project }) {
 					sizes='(min-width: 1280px) 400px, (min-width: 768px) 50vw, 100vw'
 					className='object-cover object-top'
 				/>
-				{project.comingSoon && (
+				{project.badge && (
 					<span className='absolute top-3 left-3 inline-flex items-center rounded-full bg-brand/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-text ring-1 ring-inset ring-brand/30 backdrop-blur-sm'>
-						Launching Soon
+						{project.badge}
 					</span>
 				)}
 			</div>
@@ -116,6 +86,11 @@ function ProjectCard({ project }) {
 					{project.description}
 				</p>
 				<div className='flex items-center gap-3 pt-5 mt-5 border-t border-overlay/5'>
+					{project.caseStudyLink?.length > 0 && (
+						<Link href={project.caseStudyLink} className={portfolioLink}>
+							Case Study <FaArrowRight className='text-[10px]' />
+						</Link>
+					)}
 					{project.appLink?.length > 0 && (
 						<a href={project.appLink} target='_blank' rel='noopener noreferrer' className={portfolioLink}>
 							App <FaExternalLinkAlt className='text-[10px]' />

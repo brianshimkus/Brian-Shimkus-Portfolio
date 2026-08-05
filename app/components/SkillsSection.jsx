@@ -80,7 +80,7 @@ function SkillCard({ group }) {
 export default function SkillsSection() {
 	return (
 		<section id='skills' className='scroll-mt-16'>
-			<SectionTitle eyebrow='What I Know' title='Skills' />
+			<SectionTitle eyebrow='What I Know' title='Skills' divider={false} />
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 				{toolGroups.map((group) => (
 					<SkillCard key={group.category} group={group} />

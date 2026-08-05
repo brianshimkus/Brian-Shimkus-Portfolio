@@ -12,9 +12,9 @@ import { btnOutline } from '../utils'
 
 const navLinks = [
 	{ title: 'Intro', path: '/#hero' },
-	{ title: 'About', path: '/#about' },
 	{ title: 'Skills', path: '/#skills' },
 	{ title: 'Portfolio', path: '/#portfolio' },
+	{ title: 'About', path: '/#about' },
 ]
 
 export default function Navbar() {

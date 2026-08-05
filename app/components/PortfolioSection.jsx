@@ -12,12 +12,14 @@ const aiProjects = [
 			'An independent Solutions Engineering case study: a controlled AI workflow that recovers missing proof-of-delivery documents for a freight brokerage, with SOP-grounded recommendations, human approval, and a full audit trail.',
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/pod-recovery-assistant',
+		githubLink: 'https://github.com/brianshimkus/Freight-POD-Recovery',
 	},
 	{
 		title: 'Salesforce Intelligence',
 		thumbnail: '/images/salesforce-rag.png',
 		description:
 			'A retrieval-augmented chat assistant built on live Salesforce data, letting support and sales teams ask natural-language questions about accounts, cases, and escalations and get sourced answers instantly.',
+		caseStudyLink: '/case-studies/salesforce-intelligence',
 		appLink: 'https://rag.insolla.ai',
 		githubLink: 'https://github.com/brianshimkus/Insolla-Salesforce-RAG',
 	},
@@ -85,7 +87,7 @@ function ProjectCard({ project }) {
 				<p className='text-sm text-muted-foreground leading-relaxed flex-1'>
 					{project.description}
 				</p>
-				<div className='flex items-center gap-3 pt-5 mt-5 border-t border-overlay/5'>
+				<div className='flex flex-wrap items-center gap-3 pt-5 mt-5 border-t border-overlay/5'>
 					{project.caseStudyLink?.length > 0 && (
 						<Link href={project.caseStudyLink} className={portfolioLink}>
 							Case Study <FaArrowRight className='text-[10px]' />

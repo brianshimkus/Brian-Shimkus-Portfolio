@@ -6,10 +6,32 @@ import Footer from '../../components/Footer'
 import SectionDivider from '../../components/SectionDivider'
 import { gradientText, portfolioLink, skillPill, btnCta } from '../../utils'
 
+const title = 'POD Recovery Assistant Case Study'
+const description =
+	'An independent Solutions Engineering case study: a controlled AI workflow that recovers missing proof-of-delivery documents for a freight brokerage, with SOP-grounded recommendations, human approval, and a full audit trail.'
+
 export const metadata = {
-	title: 'POD Recovery Assistant Case Study',
-	description:
-		'An independent Solutions Engineering case study: a controlled AI workflow that recovers missing proof-of-delivery documents for a freight brokerage, with SOP-grounded recommendations, human approval, and a full audit trail.',
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+		type: 'article',
+		images: [
+			{
+				url: '/images/pod-recovery-assistant.png',
+				width: 1448,
+				height: 1086,
+				alt: 'POD Recovery Assistant',
+			},
+		],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title,
+		description,
+		images: ['/images/pod-recovery-assistant.png'],
+	},
 }
 
 const processSteps = [

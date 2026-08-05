@@ -8,7 +8,6 @@ const aiProjects = [
 	{
 		title: 'POD Recovery Assistant',
 		thumbnail: '/images/pod-recovery-assistant.png',
-		thumbnailFit: 'contain',
 		description:
 			'An independent Solutions Engineering case study: a controlled AI workflow that recovers missing proof-of-delivery documents for a freight brokerage, with SOP-grounded recommendations, human approval, and a full audit trail.',
 		badge: 'In Progress',
@@ -16,7 +15,7 @@ const aiProjects = [
 	},
 	{
 		title: 'Salesforce Intelligence',
-		thumbnail: '/images/salesforce-rag.jpg',
+		thumbnail: '/images/salesforce-rag.png',
 		description:
 			'A retrieval-augmented chat assistant built on live Salesforce data, letting support and sales teams ask natural-language questions about accounts, cases, and escalations and get sourced answers instantly.',
 		appLink: 'https://rag.insolla.ai',
@@ -27,35 +26,35 @@ const aiProjects = [
 const otherProjects = [
 	{
 		title: 'Workflow Analyzer',
-		thumbnail: '/images/workflow-analyzer.jpg',
+		thumbnail: '/images/workflow-analyzer.png',
 		description:
 			'Upload a process document, screenshot, or SOP and this tool extracts the workflow, then tells you exactly what to automate, which tools to use, and how many hours it will save each week.',
 		appLink: 'https://www.insolla.ai/workflow-analyzer',
 	},
 	{
 		title: 'List Enricher',
-		thumbnail: '/images/list-enricher.jpg',
+		thumbnail: '/images/list-enricher.png',
 		description:
 			'Upload a spreadsheet, describe the columns you want added in plain English, and get back a clean file enriched with real, web-researched data for every row.',
 		appLink: 'https://www.insolla.ai/products/list-enricher',
 	},
 	{
 		title: 'SOP Generator',
-		thumbnail: '/images/sop-generator.jpg',
+		thumbnail: '/images/sop-generator.png',
 		description:
 			'Describe a process in plain English or upload existing notes, and this tool turns tribal knowledge into a polished Standard Operating Procedure complete with roles, prerequisites, and quality checks.',
 		appLink: 'https://www.insolla.ai/products/sop-generator',
 	},
 	{
 		title: 'Meeting Notes Analyzer',
-		thumbnail: '/images/meeting-notes.jpg',
+		thumbnail: '/images/meeting-notes.png',
 		description:
 			'Paste in a transcript or raw notes and get a clean recap with action items, owners, due dates, decisions, and open questions ready to copy straight into your task tracker.',
 		appLink: 'https://www.insolla.ai/products/meeting-notes',
 	},
 	{
 		title: 'Contract Analyzer',
-		thumbnail: '/images/contract-analyzer.jpg',
+		thumbnail: '/images/contract-analyzer.png',
 		description:
 			'Upload any contract and get a plain-English summary, key dates, obligations on both sides, and severity-flagged risks worth pushing back on, all in about 30 seconds.',
 		appLink: 'https://www.insolla.ai/products/contract-analyzer',
@@ -74,7 +73,7 @@ function ProjectCard({ project }) {
 					className={project.thumbnailFit === 'contain' ? 'object-contain' : 'object-cover object-top'}
 				/>
 				{project.badge && (
-					<span className='absolute top-3 left-3 inline-flex items-center rounded-full bg-brand/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-text ring-1 ring-inset ring-brand/30 backdrop-blur-sm'>
+					<span className='absolute top-3 right-3 inline-flex items-center rounded-full bg-black/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white ring-1 ring-inset ring-white/20 backdrop-blur-md'>
 						{project.badge}
 					</span>
 				)}

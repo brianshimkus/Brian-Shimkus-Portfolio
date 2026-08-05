@@ -7,7 +7,8 @@ import { FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa'
 const aiProjects = [
 	{
 		title: 'POD Recovery Assistant',
-		thumbnail: '/images/pod-recovery-assistant.jpg',
+		thumbnail: '/images/pod-recovery-assistant.png',
+		thumbnailFit: 'contain',
 		description:
 			'An independent Solutions Engineering case study: a controlled AI workflow that recovers missing proof-of-delivery documents for a freight brokerage, with SOP-grounded recommendations, human approval, and a full audit trail.',
 		badge: 'In Progress',
@@ -64,13 +65,13 @@ const otherProjects = [
 function ProjectCard({ project }) {
 	return (
 		<div className='card flex flex-col'>
-			<div className='relative w-full aspect-[4/3] rounded-t-2xl overflow-hidden'>
+			<div className='relative w-full aspect-[4/3] rounded-t-2xl overflow-hidden bg-charcoal'>
 				<Image
 					src={project.thumbnail}
 					alt={project.title}
 					fill
 					sizes='(min-width: 1280px) 400px, (min-width: 768px) 50vw, 100vw'
-					className='object-cover object-top'
+					className={project.thumbnailFit === 'contain' ? 'object-contain' : 'object-cover object-top'}
 				/>
 				{project.badge && (
 					<span className='absolute top-3 left-3 inline-flex items-center rounded-full bg-brand/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-text ring-1 ring-inset ring-brand/30 backdrop-blur-sm'>

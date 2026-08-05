@@ -33,11 +33,12 @@ export default function HeroSection() {
 							sizes='100vw'
 						/>
 					</div>
-					<p className='text-lg sm:text-lg mb-2 lg:text-2xl text-foreground'>
+					<p className='text-lg sm:text-lg mb-2 lg:text-2xl text-foreground text-pretty'>
 						{`Pre-sales Solutions Engineer specializing in AI integration,
 						running the full technical sales motion at Insolla: discovery
 						calls, solution scoping, tailored demos, and proof-of-concept
-						builds that win engagements.`}
+						builds, including cutting a client's social media workflow from
+						8 hours a week to 10 minutes through automation.`}
 					</p>
 					<p className='text-base sm:text-base mb-6 lg:text-lg text-muted-foreground'>
 						{`12 years shipping customer-facing solutions inside regulated

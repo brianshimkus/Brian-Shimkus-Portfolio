@@ -120,8 +120,12 @@ export default function PortfolioSection() {
 			</div>
 
 			<div className='mt-20 pt-10 border-t border-overlay/10'>
-				<p className='mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground'>
+				<p className='mb-2 text-sm font-semibold uppercase tracking-wider text-muted-foreground'>
 					More projects
+				</p>
+				<p className='mb-6 text-sm text-muted-foreground max-w-2xl'>
+					Narrower, faster builds shipped through Insolla, the same
+					discovery-to-delivery process applied at a smaller scale.
 				</p>
 				<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
 					{otherProjects.map((project, index) => (

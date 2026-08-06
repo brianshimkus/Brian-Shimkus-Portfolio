@@ -15,6 +15,15 @@ const aiProjects = [
 		githubLink: 'https://github.com/brianshimkus/Freight-POD-Recovery',
 	},
 	{
+		title: 'Employee Access Lifecycle Assistant',
+		thumbnail: '/images/employee-access-lifecycle.png',
+		description:
+			'An independent Solutions Engineering case study: a deterministic policy engine that evaluates employee role changes, routes risky access combinations for security review, and provisions through mock connectors with a full audit trail.',
+		badge: 'In Progress',
+		caseStudyLink: '/case-studies/employee-access-lifecycle',
+		githubLink: 'https://github.com/brianshimkus/Employee-Access-Lifecycle-Assistant',
+	},
+	{
 		title: 'Salesforce Intelligence',
 		thumbnail: '/images/salesforce-rag.png',
 		description:

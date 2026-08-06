@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { FaBolt } from 'react-icons/fa'
 import { btnCta, btnOutline, eyebrowPill, gradientText } from '../utils'
 
 export default function HeroSection() {
@@ -37,16 +38,23 @@ export default function HeroSection() {
 						{`Pre-sales Solutions Engineer specializing in AI integration,
 						running the full technical sales motion at Insolla: discovery
 						calls, solution scoping, tailored demos, and proof-of-concept
-						builds, including cutting a client's social media workflow from
-						8 hours a week to 10 minutes through automation.`}
+						builds.`}
 					</p>
-					<p className='text-base sm:text-base mb-6 lg:text-lg text-muted-foreground'>
+					<p className='text-base sm:text-base mb-4 lg:text-lg text-muted-foreground'>
 						{`12 years shipping customer-facing solutions inside regulated
 						financial organizations, including OCC, TransUnion, and Marex.
 						Seeking Solutions Engineer, Forward Deployed Engineer, or
 						AI/Automation Engineer roles. Based in Chicago, open to remote,
 						available immediately including contract work.`}
 					</p>
+					<div className='inline-flex items-center gap-2 mb-6 rounded-full border border-brand/20 bg-brand/5 px-4 py-2 text-sm text-foreground'>
+						<FaBolt className='text-brand-text text-xs shrink-0' />
+						<span>
+							<strong className='text-brand-text font-semibold'>Recent win:</strong>{' '}
+							cut a client&apos;s social media workflow from 8 hours a week to
+							10 minutes through automation
+						</span>
+					</div>
 					<div className='flex flex-row flex-wrap items-start gap-3 sm:gap-4'>
 						<a href='mailto:brian@brianshimkus.com' className={btnCta}>
 							Contact Me

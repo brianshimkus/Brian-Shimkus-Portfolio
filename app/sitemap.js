@@ -20,5 +20,11 @@ export default function sitemap() {
 			changeFrequency: 'monthly',
 			priority: 0.8,
 		},
+		{
+			url: 'https://www.brianshimkus.dev/case-studies/employee-access-lifecycle',
+			lastModified,
+			changeFrequency: 'monthly',
+			priority: 0.8,
+		},
 	]
 }

@@ -40,13 +40,15 @@ export default function AboutSection() {
 					</p>
 					<p className='mb-6'>{`Seven months ago I set out to build something different: Insolla, an independent AI consulting practice where I run the full technical sales motion myself, discovery calls, solution scoping, tailored demos, and proof-of-concept builds that win engagements, including a source-grounded RAG assistant over live Salesforce CRM data. It's been the best crash course in applied AI I could have asked for, and it's shown me where I want to go next: a pre-sales Solutions Engineer role that sits between customers and working systems.`}</p>
 				</div>
-				<Image
-					className='rounded-3xl hidden lg:block'
-					src='/images/desk.jpg'
-					alt='about image'
-					width={500}
-					height={500}
-				/>
+				<div className='relative hidden lg:block w-full aspect-square rounded-3xl overflow-hidden'>
+					<Image
+						className='object-cover'
+						src='/images/desk.jpg'
+						alt='about image'
+						fill
+						sizes='(min-width: 1024px) 50vw, 100vw'
+					/>
+				</div>
 			</div>
 		</section>
 	)

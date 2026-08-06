@@ -103,7 +103,9 @@ function ProjectCard({ project }) {
 					{project.caseStudyLink?.length > 0 && (
 						<Link
 							href={project.caseStudyLink}
-							onClick={() => track('Portfolio Link Click', { project: project.title, type: 'case_study' })}
+							onClick={() =>
+								track(`${project.title} - Case Study`, { project: project.title, type: 'case_study' })
+							}
 							className={portfolioLink}>
 							Case Study <FaArrowRight className='text-[10px]' />
 						</Link>
@@ -113,7 +115,7 @@ function ProjectCard({ project }) {
 							href={project.appLink}
 							target='_blank'
 							rel='noopener noreferrer'
-							onClick={() => track('Portfolio Link Click', { project: project.title, type: 'app' })}
+							onClick={() => track(`${project.title} - App`, { project: project.title, type: 'app' })}
 							className={portfolioLink}>
 							App <FaExternalLinkAlt className='text-[10px]' />
 						</a>
@@ -123,7 +125,7 @@ function ProjectCard({ project }) {
 							href={project.githubLink}
 							target='_blank'
 							rel='noopener noreferrer'
-							onClick={() => track('Portfolio Link Click', { project: project.title, type: 'code' })}
+							onClick={() => track(`${project.title} - Code`, { project: project.title, type: 'code' })}
 							className={portfolioLink}>
 							Code <FaExternalLinkAlt className='text-[10px]' />
 						</a>

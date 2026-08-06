@@ -1,3 +1,6 @@
+'use client'
+
+import { track } from '@vercel/analytics'
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
@@ -14,6 +17,7 @@ export default function SocialLinks({ styles, boxed = false }) {
 					target='_blank'
 					rel='noopener noreferrer'
 					aria-label='Email'
+					onClick={() => track('Social Click', { platform: 'email' })}
 					className={boxStyles}>
 					<FaEnvelope className={styles} />
 				</a>
@@ -24,6 +28,7 @@ export default function SocialLinks({ styles, boxed = false }) {
 					target='_blank'
 					rel='noopener noreferrer'
 					aria-label='GitHub'
+					onClick={() => track('Social Click', { platform: 'github' })}
 					className={boxStyles}>
 					<FaGithub className={styles} />
 				</a>
@@ -34,6 +39,7 @@ export default function SocialLinks({ styles, boxed = false }) {
 					target='_blank'
 					rel='noopener noreferrer'
 					aria-label='LinkedIn'
+					onClick={() => track('Social Click', { platform: 'linkedin' })}
 					className={boxStyles}>
 					<FaLinkedin className={styles} />
 				</a>

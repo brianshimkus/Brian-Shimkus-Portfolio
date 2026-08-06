@@ -3,6 +3,7 @@ import { FaArrowLeft } from 'react-icons/fa'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import SectionDivider from '../../components/SectionDivider'
+import TrackedLink from '../../components/TrackedLink'
 import { gradientText, skillPill, btnCta } from '../../utils'
 
 const title = 'Employee Access Lifecycle Assistant Case Study'
@@ -293,9 +294,13 @@ export default function EmployeeAccessLifecyclePage() {
 						This build is happening in public. Reach out if you&apos;d like to talk through the
 						approach, or check back for the finished demo and technical walkthrough.
 					</p>
-					<a href='mailto:brian@brianshimkus.com' className={btnCta}>
+					<TrackedLink
+						href='mailto:brian@brianshimkus.com'
+						event='Contact Click'
+						eventData={{ location: 'case_study_employee_access' }}
+						className={btnCta}>
 						Contact Me
-					</a>
+					</TrackedLink>
 				</div>
 			</div>
 			<Footer />

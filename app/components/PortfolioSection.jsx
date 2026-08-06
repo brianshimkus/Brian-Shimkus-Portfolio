@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { track } from '@vercel/analytics'
 import SectionTitle from './SectionTitle'
 import { portfolioLink } from '../utils'
 import { FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa'
@@ -98,17 +101,30 @@ function ProjectCard({ project }) {
 				</p>
 				<div className='flex flex-wrap items-center gap-3 pt-5 mt-5 border-t border-overlay/5'>
 					{project.caseStudyLink?.length > 0 && (
-						<Link href={project.caseStudyLink} className={portfolioLink}>
+						<Link
+							href={project.caseStudyLink}
+							onClick={() => track('Portfolio Link Click', { project: project.title, type: 'case_study' })}
+							className={portfolioLink}>
 							Case Study <FaArrowRight className='text-[10px]' />
 						</Link>
 					)}
 					{project.appLink?.length > 0 && (
-						<a href={project.appLink} target='_blank' rel='noopener noreferrer' className={portfolioLink}>
+						<a
+							href={project.appLink}
+							target='_blank'
+							rel='noopener noreferrer'
+							onClick={() => track('Portfolio Link Click', { project: project.title, type: 'app' })}
+							className={portfolioLink}>
 							App <FaExternalLinkAlt className='text-[10px]' />
 						</a>
 					)}
 					{project.githubLink?.length > 0 && (
-						<a href={project.githubLink} target='_blank' rel='noopener noreferrer' className={portfolioLink}>
+						<a
+							href={project.githubLink}
+							target='_blank'
+							rel='noopener noreferrer'
+							onClick={() => track('Portfolio Link Click', { project: project.title, type: 'code' })}
+							className={portfolioLink}>
 							Code <FaExternalLinkAlt className='text-[10px]' />
 						</a>
 					)}

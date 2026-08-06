@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import NavLink from './NavLink'
+import { track } from '@vercel/analytics'
 import { useEffect, useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './MenuOverlay'
@@ -92,7 +93,10 @@ export default function Navbar() {
 						styles='h-5 w-5 text-muted-foreground hover:text-brand-text transition-colors duration-300'
 					/>
 					<ThemeToggle />
-					<a href='mailto:brian@brianshimkus.com' className={`${btnOutline} !px-4 !py-2 text-sm`}>
+					<a
+						href='mailto:brian@brianshimkus.com'
+						onClick={() => track('Contact Click', { location: 'navbar' })}
+						className={`${btnOutline} !px-4 !py-2 text-sm`}>
 						Contact Me
 					</a>
 				</div>

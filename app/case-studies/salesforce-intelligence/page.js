@@ -3,6 +3,7 @@ import { FaArrowLeft, FaExternalLinkAlt } from 'react-icons/fa'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import SectionDivider from '../../components/SectionDivider'
+import TrackedLink from '../../components/TrackedLink'
 import { gradientText, portfolioLink, skillPill, btnCta, btnOutline } from '../../utils'
 
 const title = 'Salesforce Intelligence Case Study'
@@ -161,20 +162,24 @@ export default function SalesforceIntelligencePage() {
 				</div>
 
 				<div className='flex flex-wrap gap-3 mb-10'>
-					<a
+					<TrackedLink
 						href='https://rag.insolla.ai'
 						target='_blank'
 						rel='noopener noreferrer'
+						event='Portfolio Link Click'
+						eventData={{ project: 'Salesforce Intelligence', type: 'app', location: 'case_study_top' }}
 						className={btnCta}>
 						Try the Live Demo
-					</a>
-					<a
+					</TrackedLink>
+					<TrackedLink
 						href='https://github.com/brianshimkus/Insolla-Salesforce-RAG'
 						target='_blank'
 						rel='noopener noreferrer'
+						event='Portfolio Link Click'
+						eventData={{ project: 'Salesforce Intelligence', type: 'code', location: 'case_study_top' }}
 						className={btnOutline}>
 						View the Code
-					</a>
+					</TrackedLink>
 				</div>
 
 				<div className='card p-6 mb-16'>
@@ -303,20 +308,24 @@ export default function SalesforceIntelligencePage() {
 						every answer, or read the code to see how the pipeline fits together.
 					</p>
 					<div className='flex flex-wrap justify-center gap-3'>
-						<a
+						<TrackedLink
 							href='https://rag.insolla.ai'
 							target='_blank'
 							rel='noopener noreferrer'
+							event='Portfolio Link Click'
+							eventData={{ project: 'Salesforce Intelligence', type: 'app', location: 'case_study_bottom' }}
 							className={portfolioLink}>
 							Live Demo <FaExternalLinkAlt className='text-[10px]' />
-						</a>
-						<a
+						</TrackedLink>
+						<TrackedLink
 							href='https://github.com/brianshimkus/Insolla-Salesforce-RAG'
 							target='_blank'
 							rel='noopener noreferrer'
+							event='Portfolio Link Click'
+							eventData={{ project: 'Salesforce Intelligence', type: 'code', location: 'case_study_bottom' }}
 							className={portfolioLink}>
 							Code <FaExternalLinkAlt className='text-[10px]' />
-						</a>
+						</TrackedLink>
 					</div>
 				</div>
 			</div>

@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { track } from '@vercel/analytics'
 import { FaBolt } from 'react-icons/fa'
 import { btnCta, btnOutline, eyebrowPill, gradientText } from '../utils'
 
@@ -56,13 +57,17 @@ export default function HeroSection() {
 						</span>
 					</div>
 					<div className='flex flex-row flex-wrap items-start gap-3 sm:gap-4'>
-						<a href='mailto:brian@brianshimkus.com' className={btnCta}>
+						<a
+							href='mailto:brian@brianshimkus.com'
+							onClick={() => track('Contact Click', { location: 'hero' })}
+							className={btnCta}>
 							Contact Me
 						</a>
 						<a
 							href='Resume-BrianShimkus-SolutionsEngineer.pdf'
 							target='_blank'
 							rel='noopener noreferrer'
+							onClick={() => track('Resume Click', { location: 'hero' })}
 							className={btnOutline}>
 							View Resume
 						</a>

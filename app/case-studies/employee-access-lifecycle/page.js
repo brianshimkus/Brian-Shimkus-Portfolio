@@ -5,6 +5,8 @@ import Footer from '../../components/Footer'
 import SectionDivider from '../../components/SectionDivider'
 import TrackedLink from '../../components/TrackedLink'
 import ProcessSteps from '../../components/ProcessSteps'
+import CountUp from '../../components/CountUp'
+import Reveal from '../../components/Reveal'
 import { gradientText, skillPill, btnCta } from '../../utils'
 
 const title = 'Employee Access Lifecycle Assistant Case Study'
@@ -179,7 +181,9 @@ export default function EmployeeAccessLifecyclePage() {
 				<div className='grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16'>
 					{assumptions.map((a) => (
 						<div key={a.label} className='card p-5 text-center'>
-							<p className='text-2xl font-bold text-brand-text font-display mb-1'>{a.value}</p>
+							<p className='text-2xl font-bold text-brand-text font-display mb-1'>
+								<CountUp value={a.value} />
+							</p>
 							<p className='text-xs text-muted-foreground leading-snug'>{a.label}</p>
 						</div>
 					))}
@@ -197,12 +201,17 @@ export default function EmployeeAccessLifecyclePage() {
 				</p>
 				<ol className='space-y-3 mb-16'>
 					{workflowSteps.map((step, i) => (
-						<li key={i} className='flex gap-4 text-sm text-muted-foreground leading-relaxed'>
+						<Reveal
+							as='li'
+							key={i}
+							delay={Math.min(i, 6) * 0.06}
+							y={8}
+							className='flex gap-4 text-sm text-muted-foreground leading-relaxed'>
 							<span className='shrink-0 text-brand-text font-bold font-display'>
 								{String(i + 1).padStart(2, '0')}
 							</span>
 							{step}
-						</li>
+						</Reveal>
 					))}
 				</ol>
 
@@ -216,12 +225,17 @@ export default function EmployeeAccessLifecyclePage() {
 					live credentials, and no claim to be an identity provider or governance platform.
 				</p>
 				<div className='card divide-y divide-overlay/10 mb-16'>
-					{architecture.map((row) => (
-						<div key={row.component} className='p-5 grid sm:grid-cols-3 gap-2 sm:gap-4'>
+					{architecture.map((row, i) => (
+						<Reveal
+							as='div'
+							key={row.component}
+							delay={Math.min(i, 6) * 0.06}
+							y={8}
+							className='p-5 grid sm:grid-cols-3 gap-2 sm:gap-4'>
 							<p className='text-sm font-semibold text-foreground font-display'>{row.component}</p>
 							<p className='text-sm text-muted-foreground sm:col-span-1'>{row.responsibility}</p>
 							<p className='text-xs text-muted-foreground/80 italic sm:col-span-1'>{row.limit}</p>
-						</div>
+						</Reveal>
 					))}
 				</div>
 

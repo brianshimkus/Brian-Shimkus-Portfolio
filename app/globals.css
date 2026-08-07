@@ -29,6 +29,15 @@ body {
 	scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+	transition-property: background-color, border-color, color, fill, stroke,
+		box-shadow;
+	transition-timing-function: ease;
+	transition-duration: 300ms;
+}
+
 @layer base {
 	* {
 		@apply border-border;
@@ -83,6 +92,16 @@ body {
 	}
 	.btn {
 		@apply inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-medium transition-colors duration-300 ease-in-out;
+		transition-property: color, background-color, background-image, filter, box-shadow, transform;
+		transition-duration: 300ms;
+		transition-timing-function: ease-out;
+	}
+	.btn:hover {
+		transform: translateY(-1px);
+	}
+	.btn:active {
+		transform: translateY(0);
+		transition-duration: 100ms;
 	}
 	.btn-secondary {
 		@apply bg-overlay/[0.08] text-foreground hover:bg-overlay/[0.12] transition-colors duration-300 ease-in-out;
@@ -97,7 +116,7 @@ body {
 		background-size: 100% 100%, 200% 200%;
 		transition: filter 320ms ease, box-shadow 320ms ease,
 			background-color 320ms ease, background-image 320ms ease,
-			background-size 320ms ease, color 320ms ease;
+			background-size 320ms ease, color 320ms ease, transform 200ms ease-out;
 	}
 	.btn-outline:hover {
 		background: linear-gradient(135deg, #60a5fa 0%, #8b5cf6 50%, #10b981 100%)
@@ -106,6 +125,7 @@ body {
 		background-size: 200% 200%, 200% 200%;
 		filter: brightness(1.04);
 		color: #ffffff;
+		box-shadow: 0 6px 20px -6px rgba(139, 92, 246, 0.45);
 	}
 	.btn-cta {
 		border: 2px solid transparent;
@@ -117,7 +137,7 @@ body {
 		background-size: 100% 100%, 100% 100%;
 		transition: background-color 320ms ease, background-image 320ms ease,
 			background-size 320ms ease, filter 320ms ease, box-shadow 320ms ease,
-			opacity 320ms ease, color 320ms ease;
+			opacity 320ms ease, color 320ms ease, transform 200ms ease-out;
 		position: relative;
 		overflow: hidden;
 		z-index: 0;
@@ -125,6 +145,7 @@ body {
 	}
 	.btn-cta:hover {
 		color: #ffffff;
+		box-shadow: 0 8px 24px -6px rgba(94, 158, 225, 0.45);
 	}
 	.btn-cta::after {
 		content: '';

@@ -166,7 +166,7 @@ export default function SalesforceIntelligencePage() {
 						href='https://rag.insolla.ai'
 						target='_blank'
 						rel='noopener noreferrer'
-						event='Portfolio Link Click'
+						event='Salesforce Intelligence - App'
 						eventData={{ project: 'Salesforce Intelligence', type: 'app', location: 'case_study_top' }}
 						className={btnCta}>
 						Try the Live Demo
@@ -175,7 +175,7 @@ export default function SalesforceIntelligencePage() {
 						href='https://github.com/brianshimkus/Insolla-Salesforce-RAG'
 						target='_blank'
 						rel='noopener noreferrer'
-						event='Portfolio Link Click'
+						event='Salesforce Intelligence - Code'
 						eventData={{ project: 'Salesforce Intelligence', type: 'code', location: 'case_study_top' }}
 						className={btnOutline}>
 						View the Code
@@ -312,7 +312,7 @@ export default function SalesforceIntelligencePage() {
 							href='https://rag.insolla.ai'
 							target='_blank'
 							rel='noopener noreferrer'
-							event='Portfolio Link Click'
+							event='Salesforce Intelligence - App'
 							eventData={{ project: 'Salesforce Intelligence', type: 'app', location: 'case_study_bottom' }}
 							className={portfolioLink}>
 							Live Demo <FaExternalLinkAlt className='text-[10px]' />
@@ -321,7 +321,7 @@ export default function SalesforceIntelligencePage() {
 							href='https://github.com/brianshimkus/Insolla-Salesforce-RAG'
 							target='_blank'
 							rel='noopener noreferrer'
-							event='Portfolio Link Click'
+							event='Salesforce Intelligence - Code'
 							eventData={{ project: 'Salesforce Intelligence', type: 'code', location: 'case_study_bottom' }}
 							className={portfolioLink}>
 							Code <FaExternalLinkAlt className='text-[10px]' />

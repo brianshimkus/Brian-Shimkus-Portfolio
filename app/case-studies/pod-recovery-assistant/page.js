@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import SectionDivider from '../../components/SectionDivider'
 import TrackedLink from '../../components/TrackedLink'
+import ProcessSteps from '../../components/ProcessSteps'
 import { gradientText, portfolioLink, skillPill, btnCta } from '../../utils'
 
 const title = 'POD Recovery Assistant Case Study'
@@ -153,21 +154,7 @@ export default function PodRecoveryAssistantPage() {
 					documents without becoming an autonomous agent.
 				</p>
 
-				<div className='flex flex-wrap items-center gap-2 mb-10'>
-					{processSteps.map((step, i) => (
-						<span
-							key={step.label}
-							className={`${
-								step.tone === 'end'
-									? 'bg-foreground text-background'
-									: step.tone === 'start'
-									? 'bg-overlay/5 text-foreground/70 border border-overlay/10'
-									: 'bg-brand/10 text-brand-text border border-brand/20'
-							} rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider`}>
-							{step.label}
-						</span>
-					))}
-				</div>
+				<ProcessSteps steps={processSteps} />
 
 				<div className='card p-6 mb-16'>
 					<p className='text-xs font-semibold uppercase tracking-wider text-brand-text mb-2'>

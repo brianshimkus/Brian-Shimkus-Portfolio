@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { track } from '@vercel/analytics'
 import SectionTitle from './SectionTitle'
+import Reveal from './Reveal'
 import { portfolioLink } from '../utils'
 import { FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa'
 
@@ -77,7 +78,7 @@ const otherProjects = [
 
 function ProjectCard({ project }) {
 	return (
-		<div className='card flex flex-col'>
+		<div className='card flex flex-col h-full'>
 			<div className='relative w-full aspect-[4/3] rounded-t-2xl overflow-hidden bg-charcoal'>
 				<Image
 					src={project.thumbnail}
@@ -142,7 +143,9 @@ export default function PortfolioSection() {
 			<SectionTitle eyebrow='What I Build' title='Portfolio' />
 			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
 				{aiProjects.map((project, index) => (
-					<ProjectCard key={index} project={project} />
+					<Reveal key={index} delay={(index % 3) * 0.08} className='h-full'>
+						<ProjectCard project={project} />
+					</Reveal>
 				))}
 			</div>
 
@@ -156,7 +159,9 @@ export default function PortfolioSection() {
 				</p>
 				<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
 					{otherProjects.map((project, index) => (
-						<ProjectCard key={index} project={project} />
+						<Reveal key={index} delay={(index % 3) * 0.08} className='h-full'>
+							<ProjectCard project={project} />
+						</Reveal>
 					))}
 				</div>
 			</div>

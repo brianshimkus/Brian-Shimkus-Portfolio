@@ -1,4 +1,5 @@
 import SectionTitle from './SectionTitle'
+import Reveal from './Reveal'
 import { skillPill } from '../utils'
 
 const toolGroups = [
@@ -82,13 +83,15 @@ export default function SkillsSection() {
 		<section id='skills' className='scroll-mt-16'>
 			<SectionTitle eyebrow='What I Know' title='Skills' divider={false} />
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-				{toolGroups.map((group) => (
-					<SkillCard key={group.category} group={group} />
+				{toolGroups.map((group, index) => (
+					<Reveal key={group.category} delay={index * 0.08}>
+						<SkillCard group={group} />
+					</Reveal>
 				))}
 			</div>
-			<div className='mt-6'>
+			<Reveal delay={toolGroups.length * 0.08} className='mt-6'>
 				<SkillCard group={deliveryGroup} />
-			</div>
+			</Reveal>
 		</section>
 	)
 }

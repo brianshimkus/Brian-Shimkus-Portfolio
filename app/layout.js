@@ -107,8 +107,12 @@ export default function RootLayout({ children }) {
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
 				/>
 				{children}
-				<Analytics />
-				<SpeedInsights />
+				{process.env.VERCEL_ENV === 'production' && (
+					<>
+						<Analytics />
+						<SpeedInsights />
+					</>
+				)}
 			</body>
 		</html>
 	)

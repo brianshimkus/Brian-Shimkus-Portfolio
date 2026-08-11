@@ -92,6 +92,7 @@ export default function Navbar() {
 					</ul>
 					<SocialLinks
 						styles='h-5 w-5 text-muted-foreground hover:text-brand-text transition-colors duration-300'
+						hideGithub
 					/>
 					<ThemeToggle />
 					<a

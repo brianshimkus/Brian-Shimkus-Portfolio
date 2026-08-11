@@ -57,7 +57,7 @@ export default function HeroSection() {
 							src='/images/hero-image.jpg'
 							alt='hero image'
 							fill
-							sizes='100vw'
+							sizes='(max-width: 1024px) calc(100vw - 96px), 33vw'
 						/>
 					</motion.div>
 					<motion.p

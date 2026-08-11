@@ -100,7 +100,7 @@ const themeInitScript = `(function() {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<body className={`${inter.className} ${rajdhani.variable}`}>
+			<body className={`${inter.className} ${rajdhani.variable}`} suppressHydrationWarning>
 				<script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
 				<script
 					type='application/ld+json'

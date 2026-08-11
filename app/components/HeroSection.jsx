@@ -31,6 +31,7 @@ export default function HeroSection() {
 							src='/images/hero-image.jpg'
 							alt='hero image'
 							fill
+							priority
 							sizes='(min-width: 1024px) 33vw, 100vw'
 						/>
 					</div>
@@ -57,6 +58,7 @@ export default function HeroSection() {
 							src='/images/hero-image.jpg'
 							alt='hero image'
 							fill
+							priority
 							sizes='(max-width: 1024px) calc(100vw - 96px), 33vw'
 						/>
 					</motion.div>

@@ -8,14 +8,14 @@ import Reveal from './Reveal'
 const experience = [
 	{
 		role: 'AI Solutions Engineer',
-		company: 'Insolla (Independent Consulting Practice)',
+		company: 'Insolla (Independent AI Practice)',
 		location: 'Chicago, IL (Remote)',
 		dates: 'Dec 2025 – Present',
 		bullets: [
-			'Own the complete pre-sales motion as sole technical seller: discovery calls, solution scoping, tailored demos, and proofs of concept that convert prospects into engagements.',
+			'Practiced the complete pre-sales motion solo: discovery calls, solution scoping, tailored demos, and proof-of-concept builds, run end-to-end without a team.',
 			'Produce the full pre-sales package: discovery guide, stakeholder map, technical walkthrough, security brief, and POV plan.',
 			'Build proofs of concept against customers’ own systems, integrating CRM, document, and workflow platforms through REST APIs, webhooks, and iPaaS tooling, not canned data.',
-			'Cut a client’s social media workflow from 8 hours a week to 10 minutes with an automated content pipeline.',
+			'Cut a small business’s social media workflow from 8 hours a week to 10 minutes with an automated content pipeline, scoped and delivered directly with the owner.',
 		],
 	},
 	{

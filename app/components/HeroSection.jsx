@@ -85,8 +85,8 @@ export default function HeroSection() {
 						<FaBolt className='text-brand-text text-xs shrink-0' />
 						<span>
 							<strong className='text-brand-text font-semibold'>Recent win:</strong>{' '}
-							cut a client&apos;s social media workflow from 8 hours a week to
-							10 minutes through automation
+							cut a small business&apos;s social media workflow from 8 hours a
+							week to 10 minutes through automation
 						</span>
 					</motion.div>
 					<motion.div variants={item} className='flex flex-row flex-wrap items-start gap-3 sm:gap-4'>

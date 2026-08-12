@@ -65,21 +65,22 @@ const nextConfig = {
 			destination: 'https://www.insolla.ai/products/contract-analyzer?utm_source=brianshimkus&utm_medium=portfolio&utm_campaign=insolla_tools',
 			permanent: false,
 		},
-		// Resume redirects
+		// Resume page (with OG preview) - no redirect needed, it's a real page now
+		// Direct PDF downloads redirect with UTM params
 		{
-			source: '/resume',
+			source: '/resume-pdf',
 			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf',
 			permanent: false,
 		},
 		{
 			source: '/resume-linkedin',
-			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=resume_profile&utm_content=profile_link',
+			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=resume_profile&utm_content=profile_link',
 			permanent: false,
 		},
 		// Solutions Engineering positioning post redirects
 		{
 			source: '/solutions-engineering-resume',
-			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=solutions_engineering_positioning&utm_content=resume_comment',
+			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=solutions_engineering_positioning&utm_content=resume_comment',
 			permanent: false,
 		},
 		{
@@ -90,23 +91,23 @@ const nextConfig = {
 		// Build-in-public project post redirects
 		{
 			source: '/pod-recovery-resume',
-			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=pod_recovery_build_in_public&utm_content=resume_comment',
+			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=pod_recovery_build_in_public&utm_content=resume_comment',
 			permanent: false,
 		},
 		{
 			source: '/employee-access-resume',
-			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=employee_access_build_in_public&utm_content=resume_comment',
+			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=employee_access_build_in_public&utm_content=resume_comment',
 			permanent: false,
 		},
 		{
 			source: '/salesforce-resume',
-			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=salesforce_intelligence_social&utm_content=resume_comment',
+			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=salesforce_intelligence_social&utm_content=resume_comment',
 			permanent: false,
 		},
 		// Open to work / hiring outreach redirects
 		{
 			source: '/hiring-resume',
-			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=open_to_work&utm_content=hiring_post',
+			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=open_to_work&utm_content=hiring_post',
 			permanent: false,
 		},
 		{

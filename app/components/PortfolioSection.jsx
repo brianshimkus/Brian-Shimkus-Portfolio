@@ -17,7 +17,7 @@ const aiProjects = [
 		impact: 'Modeled to cut ~240 hours/month of manual follow-up to a handful of human-reviewed exceptions.',
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/pod-recovery-assistant',
-		githubLink: 'https://github.com/brianshimkus/Freight-POD-Recovery',
+		githubLink: '/pod-github',
 	},
 	{
 		title: 'Employee Access Lifecycle Assistant',
@@ -27,7 +27,7 @@ const aiProjects = [
 		impact: 'Modeled to cut ~52 hours/month of manual IT provisioning effort to policy-driven, auditable decisions.',
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/employee-access-lifecycle',
-		githubLink: 'https://github.com/brianshimkus/Employee-Access-Lifecycle-Assistant',
+		githubLink: '/employee-access-github',
 	},
 	{
 		title: 'Salesforce Intelligence',
@@ -36,8 +36,8 @@ const aiProjects = [
 			'A retrieval-augmented chat assistant built on live Salesforce data, letting support and sales teams ask natural-language questions about accounts, cases, and escalations and get sourced answers instantly.',
 		impact: 'Turns a multi-record manual lookup across Cases, Accounts, and Opportunities into one sourced answer in seconds.',
 		caseStudyLink: '/case-studies/salesforce-intelligence',
-		appLink: 'https://rag.insolla.ai',
-		githubLink: 'https://github.com/brianshimkus/Insolla-Salesforce-RAG',
+		appLink: '/salesforce-demo',
+		githubLink: '/salesforce-github',
 	},
 ]
 
@@ -48,7 +48,7 @@ const otherProjects = [
 		description:
 			'Upload a process document, screenshot, or SOP and this tool extracts the workflow, then tells you exactly what to automate, which tools to use, and how many hours it will save each week.',
 		impact: '~2 hours of manual process mapping condensed into a 5-minute upload.',
-		appLink: 'https://www.insolla.ai/workflow-analyzer',
+		appLink: '/workflow-analyzer',
 	},
 	{
 		title: 'List Enricher',
@@ -56,7 +56,7 @@ const otherProjects = [
 		description:
 			'Upload a spreadsheet, describe the columns you want added in plain English, and get back a clean file enriched with real, web-researched data for every row.',
 		impact: 'Turns a multi-hour, row-by-row research task into one batch run.',
-		appLink: 'https://www.insolla.ai/products/list-enricher',
+		appLink: '/list-enricher',
 	},
 	{
 		title: 'SOP Generator',
@@ -64,7 +64,7 @@ const otherProjects = [
 		description:
 			'Describe a process in plain English or upload existing notes, and this tool turns tribal knowledge into a polished Standard Operating Procedure complete with roles, prerequisites, and quality checks.',
 		impact: 'Cuts SOP drafting from a half-day of writing to under 10 minutes.',
-		appLink: 'https://www.insolla.ai/products/sop-generator',
+		appLink: '/sop-generator',
 	},
 	{
 		title: 'Meeting Notes Analyzer',
@@ -72,7 +72,7 @@ const otherProjects = [
 		description:
 			'Paste in a transcript or raw notes and get a clean recap with action items, owners, due dates, decisions, and open questions ready to copy straight into your task tracker.',
 		impact: 'Turns 30 minutes of post-meeting note-cleanup into an instant recap.',
-		appLink: 'https://www.insolla.ai/products/meeting-notes',
+		appLink: '/meeting-notes-analyzer',
 	},
 	{
 		title: 'Contract Analyzer',
@@ -80,7 +80,7 @@ const otherProjects = [
 		description:
 			'Upload any contract and get a plain-English summary, key dates, obligations on both sides, and severity-flagged risks worth pushing back on, all in about 30 seconds.',
 		impact: 'Cuts contract triage from ~45 minutes of manual review to under a minute.',
-		appLink: 'https://www.insolla.ai/products/contract-analyzer',
+		appLink: '/contract-analyzer',
 	},
 ]
 

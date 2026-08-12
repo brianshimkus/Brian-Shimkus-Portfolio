@@ -102,7 +102,7 @@ export default function HeroSection() {
 							Contact Me
 						</a>
 						<a
-							href='Resume-BrianShimkus-SolutionsEngineer.pdf'
+							href='/resume'
 							target='_blank'
 							rel='noopener noreferrer'
 							onClick={() => track('Resume Click', { location: 'hero' })}

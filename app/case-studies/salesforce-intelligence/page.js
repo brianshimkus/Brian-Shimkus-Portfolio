@@ -161,7 +161,7 @@ export default function SalesforceIntelligencePage() {
 
 				<div className='flex flex-wrap gap-3 mb-10'>
 					<TrackedLink
-						href='https://rag.insolla.ai'
+						href='/salesforce-demo'
 						target='_blank'
 						rel='noopener noreferrer'
 						event='Salesforce Intelligence - App'
@@ -170,7 +170,7 @@ export default function SalesforceIntelligencePage() {
 						Try the Live Demo
 					</TrackedLink>
 					<TrackedLink
-						href='https://github.com/brianshimkus/Insolla-Salesforce-RAG'
+						href='/salesforce-github'
 						target='_blank'
 						rel='noopener noreferrer'
 						event='Salesforce Intelligence - Code'
@@ -318,7 +318,7 @@ export default function SalesforceIntelligencePage() {
 					</p>
 					<div className='flex flex-wrap justify-center gap-3'>
 						<TrackedLink
-							href='https://rag.insolla.ai'
+							href='/salesforce-demo'
 							target='_blank'
 							rel='noopener noreferrer'
 							event='Salesforce Intelligence - App'
@@ -327,7 +327,7 @@ export default function SalesforceIntelligencePage() {
 							Live Demo <FaExternalLinkAlt className='text-[10px]' />
 						</TrackedLink>
 						<TrackedLink
-							href='https://github.com/brianshimkus/Insolla-Salesforce-RAG'
+							href='/salesforce-github'
 							target='_blank'
 							rel='noopener noreferrer'
 							event='Salesforce Intelligence - Code'

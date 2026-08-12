@@ -65,10 +65,15 @@ const nextConfig = {
 			destination: 'https://www.insolla.ai/products/contract-analyzer?utm_source=brianshimkus&utm_medium=portfolio&utm_campaign=insolla_tools',
 			permanent: false,
 		},
-		// Resume redirect
+		// Resume redirects
 		{
 			source: '/resume',
 			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf',
+			permanent: false,
+		},
+		{
+			source: '/resume-linkedin',
+			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=resume_profile&utm_content=profile_link',
 			permanent: false,
 		},
 	],

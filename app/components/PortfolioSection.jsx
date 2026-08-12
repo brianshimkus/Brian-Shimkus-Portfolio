@@ -14,6 +14,7 @@ const aiProjects = [
 		thumbnail: '/images/pod-recovery-assistant.png',
 		description:
 			'An independent Solutions Engineering case study: a controlled AI workflow that recovers missing proof-of-delivery documents for a freight brokerage, with SOP-grounded recommendations, human approval, and a full audit trail.',
+		impact: 'Modeled to cut ~240 hours/month of manual follow-up to a handful of human-reviewed exceptions.',
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/pod-recovery-assistant',
 		githubLink: 'https://github.com/brianshimkus/Freight-POD-Recovery',
@@ -23,6 +24,7 @@ const aiProjects = [
 		thumbnail: '/images/employee-access-lifecycle.png',
 		description:
 			'An independent Solutions Engineering case study: a deterministic policy engine that evaluates employee role changes, routes risky access combinations for security review, and provisions through mock connectors with a full audit trail.',
+		impact: 'Modeled to cut ~52 hours/month of manual IT provisioning effort to policy-driven, auditable decisions.',
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/employee-access-lifecycle',
 		githubLink: 'https://github.com/brianshimkus/Employee-Access-Lifecycle-Assistant',
@@ -32,6 +34,7 @@ const aiProjects = [
 		thumbnail: '/images/salesforce-rag.png',
 		description:
 			'A retrieval-augmented chat assistant built on live Salesforce data, letting support and sales teams ask natural-language questions about accounts, cases, and escalations and get sourced answers instantly.',
+		impact: 'Turns a multi-record manual lookup across Cases, Accounts, and Opportunities into one sourced answer in seconds.',
 		caseStudyLink: '/case-studies/salesforce-intelligence',
 		appLink: 'https://rag.insolla.ai',
 		githubLink: 'https://github.com/brianshimkus/Insolla-Salesforce-RAG',
@@ -154,6 +157,10 @@ export default function PortfolioSection() {
 	return (
 		<section id='portfolio' className='scroll-mt-16'>
 			<SectionTitle eyebrow='What I Build' title='Portfolio' />
+			<p className='-mt-6 mb-8 text-xs text-muted-foreground/70 max-w-2xl italic'>
+				Impact estimates are illustrative, modeled on the workflow each project targets, not
+				measured client results.
+			</p>
 			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
 				{aiProjects.map((project, index) => (
 					<Reveal key={index} delay={(index % 3) * 0.08} className='h-full'>
@@ -166,13 +173,9 @@ export default function PortfolioSection() {
 				<p className='mb-2 text-sm font-semibold uppercase tracking-wider text-muted-foreground'>
 					More projects
 				</p>
-				<p className='mb-2 text-sm text-muted-foreground max-w-2xl'>
+				<p className='mb-6 text-sm text-muted-foreground max-w-2xl'>
 					Narrower, faster builds shipped through Insolla, the same
 					discovery-to-delivery process applied at a smaller scale.
-				</p>
-				<p className='mb-6 text-xs text-muted-foreground/70 max-w-2xl italic'>
-					Impact estimates are illustrative based on the workflows each tool replaces, not
-					measured client results.
 				</p>
 				<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
 					{otherProjects.map((project, index) => (

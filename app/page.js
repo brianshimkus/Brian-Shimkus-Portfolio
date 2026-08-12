@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import PortfolioSection from './components/PortfolioSection'
 import SkillsSection from './components/SkillsSection'
+import TestimonialsSection from './components/TestimonialsSection'
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 				<SkillsSection />
 				<ExperienceSection />
 				<PortfolioSection />
+				<TestimonialsSection />
 				<AboutSection />
 			</div>
 			<Footer />

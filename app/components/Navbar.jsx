@@ -12,10 +12,10 @@ import ThemeToggle from './ThemeToggle'
 import { btnOutline } from '../utils'
 
 const navLinks = [
-	{ title: 'Intro', path: '/#hero' },
 	{ title: 'Skills', path: '/#skills' },
 	{ title: 'Experience', path: '/#experience' },
 	{ title: 'Portfolio', path: '/#portfolio' },
+	{ title: 'Testimonials', path: '/#testimonials' },
 	{ title: 'About', path: '/#about' },
 ]
 

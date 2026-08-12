@@ -87,6 +87,22 @@ const nextConfig = {
 			destination: '/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=solutions_engineering_positioning&utm_content=portfolio_comment',
 			permanent: false,
 		},
+		// Build-in-public project post redirects
+		{
+			source: '/pod-recovery-resume',
+			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=pod_recovery_build_in_public&utm_content=resume_comment',
+			permanent: false,
+		},
+		{
+			source: '/employee-access-resume',
+			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=employee_access_build_in_public&utm_content=resume_comment',
+			permanent: false,
+		},
+		{
+			source: '/salesforce-resume',
+			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=salesforce_intelligence_social&utm_content=resume_comment',
+			permanent: false,
+		},
 	],
 };
 

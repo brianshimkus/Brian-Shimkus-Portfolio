@@ -103,6 +103,22 @@ const nextConfig = {
 			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=salesforce_intelligence_social&utm_content=resume_comment',
 			permanent: false,
 		},
+		// Open to work / hiring outreach redirects
+		{
+			source: '/hiring-resume',
+			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=open_to_work&utm_content=hiring_post',
+			permanent: false,
+		},
+		{
+			source: '/hiring-portfolio',
+			destination: '/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=open_to_work&utm_content=hiring_post',
+			permanent: false,
+		},
+		{
+			source: '/hiring-demo',
+			destination: 'https://rag.insolla.ai?utm_source=linkedin&utm_medium=organic_social&utm_campaign=open_to_work&utm_content=hiring_post',
+			permanent: false,
+		},
 	],
 };
 

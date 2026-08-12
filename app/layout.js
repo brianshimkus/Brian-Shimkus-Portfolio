@@ -12,7 +12,7 @@ const rajdhani = Rajdhani({
 	variable: '--font-rajdhani',
 })
 
-const siteUrl = 'https://www.brianshimkus.dev'
+const siteUrl = 'https://www.brianshimkus.com'
 const siteTitle = 'Brian Shimkus | AI Solutions Engineer'
 const siteDescription =
 	'Pre-sales Solutions Engineer specializing in AI integration, running the technical sales motion at Insolla: discovery calls, solution scoping, tailored demos, and proof-of-concept builds. Based in Chicago, IL, open to remote and contract work.'

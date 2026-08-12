@@ -121,12 +121,12 @@ const articleJsonLd = {
 	'@type': 'Article',
 	headline: title,
 	description,
-	image: 'https://www.brianshimkus.dev/images/salesforce-rag.png',
-	url: 'https://www.brianshimkus.dev/case-studies/salesforce-intelligence',
+	image: 'https://www.brianshimkus.com/images/salesforce-rag.png',
+	url: 'https://www.brianshimkus.com/case-studies/salesforce-intelligence',
 	author: {
 		'@type': 'Person',
 		name: 'Brian Shimkus',
-		url: 'https://www.brianshimkus.dev',
+		url: 'https://www.brianshimkus.com',
 	},
 }
 

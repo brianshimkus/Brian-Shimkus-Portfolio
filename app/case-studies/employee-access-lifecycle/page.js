@@ -123,12 +123,12 @@ const articleJsonLd = {
 	'@type': 'Article',
 	headline: title,
 	description,
-	image: 'https://www.brianshimkus.dev/images/employee-access-lifecycle.png',
-	url: 'https://www.brianshimkus.dev/case-studies/employee-access-lifecycle',
+	image: 'https://www.brianshimkus.com/images/employee-access-lifecycle.png',
+	url: 'https://www.brianshimkus.com/case-studies/employee-access-lifecycle',
 	author: {
 		'@type': 'Person',
 		name: 'Brian Shimkus',
-		url: 'https://www.brianshimkus.dev',
+		url: 'https://www.brianshimkus.com',
 	},
 }
 

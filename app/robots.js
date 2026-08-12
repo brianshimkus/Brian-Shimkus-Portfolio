@@ -15,6 +15,6 @@ export default function robots() {
 			userAgent: '*',
 			allow: '/',
 		},
-		sitemap: 'https://www.brianshimkus.dev/sitemap.xml',
+		sitemap: 'https://www.brianshimkus.com/sitemap.xml',
 	}
 }

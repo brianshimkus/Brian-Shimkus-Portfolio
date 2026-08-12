@@ -7,9 +7,9 @@ import Reveal from './Reveal'
 
 const experience = [
 	{
-		role: 'AI Solutions Engineer',
+		role: 'Applied AI Engineering',
 		company: 'Insolla (Independent AI Practice)',
-		location: 'Chicago, IL (Remote)',
+		location: 'Chicago, IL',
 		dates: 'Dec 2025 – Present',
 		bullets: [
 			'Practiced the complete pre-sales motion solo: discovery calls, solution scoping, tailored demos, and proof-of-concept builds, run end-to-end without a team.',

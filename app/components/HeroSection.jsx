@@ -65,19 +65,24 @@ export default function HeroSection() {
 					<motion.p
 						variants={item}
 						className='text-lg sm:text-lg mb-2 lg:text-2xl text-foreground text-pretty'>
-						{`Pre-sales Solutions Engineer specializing in AI integration,
-						running the full technical sales motion at Insolla: discovery
-						calls, solution scoping, tailored demos, and proof-of-concept
-						builds.`}
+						{`Front-end developer moving into solutions engineering.
+						Through Insolla, my self-directed practice, I run the full
+						technical sales motion, discovery calls, solution scoping,
+						tailored demos, and proof-of-concept builds, shipping systems
+						like RAG over live CRM data, identity policy automation, and
+						document workflows.`}
 					</motion.p>
 					<motion.p
 						variants={item}
 						className='text-base sm:text-base mb-4 lg:text-lg text-muted-foreground'>
-						{`12 years shipping customer-facing solutions inside regulated
-						financial organizations, including OCC, TransUnion, and Marex.
-						Seeking Solutions Engineer, Forward Deployed Engineer, or
-						AI/Automation Engineer roles. Based in Chicago, open to remote,
-						available immediately including contract work.`}
+						{`Twelve years delivering customer-facing solutions inside
+						regulated financial organizations, including OCC, TransUnion, and
+						Marex, taught me to run stakeholder discovery, demo to technical
+						and executive audiences, and integrate enterprise APIs under
+						compliance and security constraints. Seeking Solutions Engineer,
+						Forward Deployed Engineer, or AI/Automation Engineer roles. Based
+						in Chicago, open to remote, available immediately including
+						contract work.`}
 					</motion.p>
 					<motion.div
 						variants={item}

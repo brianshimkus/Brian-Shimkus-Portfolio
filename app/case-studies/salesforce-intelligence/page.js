@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import SectionDivider from '../../components/SectionDivider'
 import TrackedLink from '../../components/TrackedLink'
 import ProcessSteps from '../../components/ProcessSteps'
+import ArchitectureFlow from '../../components/ArchitectureFlow'
 import Reveal from '../../components/Reveal'
 import { gradientText, portfolioLink, skillPill, btnCta, btnOutline } from '../../utils'
 
@@ -53,6 +54,15 @@ const pipelineSteps = [
 	'Embed every document and store the vectors, with metadata, in a Pinecone index. The index is cleared first so re-running the pipeline is idempotent instead of duplicating data.',
 	'At question time, embed the question, retrieve the nearest document vectors, and hand them to the LLM as context with an explicit instruction not to answer beyond it. Retrieval also accepts an optional metadata filter for exact criteria like "open deals over $100k," since semantic similarity alone only captures topical relevance.',
 	'Serve it through a chat UI with clickable sample prompts, showing the retrieved source records alongside every answer.',
+]
+
+const architectureFlow = [
+	'User Question',
+	'Streamlit UI',
+	'rag.py (Embed & Retrieve)',
+	'Pinecone Vector Store',
+	'GPT-4o-mini',
+	'Grounded Answer + Sources',
 ]
 
 const architecture = [
@@ -220,6 +230,7 @@ export default function SalesforceIntelligencePage() {
 					Python, OpenAI for embeddings and chat, LangChain, Pinecone, Streamlit, and the
 					Salesforce API via <code className='text-xs'>simple-salesforce</code>.
 				</p>
+				<ArchitectureFlow nodes={architectureFlow} />
 				<div className='card divide-y divide-overlay/10 mb-16'>
 					{architecture.map((row, i) => (
 						<Reveal

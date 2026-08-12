@@ -6,6 +6,7 @@ import Footer from '../../components/Footer'
 import SectionDivider from '../../components/SectionDivider'
 import TrackedLink from '../../components/TrackedLink'
 import ProcessSteps from '../../components/ProcessSteps'
+import ArchitectureFlow from '../../components/ArchitectureFlow'
 import CountUp from '../../components/CountUp'
 import Reveal from '../../components/Reveal'
 import { gradientText, portfolioLink, skillPill, btnCta } from '../../utils'
@@ -65,6 +66,15 @@ const workflowSteps = [
 	'The system extracts candidate identifiers, then deterministic rules validate the match.',
 	'A valid match updates the simulated TMS; ambiguous cases create a human-review exception.',
 	'Every decision, approval, external action, and result enters the audit timeline.',
+]
+
+const architectureFlow = [
+	'Mock TMS (Delivered Event)',
+	'Workflow API',
+	'LLM Adapter (SOP-Grounded Draft)',
+	'Human Approval',
+	'Validator',
+	'Mock TMS Update + Audit Store',
 ]
 
 const architecture = [
@@ -227,6 +237,7 @@ export default function PodRecoveryAssistantPage() {
 					Say every limitation plainly. The project demonstrates reasoning and workflow design,
 					not production certification.
 				</p>
+				<ArchitectureFlow nodes={architectureFlow} />
 				<div className='card divide-y divide-overlay/10 mb-16'>
 					{architecture.map((row, i) => (
 						<Reveal

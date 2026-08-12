@@ -6,7 +6,7 @@ import { track } from '@vercel/analytics'
 import SectionTitle from './SectionTitle'
 import Reveal from './Reveal'
 import { portfolioLink } from '../utils'
-import { FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaArrowRight, FaBolt } from 'react-icons/fa'
 
 const aiProjects = [
 	{
@@ -44,6 +44,7 @@ const otherProjects = [
 		thumbnail: '/images/workflow-analyzer.png',
 		description:
 			'Upload a process document, screenshot, or SOP and this tool extracts the workflow, then tells you exactly what to automate, which tools to use, and how many hours it will save each week.',
+		impact: '~2 hours of manual process mapping condensed into a 5-minute upload.',
 		appLink: 'https://www.insolla.ai/workflow-analyzer',
 	},
 	{
@@ -51,6 +52,7 @@ const otherProjects = [
 		thumbnail: '/images/list-enricher.png',
 		description:
 			'Upload a spreadsheet, describe the columns you want added in plain English, and get back a clean file enriched with real, web-researched data for every row.',
+		impact: 'Turns a multi-hour, row-by-row research task into one batch run.',
 		appLink: 'https://www.insolla.ai/products/list-enricher',
 	},
 	{
@@ -58,6 +60,7 @@ const otherProjects = [
 		thumbnail: '/images/sop-generator.png',
 		description:
 			'Describe a process in plain English or upload existing notes, and this tool turns tribal knowledge into a polished Standard Operating Procedure complete with roles, prerequisites, and quality checks.',
+		impact: 'Cuts SOP drafting from a half-day of writing to under 10 minutes.',
 		appLink: 'https://www.insolla.ai/products/sop-generator',
 	},
 	{
@@ -65,6 +68,7 @@ const otherProjects = [
 		thumbnail: '/images/meeting-notes.png',
 		description:
 			'Paste in a transcript or raw notes and get a clean recap with action items, owners, due dates, decisions, and open questions ready to copy straight into your task tracker.',
+		impact: 'Turns 30 minutes of post-meeting note-cleanup into an instant recap.',
 		appLink: 'https://www.insolla.ai/products/meeting-notes',
 	},
 	{
@@ -72,6 +76,7 @@ const otherProjects = [
 		thumbnail: '/images/contract-analyzer.png',
 		description:
 			'Upload any contract and get a plain-English summary, key dates, obligations on both sides, and severity-flagged risks worth pushing back on, all in about 30 seconds.',
+		impact: 'Cuts contract triage from ~45 minutes of manual review to under a minute.',
 		appLink: 'https://www.insolla.ai/products/contract-analyzer',
 	},
 ]
@@ -100,6 +105,14 @@ function ProjectCard({ project }) {
 				<p className='text-sm text-muted-foreground leading-relaxed flex-1'>
 					{project.description}
 				</p>
+				{project.impact && (
+					<p className='mt-4 inline-flex items-start gap-1.5 text-xs text-brand-text'>
+						<FaBolt className='text-[10px] shrink-0 mt-0.5' />
+						<span>
+							<span className='font-semibold'>Est. impact:</span> {project.impact}
+						</span>
+					</p>
+				)}
 				<div className='flex flex-wrap items-center gap-3 pt-5 mt-5 border-t border-overlay/5'>
 					{project.caseStudyLink?.length > 0 && (
 						<Link
@@ -153,9 +166,13 @@ export default function PortfolioSection() {
 				<p className='mb-2 text-sm font-semibold uppercase tracking-wider text-muted-foreground'>
 					More projects
 				</p>
-				<p className='mb-6 text-sm text-muted-foreground max-w-2xl'>
+				<p className='mb-2 text-sm text-muted-foreground max-w-2xl'>
 					Narrower, faster builds shipped through Insolla, the same
 					discovery-to-delivery process applied at a smaller scale.
+				</p>
+				<p className='mb-6 text-xs text-muted-foreground/70 max-w-2xl italic'>
+					Impact estimates are illustrative based on the workflows each tool replaces, not
+					measured client results.
 				</p>
 				<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
 					{otherProjects.map((project, index) => (

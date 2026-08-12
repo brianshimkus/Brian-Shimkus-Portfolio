@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import SectionDivider from '../../components/SectionDivider'
 import TrackedLink from '../../components/TrackedLink'
 import ProcessSteps from '../../components/ProcessSteps'
+import ArchitectureFlow from '../../components/ArchitectureFlow'
 import CountUp from '../../components/CountUp'
 import Reveal from '../../components/Reveal'
 import { gradientText, skillPill, btnCta } from '../../utils'
@@ -63,6 +64,15 @@ const workflowSteps = [
 	'At the effective time, mock connector commands execute idempotently against identity, SaaS, and service-desk adapters.',
 	'Downstream state is verified and confirmed before the event is marked complete; partial failures stay visible and retryable rather than silently succeeding.',
 	'If HR cancels or changes the role move before the effective time, the prior approval is invalidated and re-evaluated. A stale approval is never executed.',
+]
+
+const architectureFlow = [
+	'HR Event',
+	'FastAPI App (State Machine + Policy Engine)',
+	'Policy Store (RBAC Rules)',
+	'Manager / Security Approval',
+	'Mock Connectors (IdP, SaaS, Service Desk)',
+	'Audit Store',
 ]
 
 const architecture = [
@@ -224,6 +234,7 @@ export default function EmployeeAccessLifecyclePage() {
 					reasoning, not production identity security: no passwords, no production directory, no
 					live credentials, and no claim to be an identity provider or governance platform.
 				</p>
+				<ArchitectureFlow nodes={architectureFlow} />
 				<div className='card divide-y divide-overlay/10 mb-16'>
 					{architecture.map((row, i) => (
 						<Reveal

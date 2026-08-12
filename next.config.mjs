@@ -76,6 +76,17 @@ const nextConfig = {
 			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=resume_profile&utm_content=profile_link',
 			permanent: false,
 		},
+		// Solutions Engineering positioning post redirects
+		{
+			source: '/solutions-engineering-resume',
+			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf?utm_source=linkedin&utm_medium=organic_social&utm_campaign=solutions_engineering_positioning&utm_content=resume_comment',
+			permanent: false,
+		},
+		{
+			source: '/solutions-engineering-portfolio',
+			destination: '/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=solutions_engineering_positioning&utm_content=portfolio_comment',
+			permanent: false,
+		},
 	],
 };
 

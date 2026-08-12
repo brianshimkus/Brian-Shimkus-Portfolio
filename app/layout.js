@@ -16,6 +16,7 @@ const siteUrl = 'https://www.brianshimkus.dev'
 const siteTitle = 'Brian Shimkus | AI Solutions Engineer'
 const siteDescription =
 	'Pre-sales Solutions Engineer specializing in AI integration, running the technical sales motion at Insolla: discovery calls, solution scoping, tailored demos, and proof-of-concept builds. Based in Chicago, IL, open to remote and contract work.'
+const isProduction = process.env.VERCEL_ENV === 'production'
 
 export const metadata = {
 	metadataBase: new URL(siteUrl),
@@ -53,11 +54,11 @@ export const metadata = {
 		description: siteDescription,
 	},
 	robots: {
-		index: true,
-		follow: true,
+		index: isProduction,
+		follow: isProduction,
 		googleBot: {
-			index: true,
-			follow: true,
+			index: isProduction,
+			follow: isProduction,
 			'max-image-preview': 'large',
 		},
 	},

@@ -29,7 +29,7 @@ export default function HeroSection() {
 						<Image
 							className='rounded-3xl object-cover'
 							src='/images/hero-image.jpg'
-							alt='hero image'
+							alt='Brian Shimkus, AI Solutions Engineer'
 							fill
 							priority
 							sizes='(min-width: 1024px) 33vw, 100vw'
@@ -56,7 +56,7 @@ export default function HeroSection() {
 						<Image
 							className='object-cover'
 							src='/images/hero-image.jpg'
-							alt='hero image'
+							alt='Brian Shimkus, AI Solutions Engineer'
 							fill
 							priority
 							sizes='(max-width: 1024px) calc(100vw - 96px), 33vw'

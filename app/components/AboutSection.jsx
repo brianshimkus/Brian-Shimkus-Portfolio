@@ -44,7 +44,7 @@ export default function AboutSection() {
 					<Image
 						className='object-cover'
 						src='/images/desk.jpg'
-						alt='about image'
+						alt='Brian Shimkus working at his desk'
 						fill
 						sizes='(min-width: 1024px) 50vw, 100vw'
 					/>

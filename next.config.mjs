@@ -120,6 +120,12 @@ const nextConfig = {
 			destination: 'https://rag.insolla.ai?utm_source=linkedin&utm_medium=organic_social&utm_campaign=open_to_work&utm_content=hiring_post',
 			permanent: false,
 		},
+		// LinkedIn profile featured section
+		{
+			source: '/linkedin-featured',
+			destination: '/resume?utm_source=linkedin&utm_medium=profile&utm_campaign=featured_resume&utm_content=profile_section',
+			permanent: false,
+		},
 	],
 };
 

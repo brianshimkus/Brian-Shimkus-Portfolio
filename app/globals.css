@@ -163,12 +163,12 @@ body {
 	}
 	.eyebrow {
 		@apply text-xs uppercase tracking-wider text-muted-foreground;
-		font-family: var(--font-public-sans), Inter, system-ui, sans-serif;
+		font-family: var(--font-rajdhani), Inter, system-ui, sans-serif;
 		font-weight: 600;
 		letter-spacing: 0.1em;
 	}
 	.font-display {
-		font-family: var(--font-public-sans), Inter, system-ui, sans-serif;
+		font-family: var(--font-rajdhani), Inter, system-ui, sans-serif;
 	}
 	h1,
 	h2,
@@ -176,7 +176,7 @@ body {
 	h4,
 	h5,
 	h6 {
-		font-family: var(--font-public-sans), Inter, system-ui, sans-serif;
+		font-family: var(--font-rajdhani), Inter, system-ui, sans-serif;
 	}
 	.text-balance {
 		text-wrap: balance;

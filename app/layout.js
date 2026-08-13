@@ -1,15 +1,15 @@
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { Inter, Rajdhani } from 'next/font/google'
+import { Inter, Public_Sans } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const rajdhani = Rajdhani({
+const publicSans = Public_Sans({
 	subsets: ['latin'],
 	weight: ['500', '600', '700'],
 	display: 'swap',
-	variable: '--font-rajdhani',
+	variable: '--font-public-sans',
 })
 
 const siteUrl = 'https://www.brianshimkus.com'
@@ -101,7 +101,7 @@ const themeInitScript = `(function() {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<body className={`${inter.className} ${rajdhani.variable}`} suppressHydrationWarning>
+			<body className={`${inter.className} ${publicSans.variable}`} suppressHydrationWarning>
 				<script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
 				<script
 					type='application/ld+json'

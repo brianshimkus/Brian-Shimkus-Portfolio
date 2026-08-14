@@ -4,12 +4,14 @@ import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import PortfolioSection from './components/PortfolioSection'
+import SectionTracker from './components/SectionTracker'
 import SkillsSection from './components/SkillsSection'
 import TestimonialsSection from './components/TestimonialsSection'
 
 export default function Home() {
 	return (
 		<main className='app-bg flex min-h-screen flex-col'>
+			<SectionTracker />
 			<Navbar />
 			<div className='container mt-8 mb-24 mx-auto px-12 py-4'>
 				<HeroSection />

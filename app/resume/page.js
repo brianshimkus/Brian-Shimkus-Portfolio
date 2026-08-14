@@ -1,7 +1,6 @@
-import Link from 'next/link'
-import { FaArrowLeft } from 'react-icons/fa'
 import { btnCta } from '../utils'
 import ResumeDownloadButton from '../components/ResumeDownloadButton'
+import BackButton from '../components/BackButton'
 
 const title = 'Brian Shimkus - Solutions Engineer Resume'
 const description =
@@ -39,9 +38,7 @@ export default function ResumePage() {
 		<main className='app-bg min-h-screen flex flex-col'>
 			<nav className='sticky top-0 z-50 border-b border-overlay/10 bg-overlay/[0.06] backdrop-blur-xl'>
 				<div className='container mx-auto px-6 sm:px-12 h-16 flex items-center'>
-					<Link href='/#about' className='inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors'>
-						<FaArrowLeft className='text-xs' /> Back
-					</Link>
+					<BackButton />
 				</div>
 			</nav>
 

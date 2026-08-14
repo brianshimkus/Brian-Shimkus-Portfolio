@@ -103,8 +103,6 @@ export default function HeroSection() {
 						</a>
 						<a
 							href='/resume'
-							target='_blank'
-							rel='noopener noreferrer'
 							onClick={() => track('Resume Click', { location: 'hero' })}
 							className={btnOutline}>
 							View Resume

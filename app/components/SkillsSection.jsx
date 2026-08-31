@@ -4,62 +4,48 @@ import { skillPill } from '../utils'
 
 const toolGroups = [
 	{
+		category: 'Pre-Sales & Discovery',
+		skills: [
+			'Technical discovery & interviews',
+			'Tailored demos',
+			'POC scoping & delivery',
+			'Solution architecture',
+			'Executive presentations',
+			'Objection handling',
+			'Customer enablement',
+		],
+	},
+	{
 		category: 'AI & LLM',
 		skills: [
-			'OpenAI APIs',
-			'LangChain',
-			'Pinecone',
-			'RAG Architecture',
-			'Embeddings',
-			'Structured Outputs',
-			'Source Grounding',
-			'Prompt Design',
-			'Python',
+			'OpenAI API & GPT',
+			'RAG architecture & retrieval',
+			'Embeddings & vector databases',
+			'LangChain & prompt engineering',
+			'Source grounding & structured outputs',
 		],
 	},
 	{
-		category: 'Automation & No-Code',
-		skills: ['Make.com', 'n8n', 'Airtable', 'Hunter.io', 'Brevo'],
-	},
-	{
-		category: 'Integration & Platform',
+		category: 'Integration & Backend',
 		skills: [
-			'REST APIs',
-			'FastAPI',
+			'REST APIs & webhooks',
 			'Salesforce API (OAuth 2.0 JWT)',
-			'Node.js',
-			'SQL (MySQL)',
-			'DocuSign API',
-			'AWS',
+			'FastAPI & Python',
+			'Database design & SQL',
+			'Enterprise systems & compliance',
 		],
 	},
 	{
-		category: 'Front-End',
+		category: 'Frontend & Tools',
 		skills: [
-			'React',
-			'Next.js',
-			'TypeScript',
-			'JavaScript',
-			'Redux',
-			'Tailwind',
-			'Jest',
-			'Playwright',
+			'React & Next.js',
+			'TypeScript & JavaScript',
+			'Tailwind CSS',
+			'Make.com & n8n',
+			'Design tools & prototyping',
 		],
 	},
 ]
-
-const deliveryGroup = {
-	category: 'Pre-Sales',
-	skills: [
-		'Technical Discovery',
-		'Tailored Demos',
-		'POC Scoping & Delivery',
-		'Solution Design',
-		'Objection Handling',
-		'Executive Presentations',
-		'Client Enablement',
-	],
-}
 
 function SkillCard({ group }) {
 	return (
@@ -89,9 +75,6 @@ export default function SkillsSection() {
 					</Reveal>
 				))}
 			</div>
-			<Reveal delay={toolGroups.length * 0.08} className='mt-6'>
-				<SkillCard group={deliveryGroup} />
-			</Reveal>
 		</section>
 	)
 }

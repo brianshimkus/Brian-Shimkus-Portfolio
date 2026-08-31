@@ -103,46 +103,54 @@ export default function ResumePage() {
 				{/* Skills Grid */}
 				<div className='grid md:grid-cols-2 gap-6 mb-8'>
 					<div className='card p-6'>
-						<h3 className='font-semibold font-display mb-4 text-foreground'>Pre-Sales & Discovery</h3>
+						<h3 className='font-semibold font-display mb-4 text-foreground'>Applied AI</h3>
 						<ul className='space-y-2 text-sm text-muted-foreground'>
-							<li>• Technical discovery & stakeholder interviews</li>
-							<li>• Tailored demos & proof-of-concept scoping</li>
-							<li>• Solution architecture & design</li>
-							<li>• Executive presentations & objection handling</li>
-							<li>• Customer enablement & handoff</li>
+							<li>• OpenAI API</li>
+							<li>• LLMs & GPT models</li>
+							<li>• RAG architecture</li>
+							<li>• LangChain</li>
+							<li>• Pinecone & vector databases</li>
+							<li>• Structured outputs</li>
+							<li>• Evaluations & guardrails</li>
+							<li>• Python & FastAPI</li>
 						</ul>
 					</div>
 
 					<div className='card p-6'>
-						<h3 className='font-semibold font-display mb-4 text-foreground'>AI & LLM</h3>
+						<h3 className='font-semibold font-display mb-4 text-foreground'>Integrations</h3>
 						<ul className='space-y-2 text-sm text-muted-foreground'>
-							<li>• OpenAI API & GPT models</li>
-							<li>• RAG architecture & retrieval</li>
-							<li>• Embeddings & vector databases</li>
-							<li>• LangChain & prompt engineering</li>
-							<li>• Source grounding & structured outputs</li>
-						</ul>
-					</div>
-
-					<div className='card p-6'>
-						<h3 className='font-semibold font-display mb-4 text-foreground'>Integration & Backend</h3>
-						<ul className='space-y-2 text-sm text-muted-foreground'>
-							<li>• REST APIs & webhooks</li>
 							<li>• Salesforce API (OAuth 2.0 JWT)</li>
-							<li>• FastAPI & Python</li>
-							<li>• Database design & SQL</li>
-							<li>• Enterprise systems & compliance</li>
+							<li>• DocuSign API</li>
+							<li>• REST APIs & webhooks</li>
+							<li>• JSON & data formats</li>
+							<li>• SQL & MySQL</li>
+							<li>• AWS</li>
 						</ul>
 					</div>
 
 					<div className='card p-6'>
-						<h3 className='font-semibold font-display mb-4 text-foreground'>Frontend & Tools</h3>
+						<h3 className='font-semibold font-display mb-4 text-foreground'>Engineering</h3>
 						<ul className='space-y-2 text-sm text-muted-foreground'>
-							<li>• React & Next.js</li>
 							<li>• TypeScript & JavaScript</li>
+							<li>• Node.js</li>
+							<li>• React & Next.js</li>
 							<li>• Tailwind CSS</li>
-							<li>• Automation: Make.com, n8n</li>
-							<li>• Design tools & prototyping</li>
+							<li>• Git</li>
+							<li>• Playwright</li>
+							<li>• Vercel</li>
+						</ul>
+					</div>
+
+					<div className='card p-6'>
+						<h3 className='font-semibold font-display mb-4 text-foreground'>Customer Delivery</h3>
+						<ul className='space-y-2 text-sm text-muted-foreground'>
+							<li>• Technical discovery</li>
+							<li>• Problem decomposition</li>
+							<li>• Workflow mapping</li>
+							<li>• Demo delivery</li>
+							<li>• Proof-of-concept scoping</li>
+							<li>• Stakeholder alignment</li>
+							<li>• Technical handoff</li>
 						</ul>
 					</div>
 				</div>

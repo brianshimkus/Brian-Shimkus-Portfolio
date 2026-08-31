@@ -13,7 +13,7 @@ const aiProjects = [
 		title: 'Casefile',
 		thumbnail: '/images/casefile.png',
 		description:
-			'A complete end-to-end build: an investigation copilot that ingests claims from five disagreeing data sources, resolves entity linkages with measured precision, computes deterministic risk scores, answers investigator questions with cited evidence, verifies locations against live geocoding APIs, and deploys with hardened security. Built for P&C insurers, showcasing the full discovery-to-delivery motion.',
+			'A complete end-to-end build: an investigation copilot that ingests claims from five disagreeing data sources, resolves entity linkages with measured precision, computes deterministic risk scores, answers investigator questions with cited evidence, verifies locations against live geocoding APIs, and deploys with hardened security. Built for P&C insurers, showcasing the complete discovery-to-delivery technical motion from stakeholder interviews through deployment.',
 		impact: 'Reduces insurance claim investigation time from multi-day manual process to minutes with explainable, auditable decisions.',
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/casefile',

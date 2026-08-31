@@ -21,7 +21,7 @@ export const metadata = {
 				url: '/resume-og-image.png',
 				width: 1200,
 				height: 630,
-				alt: 'Brian Shimkus - Solutions Engineer Resume',
+				alt: 'Brian Shimkus - Forward Deployed Engineer Resume',
 			},
 		],
 	},
@@ -47,9 +47,9 @@ export default function ResumePage() {
 				<div className='card p-8 mb-8'>
 					<div className='mb-8'>
 						<h1 className='text-4xl font-bold tracking-tight font-display mb-2'>Brian Shimkus</h1>
-						<p className='text-lg text-brand-text font-semibold mb-4'>Solutions Engineer • AI Integration • Pre-Sales Technical Discovery</p>
+						<p className='text-lg text-brand-text font-semibold mb-4'>Forward Deployed Engineer • AI Systems • Technical Sales</p>
 						<p className='text-muted-foreground max-w-3xl mb-8 leading-relaxed'>
-							12+ years building customer-facing solutions in regulated financial organizations. Currently running the technical sales motion at Insolla: discovery calls, solution scoping, tailored demos, and proof-of-concept builds with AI, automation, and enterprise integrations.
+							12+ years building customer-facing solutions in regulated financial organizations. Currently running the complete discovery-to-delivery motion at Insolla: technical discovery, solution architecture, proof-of-concept delivery, and production AI systems with enterprise integrations.
 						</p>
 						<div className='flex flex-wrap gap-3'>
 							<ResumeDownloadButton />
@@ -78,7 +78,7 @@ export default function ResumePage() {
 
 				{/* Current Role */}
 				<div className='card p-6 mb-8'>
-					<h2 className='text-lg font-semibold font-display mb-3'>Applied AI Engineering</h2>
+					<h2 className='text-lg font-semibold font-display mb-3'>Forward Deployed Engineer</h2>
 					<p className='text-sm text-muted-foreground mb-4'>Insolla (Self-Directed AI Practice) • Dec 2025 – Present</p>
 					<ul className='space-y-2 text-sm text-muted-foreground'>
 						<li className='flex gap-3'>

@@ -156,7 +156,7 @@ export default function CasefilePage() {
 				<ProcessSteps steps={processSteps} />
 
 				<div className='flex flex-wrap gap-3 mb-10'>
-					<Link href='/casefile-github' target='_blank' rel='noopener noreferrer' className={btnOutline}>
+					<Link href='https://github.com/brianshimkus/Casefile' target='_blank' rel='noopener noreferrer' className={btnOutline}>
 						View the Code <FaExternalLinkAlt className='text-xs' />
 					</Link>
 				</div>
@@ -294,7 +294,7 @@ export default function CasefilePage() {
 						live rehearsal.
 					</p>
 					<div className='flex flex-wrap justify-center gap-3'>
-						<Link href='/casefile-github' target='_blank' rel='noopener noreferrer' className={portfolioLink}>
+						<Link href='https://github.com/brianshimkus/Casefile' target='_blank' rel='noopener noreferrer' className={portfolioLink}>
 							Code <FaExternalLinkAlt className='text-[10px]' />
 						</Link>
 					</div>

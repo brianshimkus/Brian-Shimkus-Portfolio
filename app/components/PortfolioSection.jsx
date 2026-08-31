@@ -17,7 +17,7 @@ const aiProjects = [
 		impact: 'Reduces insurance claim investigation time from multi-day manual process to minutes with explainable, auditable decisions.',
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/casefile',
-		githubLink: '/casefile-github',
+		githubLink: 'https://github.com/brianshimkus/Casefile',
 	},
 	{
 		title: 'Salesforce Intelligence',

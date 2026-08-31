@@ -69,7 +69,7 @@ const nextConfig = {
 		// Direct PDF downloads redirect with UTM params
 		{
 			source: '/resume-pdf',
-			destination: '/Resume-BrianShimkus-SolutionsEngineer.pdf',
+			destination: '/Resume-BrianShimkus-Forward-Deployed-Applied-AI-Engineer.pdf',
 			permanent: false,
 		},
 		{

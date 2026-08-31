@@ -157,7 +157,7 @@ export default function CasefilePage() {
 
 				<div className='flex flex-wrap gap-3 mb-10'>
 					<Link href='https://github.com/brianshimkus/Casefile' target='_blank' rel='noopener noreferrer' className={btnOutline}>
-						View the Code <FaExternalLinkAlt className='text-xs' />
+						View Code <FaExternalLinkAlt className='text-xs' />
 					</Link>
 				</div>
 

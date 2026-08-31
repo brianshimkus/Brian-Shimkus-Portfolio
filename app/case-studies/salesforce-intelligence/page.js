@@ -176,7 +176,7 @@ export default function SalesforceIntelligencePage() {
 						event='Salesforce Intelligence - Code'
 						eventData={{ project: 'Salesforce Intelligence', type: 'code', location: 'case_study_top' }}
 						className={btnOutline}>
-						View the Code
+						View Code
 					</TrackedLink>
 				</div>
 

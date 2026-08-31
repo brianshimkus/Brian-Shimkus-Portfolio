@@ -38,7 +38,7 @@ export default function AboutSection() {
 						teams, medical apps to assist doctors with their patients,
 						onboarding tools for traders within the finance space, and much more.`}
 					</p>
-					<p className='mb-6 text-pretty'>{`Seven months ago I set out to build something different: Insolla, an independent AI practice where I run the full technical sales motion myself, discovery calls, solution scoping, tailored demos, and proof-of-concept builds, including a source-grounded RAG assistant over live Salesforce CRM data. It's been the best crash course in applied AI I could have asked for, and it's shown me where I want to go next: a pre-sales Solutions Engineer role that sits between customers and working systems.`}</p>
+					<p className='mb-6 text-pretty'>{`Seven months ago I set out to build something different: Insolla, an independent AI practice where I run the full technical sales motion myself, discovery calls, solution scoping, tailored demos, and proof-of-concept builds, including a source-grounded RAG assistant over live Salesforce CRM data. It's been the best crash course in applied AI I could have asked for, and it's shown me where I want to go next: a Forward Deployed Engineer role that sits between customers and working systems.`}</p>
 				</Reveal>
 				<Reveal delay={0.15} className='relative hidden lg:block w-full aspect-square rounded-3xl overflow-hidden'>
 					<Image

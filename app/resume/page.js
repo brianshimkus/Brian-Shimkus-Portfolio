@@ -2,9 +2,9 @@ import { btnCta } from '../utils'
 import ResumeDownloadButton from '../components/ResumeDownloadButton'
 import BackButton from '../components/BackButton'
 
-const title = 'Brian Shimkus - Solutions Engineer Resume'
+const title = 'Brian Shimkus - Forward Deployed Engineer Resume'
 const description =
-	'Solutions Engineer specializing in AI integration, pre-sales technical discovery, and proof-of-concept builds. 12+ years delivering customer-facing solutions.'
+	'Forward Deployed Engineer building AI systems and running technical sales. Discovery-to-delivery motion: stakeholder interviews, solution architecture, POC delivery. 12+ years in fintech.'
 
 export const metadata = {
 	title,

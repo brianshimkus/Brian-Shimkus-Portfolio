@@ -10,24 +10,14 @@ import { FaExternalLinkAlt, FaArrowRight, FaBolt } from 'react-icons/fa'
 
 const aiProjects = [
 	{
-		title: 'POD Recovery Assistant',
-		thumbnail: '/images/pod-recovery-assistant.png',
+		title: 'Casefile',
+		thumbnail: '/images/casefile.png',
 		description:
-			'An independent Solutions Engineering case study: a controlled AI workflow that recovers missing proof-of-delivery documents for a freight brokerage, with SOP-grounded recommendations, human approval, and a full audit trail.',
-		impact: 'Modeled to cut ~240 hours/month of manual follow-up to a handful of human-reviewed exceptions.',
+			'A complete end-to-end build: an investigation copilot that ingests claims from five disagreeing data sources, resolves entity linkages with measured precision, computes deterministic risk scores, answers investigator questions with cited evidence, verifies locations against live geocoding APIs, and deploys with hardened security. Built for P&C insurers, showcasing the full discovery-to-delivery motion.',
+		impact: 'Reduces insurance claim investigation time from multi-day manual process to minutes with explainable, auditable decisions.',
 		badge: 'In Progress',
-		caseStudyLink: '/case-studies/pod-recovery-assistant',
-		githubLink: '/pod-github',
-	},
-	{
-		title: 'Employee Access Lifecycle Assistant',
-		thumbnail: '/images/employee-access-lifecycle.png',
-		description:
-			'An independent Solutions Engineering case study: a deterministic policy engine that evaluates employee role changes, routes risky access combinations for security review, and provisions through mock connectors with a full audit trail.',
-		impact: 'Modeled to cut ~52 hours/month of manual IT provisioning effort to policy-driven, auditable decisions.',
-		badge: 'In Progress',
-		caseStudyLink: '/case-studies/employee-access-lifecycle',
-		githubLink: '/employee-access-github',
+		caseStudyLink: '/case-studies/casefile',
+		githubLink: '/casefile-github',
 	},
 	{
 		title: 'Salesforce Intelligence',

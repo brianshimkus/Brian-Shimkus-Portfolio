@@ -7,15 +7,15 @@ import Reveal from './Reveal'
 
 const experience = [
 	{
-		role: 'Applied AI Engineering',
+		role: 'Forward Deployed Engineer',
 		company: 'Insolla (Independent AI Practice)',
 		location: 'Chicago, IL',
 		dates: 'Dec 2025 – Present',
 		bullets: [
-			'Practiced the complete pre-sales motion solo: discovery calls, solution scoping, tailored demos, and proof-of-concept builds, run end-to-end without a team.',
-			'Produce the full pre-sales package: discovery guide, stakeholder map, technical walkthrough, security brief, and POV plan.',
-			'Build proofs of concept against customers’ own systems, integrating CRM, document, and workflow platforms through REST APIs, webhooks, and iPaaS tooling, not canned data.',
-			'Cut a small business’s social media workflow from 8 hours a week to 10 minutes with an automated content pipeline, scoped and delivered directly with the owner.',
+			'Run the complete discovery-to-delivery motion: stakeholder discovery calls, solution scoping, tailored demos, architecture design, and proof-of-concept builds, owned end-to-end.',
+			'Produce production-grade AI systems: RAG over live CRM data, identity policy automation, document workflows with enterprise API integrations (REST, webhooks, iPaaS).',
+			'Deliver full pre-sales artifacts: discovery brief, stakeholder map, technical walkthrough, security assessment, and POV plan—all tailored to customer systems, not canned.',
+			'Measured impact: cut a small business\'s social media workflow from 8 hours a week to 10 minutes through automated content pipeline, shipped end-to-end.',
 		],
 	},
 	{

@@ -194,9 +194,9 @@ export default function RelayOpsPage() {
 				</h1>
 				<p className='text-lg text-foreground mb-8 max-w-2xl'>
 					A production incident workflow with grounded AI diagnosis. Process financial integration incidents
-					through eight quality gates - environment, vertical slice, simulator, integrations, diagnosis, safe
-					actions, evaluation, operations - with deterministic recovery, built end-to-end from empty folder to
-					working portfolio demo.
+					through eight quality gates: environment, vertical slice, simulator, integrations, diagnosis, safe
+					actions, evaluation, and operations. Deterministic recovery, built end-to-end from empty folder
+					to working portfolio demo.
 				</p>
 
 				<ProcessSteps steps={processSteps} />

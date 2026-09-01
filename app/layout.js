@@ -13,9 +13,9 @@ const rajdhani = Rajdhani({
 })
 
 const siteUrl = 'https://www.brianshimkus.com'
-const siteTitle = 'Brian Shimkus | Forward Deployed Engineer'
+const siteTitle = 'Brian Shimkus | Applied AI Engineer'
 const siteDescription =
-	'Forward Deployed Engineer building AI systems and running technical sales at Insolla: discovery calls, solution scoping, tailored demos, and proof-of-concept builds. 12+ years delivering customer-facing solutions in regulated fintech. Based in Chicago, IL, open to remote and contract work.'
+	'Applied AI and integration engineer with 12+ years delivering customer-facing software and enterprise integrations. Combines hands-on engineering with discovery, workflow mapping, POV delivery, and stakeholder alignment. Building production AI systems with Python, FastAPI, Salesforce APIs, and OAuth. Based in Chicago, IL.'
 const isProduction = process.env.VERCEL_ENV === 'production'
 
 export const metadata = {
@@ -29,7 +29,7 @@ export const metadata = {
 		'Brian Shimkus',
 		'AI Solutions Engineer',
 		'AI Automation Engineer',
-		'Forward Deployed Engineer',
+		'Applied AI Engineer',
 		'LLM workflows',
 		'AI consultant Chicago',
 		'Insolla',

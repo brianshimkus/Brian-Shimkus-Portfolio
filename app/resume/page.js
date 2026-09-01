@@ -49,7 +49,7 @@ export default function ResumePage() {
 						<h1 className='text-4xl font-bold tracking-tight font-display mb-2'>Brian Shimkus</h1>
 						<p className='text-lg text-brand-text font-semibold mb-4'>Forward Deployed Engineer • AI Systems • Technical Sales</p>
 						<p className='text-muted-foreground max-w-3xl mb-8 leading-relaxed'>
-							12+ years building customer-facing solutions in regulated financial organizations. Currently running the complete discovery-to-delivery motion at Insolla: technical discovery, solution architecture, proof-of-concept delivery, and production AI systems with enterprise integrations.
+							Applied AI and integration engineer with 12+ years delivering customer-facing software and enterprise integrations. Combines hands-on engineering with discovery, workflow mapping, POV delivery, and stakeholder alignment. Building production AI systems with Python, FastAPI, Salesforce APIs, and OAuth.
 						</p>
 						<div className='flex flex-wrap gap-3'>
 							<ResumeDownloadButton />

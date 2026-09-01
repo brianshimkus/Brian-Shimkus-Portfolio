@@ -77,9 +77,10 @@ export default function HeroSection() {
 						className='text-base sm:text-base mb-4 lg:text-lg text-muted-foreground'>
 						{`Twelve years at OCC, TransUnion, and Marex taught me
 						enterprise software delivery, compliance workflows, and stakeholder
-						alignment. Now seeking Applied AI or integration engineering roles
-						where I can own the full motion from discovery through customer
-						delivery. Based in Chicago, open to remote, available immediately.`}
+						alignment. Open to Solutions Engineer, Forward Deployed Engineer,
+						and AI/Automation Engineer roles where I can own the full motion
+						from discovery through customer delivery. Based in Chicago, open
+						to remote, available immediately.`}
 					</motion.p>
 					<motion.div
 						variants={item}

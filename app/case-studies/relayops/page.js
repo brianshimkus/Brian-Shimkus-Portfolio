@@ -137,7 +137,7 @@ const architecture = [
 const productionWork = [
 	{
 		title: 'Eight incident families',
-		body: 'Expired broker token, missing data entitlement, duplicate payment webhook, settlement schema drift, reconciliation mismatch, processor retry storm, audit pipeline interruption, model provider outage—each with known root cause, approved recovery and deterministic check.',
+		body: 'Expired broker token, missing data entitlement, duplicate payment webhook, settlement schema drift, reconciliation mismatch, processor retry storm, audit pipeline interruption, model provider outage, each with known root cause, approved recovery and deterministic check.',
 	},
 	{
 		title: 'Grounded diagnosis',
@@ -194,8 +194,8 @@ export default function RelayOpsPage() {
 				</h1>
 				<p className='text-lg text-foreground mb-8 max-w-2xl'>
 					A production incident workflow with grounded AI diagnosis. Process financial integration incidents
-					through eight quality gates—environment, vertical slice, simulator, integrations, diagnosis, safe
-					actions, evaluation, operations—with deterministic recovery, built end-to-end from empty folder to
+					through eight quality gates - environment, vertical slice, simulator, integrations, diagnosis, safe
+					actions, evaluation, operations - with deterministic recovery, built end-to-end from empty folder to
 					working portfolio demo.
 				</p>
 

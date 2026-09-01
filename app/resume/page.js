@@ -163,21 +163,21 @@ export default function ResumePage() {
 							<span className='text-brand-text font-bold shrink-0'>✓</span>
 							<div>
 								<p className='font-semibold text-foreground'>Automation Impact</p>
-								<p>Cut social media workflow from 8 hours/week to 10 minutes via AI pipeline—measured results with client</p>
+								<p>Cut social media workflow from 8 hours/week to 10 minutes via AI pipeline - measured results with client</p>
 							</div>
 						</div>
 						<div className='flex gap-3'>
 							<span className='text-brand-text font-bold shrink-0'>✓</span>
 							<div>
 								<p className='font-semibold text-foreground'>CRM Intelligence</p>
-								<p>Built RAG assistant over live Salesforce with source grounding—supports natural language queries with audit trails</p>
+								<p>Built RAG assistant over live Salesforce with source grounding - supports natural language queries with audit trails</p>
 							</div>
 						</div>
 						<div className='flex gap-3'>
 							<span className='text-brand-text font-bold shrink-0'>✓</span>
 							<div>
 								<p className='font-semibold text-foreground'>Identity Systems</p>
-								<p>Designed policy engine for employee access with security review routing—models 7 access decisions per event</p>
+								<p>Designed policy engine for employee access with security review routing - models 7 access decisions per event</p>
 							</div>
 						</div>
 						<div className='flex gap-3'>

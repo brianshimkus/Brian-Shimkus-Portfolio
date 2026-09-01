@@ -14,7 +14,7 @@ const experience = [
 		bullets: [
 			'Run the complete discovery-to-delivery motion: stakeholder discovery calls, solution scoping, tailored demos, architecture design, and proof-of-concept builds, owned end-to-end.',
 			'Produce production-grade AI systems: RAG over live CRM data, identity policy automation, document workflows with enterprise API integrations (REST, webhooks, iPaaS).',
-			'Deliver full pre-sales artifacts: discovery brief, stakeholder map, technical walkthrough, security assessment, and POV plan—all tailored to customer systems, not canned.',
+			'Deliver full pre-sales artifacts: discovery brief, stakeholder map, technical walkthrough, security assessment, and POV plan, all tailored to customer systems, not canned.',
 			'Measured impact: cut a small business\'s social media workflow from 8 hours a week to 10 minutes through automated content pipeline, shipped end-to-end.',
 		],
 	},

@@ -65,23 +65,21 @@ export default function HeroSection() {
 					<motion.p
 						variants={item}
 						className='text-lg sm:text-lg mb-2 lg:text-2xl text-foreground text-pretty'>
-						{`Forward Deployed Engineer building AI systems and running
-						technical sales. Through Insolla, my self-directed practice, I
-						run the full discovery-to-delivery motion: discovery calls,
-						solution scoping, tailored demos, proof-of-concept builds,
-						shipping production systems like RAG over live CRM data, identity
-						policy automation, and document workflows.`}
+						{`Applied AI and integration engineer. Through Insolla, my
+						self-directed practice, I combine discovery and workflow mapping
+						with hands-on engineering: proof-of-value delivery, solution
+						architecture, and production AI systems. Building customer-facing
+						software with Python, FastAPI, Salesforce APIs, RAG, and OAuth
+						2.0 JWT integrations.`}
 					</motion.p>
 					<motion.p
 						variants={item}
 						className='text-base sm:text-base mb-4 lg:text-lg text-muted-foreground'>
-						{`Twelve years at OCC, TransUnion, and Marex taught me to run
-						discovery with technical and executive audiences, build systems
-						under compliance constraints, and integrate enterprise APIs. Now
-						seeking Forward Deployed Engineer, Solutions Engineer, or AI
-						Engineering roles where I can own the full technical motion from
-						discovery through delivery. Based in Chicago, open to remote,
-						available immediately.`}
+						{`Twelve years at OCC, TransUnion, and Marex taught me
+						enterprise software delivery, compliance workflows, and stakeholder
+						alignment. Now seeking Applied AI or integration engineering roles
+						where I can own the full motion from discovery through customer
+						delivery. Based in Chicago, open to remote, available immediately.`}
 					</motion.p>
 					<motion.div
 						variants={item}

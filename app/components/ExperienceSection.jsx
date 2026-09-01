@@ -7,7 +7,7 @@ import Reveal from './Reveal'
 
 const experience = [
 	{
-		role: 'Forward Deployed Engineer',
+		role: 'Applied AI & Integration Engineer',
 		company: 'Insolla (Independent AI Practice)',
 		location: 'Chicago, IL',
 		dates: 'Dec 2025 – Present',

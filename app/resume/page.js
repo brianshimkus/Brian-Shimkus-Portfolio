@@ -2,9 +2,9 @@ import { btnCta } from '../utils'
 import ResumeDownloadButton from '../components/ResumeDownloadButton'
 import BackButton from '../components/BackButton'
 
-const title = 'Brian Shimkus - Forward Deployed Engineer Resume'
+const title = 'Brian Shimkus - Applied AI Engineer Resume'
 const description =
-	'Forward Deployed Engineer building AI systems and running technical sales. Discovery-to-delivery motion: stakeholder interviews, solution architecture, POC delivery. 12+ years in fintech.'
+	'Applied AI and integration engineer with 12+ years delivering customer-facing software and enterprise integrations. Discovery to delivery: technical interviews, solution architecture, POC delivery, production AI systems.'
 
 export const metadata = {
 	title,
@@ -21,7 +21,7 @@ export const metadata = {
 				url: '/resume-og-image.png',
 				width: 1200,
 				height: 630,
-				alt: 'Brian Shimkus - Forward Deployed Engineer Resume',
+				alt: 'Brian Shimkus - Applied AI Engineer Resume',
 			},
 		],
 	},
@@ -47,7 +47,7 @@ export default function ResumePage() {
 				<div className='card p-8 mb-8'>
 					<div className='mb-8'>
 						<h1 className='text-4xl font-bold tracking-tight font-display mb-2'>Brian Shimkus</h1>
-						<p className='text-lg text-brand-text font-semibold mb-4'>Forward Deployed Engineer • AI Systems • Technical Sales</p>
+						<p className='text-lg text-brand-text font-semibold mb-4'>Applied AI • Integration • Customer Delivery</p>
 						<p className='text-muted-foreground max-w-3xl mb-8 leading-relaxed'>
 							Applied AI and integration engineer with 12+ years delivering customer-facing software and enterprise integrations. Combines hands-on engineering with discovery, workflow mapping, POV delivery, and stakeholder alignment. Building production AI systems with Python, FastAPI, Salesforce APIs, and OAuth.
 						</p>
@@ -78,7 +78,7 @@ export default function ResumePage() {
 
 				{/* Current Role */}
 				<div className='card p-6 mb-8'>
-					<h2 className='text-lg font-semibold font-display mb-3'>Forward Deployed Engineer</h2>
+					<h2 className='text-lg font-semibold font-display mb-3'>Applied AI & Integration Engineer</h2>
 					<p className='text-sm text-muted-foreground mb-4'>Insolla (Self-Directed AI Practice) • Dec 2025 – Present</p>
 					<ul className='space-y-2 text-sm text-muted-foreground'>
 						<li className='flex gap-3'>

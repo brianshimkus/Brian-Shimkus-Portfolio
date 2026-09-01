@@ -237,7 +237,7 @@ export default function RelayOpsPage() {
 					</li>
 					<li className='flex gap-3'>
 						<span className='text-brand-text shrink-0'>•</span>
-						<span>Verify recovery actually worked and didn't make things worse</span>
+						<span>Verify recovery actually worked and didn&apos;t make things worse</span>
 					</li>
 				</ul>
 

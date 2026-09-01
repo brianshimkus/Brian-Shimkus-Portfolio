@@ -192,7 +192,7 @@ export default function ResumePage() {
 
 				{/* Footer */}
 				<div className='text-muted-foreground text-sm border-t border-overlay/10 pt-8'>
-					<p className='font-semibold mb-2'>Open to Solutions Engineer, Forward Deployed Engineer, and AI/Automation Engineer roles</p>
+					<p className='font-semibold mb-2'>Seeking Applied AI Engineer, Customer Integration Engineer, or AI Implementation Engineer roles</p>
 					<p>Based in Chicago, IL • Available for remote and contract work</p>
 					<p className='text-xs mt-4'>brian@brianshimkus.com • linkedin.com/in/brianshimkus1 • github.com/brianshimkus</p>
 				</div>

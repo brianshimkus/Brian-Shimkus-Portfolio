@@ -10,14 +10,14 @@ import { FaExternalLinkAlt, FaArrowRight, FaBolt } from 'react-icons/fa'
 
 const aiProjects = [
 	{
-		title: 'Casefile',
-		thumbnail: '/images/casefile.png',
+		title: 'RelayOps',
+		thumbnail: '/images/relayops.png',
 		description:
-			'A complete end-to-end build: an investigation copilot that ingests claims from five disagreeing data sources, resolves entity linkages with measured precision, computes deterministic risk scores, answers investigator questions with cited evidence, verifies locations against live geocoding APIs, and deploys with hardened security. Built for P&C insurers, showcasing the complete discovery-to-delivery technical motion from stakeholder interviews through deployment.',
-		impact: 'Reduces insurance claim investigation time from multi-day manual process to minutes with explainable, auditable decisions.',
-		badge: 'In Progress',
-		caseStudyLink: '/case-studies/casefile',
-		githubLink: 'https://github.com/brianshimkus/Casefile',
+			'A production incident workflow platform with grounded AI diagnosis. Ingests financial integration incidents, runs them through eight quality gates (environment, vertical slice, simulator, integrations, diagnosis, safe actions, evaluation, operations), and deploys with hardened security, observability, and recovery drills. Built end-to-end from empty folder to portfolio demo.',
+		impact: 'Complete incident workflow from detection through verified recovery, with deterministic AI that explains every claim.',
+		badge: 'Complete Build',
+		caseStudyLink: '/case-studies/relayops',
+		githubLink: 'https://github.com/brianshimkus/RelayOps',
 	},
 	{
 		title: 'Salesforce Intelligence',

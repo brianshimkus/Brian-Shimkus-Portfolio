@@ -15,7 +15,7 @@ const aiProjects = [
 		description:
 			'A production incident workflow platform with grounded AI diagnosis. Ingests financial integration incidents, runs them through eight quality gates (environment, vertical slice, simulator, integrations, diagnosis, safe actions, evaluation, operations), and deploys with hardened security, observability, and recovery drills. Built end-to-end from empty folder to portfolio demo.',
 		impact: 'Complete incident workflow from detection through verified recovery, with deterministic AI that explains every claim.',
-		badge: 'Complete Build',
+		badge: 'In Progress',
 		caseStudyLink: '/case-studies/relayops',
 		githubLink: 'https://github.com/brianshimkus/RelayOps',
 	},

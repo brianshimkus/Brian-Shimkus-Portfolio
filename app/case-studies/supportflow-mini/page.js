@@ -426,7 +426,7 @@ export default function SupportFlowMiniPage() {
 						See the complete tutorial
 					</h3>
 					<p className='text-sm text-muted-foreground mb-6 max-w-md mx-auto'>
-						Every chapter has working code. Start with setup, build through to webhook delivery and evaluation. No skipped steps, no "just trust me on this" — everything is explained.
+						Every chapter has working code. Start with setup, build through to webhook delivery and evaluation. No skipped steps, no &quot;just trust me on this&quot; — everything is explained.
 					</p>
 					<div className='flex flex-wrap justify-center gap-3'>
 						<Link href='https://github.com/brianshimkus/SupportFlow-Mini' target='_blank' rel='noopener noreferrer' className={portfolioLink}>

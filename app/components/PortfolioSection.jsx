@@ -10,6 +10,16 @@ import { FaExternalLinkAlt, FaArrowRight, FaBolt } from 'react-icons/fa'
 
 const aiProjects = [
 	{
+		title: 'SupportFlow Mini',
+		thumbnail: '/images/supportflow-mini.png',
+		description:
+			'One problem, one model call, one human decision, one safe integration. A complete FDE fundamentals tutorial building a customer support ticket router with AI recommendation, human review, and webhook delivery. Learn deterministic testing, mock-first development, Pydantic contracts, and production-grade practices from day one.',
+		impact: 'Complete workflow from customer ticket to AI recommendation to human gate to system integration, with metrics and evaluation built in.',
+		badge: 'In Progress',
+		caseStudyLink: '/case-studies/supportflow-mini',
+		githubLink: 'https://github.com/brianshimkus/SupportFlow-Mini',
+	},
+	{
 		title: 'RelayOps',
 		thumbnail: '/images/relayops.png',
 		description:

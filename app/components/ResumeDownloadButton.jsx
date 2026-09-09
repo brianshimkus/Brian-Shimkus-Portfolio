@@ -7,7 +7,7 @@ import { btnCta } from '../utils'
 export default function ResumeDownloadButton() {
 	return (
 		<a
-			href='/Resume-BrianShimkus-Applied-AI-Integrations-Customer-Delivery.pdf'
+			href='/Resume-BrianShimkus.pdf'
 			target='_blank'
 			rel='noopener noreferrer'
 			onClick={() => track('Resume Download', { source: 'resume_page' })}

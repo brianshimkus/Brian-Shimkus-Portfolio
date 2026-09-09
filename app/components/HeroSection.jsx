@@ -95,7 +95,7 @@ export default function HeroSection() {
 							Contact Me
 						</a>
 						<a
-							href='/resume'
+							href='/Resume-BrianShimkus'
 							onClick={() => track('Resume Click', { location: 'hero' })}
 							className={btnOutline}>
 							View Resume

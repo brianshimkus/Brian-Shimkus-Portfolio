@@ -9,7 +9,7 @@ import { gradientText, portfolioLink, skillPill, btnOutline } from '../../utils'
 
 const title = 'SupportFlow Mini Case Study'
 const description =
-	'A complete FDE fundamentals tutorial. Build a customer support ticket router with AI recommendation, human review, and webhook delivery. Learn deterministic testing, Pydantic contracts, and production-grade practices from day one.'
+	'A customer support ticket router with AI recommendation, human review gate, and webhook delivery. Built end-to-end with FastAPI, Pydantic, SQLite, OpenAI, and deterministic evaluation.'
 
 export const metadata = {
 	title,
@@ -211,16 +211,16 @@ export default function SupportFlowMiniPage() {
 					<FaArrowLeft className='text-xs' /> Back to Portfolio
 				</Link>
 
-				<p className='eyebrow mb-3'>Complete Tutorial &middot; One Problem, One Model Call, One Human Decision</p>
+				<p className='eyebrow mb-3'>Support Ticket Router &middot; AI Recommendation with Human Gate</p>
 				<h1 className='text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.05] font-display mb-4'>
 					SupportFlow Mini
 					<br />
-					<span className={gradientText}>FDE Fundamentals</span>
+					<span className={gradientText}>Production System</span>
 				</h1>
 				<p className='text-lg text-foreground mb-8 max-w-2xl'>
-					A complete tutorial teaching how to build a customer support ticket router with AI recommendation, human review
-					gate, and webhook delivery. Learn deterministic testing, Pydantic contracts, mock-first development, and production-grade
-					practices from day one.
+					A customer support ticket router with AI recommendation, human review gate, and webhook delivery. Built end-to-end
+					with FastAPI, Pydantic, SQLite, OpenAI, and deterministic evaluation. One problem, one model call, one human decision,
+					one safe integration.
 				</p>
 
 				<ProcessSteps steps={processSteps} />
@@ -232,9 +232,9 @@ export default function SupportFlowMiniPage() {
 				</div>
 
 				<div className='card p-6 mb-16'>
-					<p className='text-xs font-semibold uppercase tracking-wider text-brand-text mb-2'>Status: Complete Build</p>
+					<p className='text-xs font-semibold uppercase tracking-wider text-brand-text mb-2'>Status: In Progress</p>
 					<p className='text-sm text-muted-foreground leading-relaxed'>
-						An 8-chapter, beginner-first tutorial that walks through the complete workflow from empty folder to fully working support ticket router. Each chapter covers one no-skip component: setup, schemas, mock workflow, UI, model integration, human gate, webhook delivery, and evaluation.
+						A production-grade support ticket routing system. Handles ticket ingestion, AI-powered categorization and priority assignment, human review and approval workflow, webhook delivery to external systems, and quality evaluation across a held-out test set.
 					</p>
 				</div>
 
@@ -313,7 +313,7 @@ export default function SupportFlowMiniPage() {
 				</p>
 
 				<SectionDivider className='mb-10' />
-				<h2 className='text-2xl font-semibold tracking-tight font-display mb-4'>Key principles</h2>
+				<h2 className='text-2xl font-semibold tracking-tight font-display mb-4'>Implementation approach</h2>
 				<div className='grid sm:grid-cols-2 gap-4 mb-16'>
 					{keyLearnings.map((item) => (
 						<div key={item.title} className='card p-5'>
@@ -323,25 +323,6 @@ export default function SupportFlowMiniPage() {
 					))}
 				</div>
 
-				<SectionDivider className='mb-10' />
-				<h2 className='text-2xl font-semibold tracking-tight font-display mb-4'>Chapters</h2>
-				<p className='text-muted-foreground leading-relaxed mb-6'>
-					The complete tutorial covers 8 chapters, each building on the previous one. Every chapter has working code and passes a quality gate.
-				</p>
-				<div className='card divide-y divide-overlay/10 mb-16'>
-					{chapters.map((chapter, i) => (
-						<Reveal
-							as='div'
-							key={chapter.number}
-							delay={Math.min(i, 8) * 0.06}
-							y={8}
-							className='p-5 grid sm:grid-cols-4 gap-2 sm:gap-4'>
-							<p className='text-sm font-semibold text-foreground font-display font-mono'>Chapter {chapter.number}</p>
-							<p className='text-sm font-semibold text-brand-text sm:col-span-2'>{chapter.title}</p>
-							<p className='text-xs text-muted-foreground italic sm:col-span-1'>{chapter.topics}</p>
-						</Reveal>
-					))}
-				</div>
 
 				<SectionDivider className='mb-10' />
 				<h2 className='text-2xl font-semibold tracking-tight font-display mb-4'>Stack</h2>
@@ -368,65 +349,65 @@ export default function SupportFlowMiniPage() {
 				</div>
 
 				<SectionDivider className='mb-10' />
-				<h2 className='text-2xl font-semibold tracking-tight font-display mb-4'>What you learn</h2>
+				<h2 className='text-2xl font-semibold tracking-tight font-display mb-4'>System capabilities</h2>
 				<div className='space-y-3 text-sm text-muted-foreground mb-16'>
 					<p className='flex gap-3'>
 						<span className='text-brand-text font-bold shrink-0'>✓</span>
 						<span>
-							<span className='font-semibold text-foreground'>Mock-first development</span>: Prove the core
-							workflow without the model, then add AI as a single swappable component.
+							<span className='font-semibold text-foreground'>Ticket ingestion</span>: Accept customer support
+							tickets via REST API with full validation. Store in SQLite with complete audit trail.
 						</span>
 					</p>
 					<p className='flex gap-3'>
 						<span className='text-brand-text font-bold shrink-0'>✓</span>
 						<span>
-							<span className='font-semibold text-foreground'>Typed data contracts</span>: Use Pydantic to
-							enforce schema at input, output, and review boundaries. Invalid data never enters business logic.
+							<span className='font-semibold text-foreground'>AI categorization</span>: Recommend ticket category
+							(billing, technical, account, feature request, other) and priority (low, medium, high, urgent) with confidence score.
 						</span>
 					</p>
 					<p className='flex gap-3'>
 						<span className='text-brand-text font-bold shrink-0'>✓</span>
 						<span>
-							<span className='font-semibold text-foreground'>One problem, one model call</span>: Keep scope
-							tight and the decision space clear. One model inference, one confidence score, one human review.
+							<span className='font-semibold text-foreground'>Human review workflow</span>: Web interface for
+							reviewers to see recommendation, approve, correct, or reassign. Separate human decision from AI recommendation for audit trail.
 						</span>
 					</p>
 					<p className='flex gap-3'>
 						<span className='text-brand-text font-bold shrink-0'>✓</span>
 						<span>
-							<span className='font-semibold text-foreground'>Human gate architecture</span>: Separate AI
-							recommendation from human decision. Measure agreement and maintain an audit trail of every routing decision.
+							<span className='font-semibold text-foreground'>Webhook delivery</span>: Send approved routing to
+							external systems via HTTP with idempotency, retry logic, and error handling.
 						</span>
 					</p>
 					<p className='flex gap-3'>
 						<span className='text-brand-text font-bold shrink-0'>✓</span>
 						<span>
-							<span className='font-semibold text-foreground'>Safe integrations</span>: Deliver routing via
-							webhook with idempotency, retry logic, and error handling from the start.
+							<span className='font-semibold text-foreground'>Quality evaluation</span>: Measure model accuracy
+							against held-out test set. Track agreement with human reviewers and confidence calibration.
 						</span>
 					</p>
 					<p className='flex gap-3'>
 						<span className='text-brand-text font-bold shrink-0'>✓</span>
 						<span>
-							<span className='font-semibold text-foreground'>Evaluation and metrics</span>: Measure model
-							accuracy against a held-out set. Know how often the model agrees with humans and whether high-confidence predictions are correct.
+							<span className='font-semibold text-foreground'>Deterministic testing</span>: Mock workflow
+							without AI to prove forms, storage, review, and delivery work before adding the model.
 						</span>
 					</p>
 					<p className='flex gap-3'>
 						<span className='text-brand-text font-bold shrink-0'>✓</span>
 						<span>
-							<span className='font-semibold text-foreground'>Production practices</span>: Dependency injection,
-							environment configuration, secret boundaries, error handling, and audit logs. No refactoring when you ship.
+							<span className='font-semibold text-foreground'>Production foundation</span>: Pydantic validation,
+							dependency injection, environment config, secret boundaries, and comprehensive error handling.
 						</span>
 					</p>
 				</div>
 
 				<div className='card p-8 text-center'>
 					<h3 className='text-xl font-semibold tracking-tight font-display mb-2'>
-						See the complete tutorial
+						View the implementation
 					</h3>
 					<p className='text-sm text-muted-foreground mb-6 max-w-md mx-auto'>
-						Every chapter has working code. Start with setup, build through to webhook delivery and evaluation. No skipped steps, no &quot;just trust me on this&quot; — everything is explained.
+						Complete, production-ready system from API through evaluation. Covers ticket ingestion, AI recommendation, human review workflow, webhook delivery, and quality measurement.
 					</p>
 					<div className='flex flex-wrap justify-center gap-3'>
 						<Link href='https://github.com/brianshimkus/SupportFlow-Mini' target='_blank' rel='noopener noreferrer' className={portfolioLink}>

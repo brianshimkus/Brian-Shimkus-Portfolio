@@ -13,8 +13,8 @@ const aiProjects = [
 		title: 'SupportFlow Mini',
 		thumbnail: '/images/supportflow-mini.png',
 		description:
-			'One problem, one model call, one human decision, one safe integration. A complete FDE fundamentals tutorial building a customer support ticket router with AI recommendation, human review, and webhook delivery. Learn deterministic testing, mock-first development, Pydantic contracts, and production-grade practices from day one.',
-		impact: 'Complete workflow from customer ticket to AI recommendation to human gate to system integration, with metrics and evaluation built in.',
+			'A customer support ticket router with AI recommendation, human review gate, and webhook delivery. One problem, one model call, one human decision, one safe integration. Built with FastAPI, Pydantic schemas, SQLite, OpenAI, mock-first workflow design, and deterministic evaluation.',
+		impact: 'Complete workflow from customer ticket through AI recommendation, human review, to system integration with built-in metrics and evaluation.',
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/supportflow-mini',
 		githubLink: 'https://github.com/brianshimkus/SupportFlow-Mini',

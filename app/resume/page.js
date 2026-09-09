@@ -10,7 +10,7 @@ export const metadata = {
 	title,
 	description,
 	alternates: {
-		canonical: '/resume',
+		canonical: '/Resume',
 	},
 	openGraph: {
 		title,

@@ -1,12 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	redirects: async () => [
-		// Resume page - case insensitive redirect
-		{
-			source: '/resume',
-			destination: '/Resume',
-			permanent: true,
-		},
 		// Case study redirects (LinkedIn)
 		{
 			source: '/pod-case-study',

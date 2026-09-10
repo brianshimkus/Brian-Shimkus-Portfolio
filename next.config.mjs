@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	redirects: async () => [
+		// Resume page - case insensitive redirect
+		{
+			source: '/resume',
+			destination: '/Resume',
+			permanent: true,
+		},
 		// Case study redirects (LinkedIn)
 		{
 			source: '/pod-case-study',
@@ -74,13 +80,13 @@ const nextConfig = {
 		},
 		{
 			source: '/resume-linkedin',
-			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=resume_profile&utm_content=profile_link',
+			destination: '/Resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=resume_profile&utm_content=profile_link',
 			permanent: false,
 		},
 		// Solutions Engineering positioning post redirects
 		{
 			source: '/solutions-engineering-resume',
-			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=solutions_engineering_positioning&utm_content=resume_comment',
+			destination: '/Resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=solutions_engineering_positioning&utm_content=resume_comment',
 			permanent: false,
 		},
 		{
@@ -91,23 +97,23 @@ const nextConfig = {
 		// Build-in-public project post redirects
 		{
 			source: '/pod-recovery-resume',
-			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=pod_recovery_build_in_public&utm_content=resume_comment',
+			destination: '/Resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=pod_recovery_build_in_public&utm_content=resume_comment',
 			permanent: false,
 		},
 		{
 			source: '/employee-access-resume',
-			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=employee_access_build_in_public&utm_content=resume_comment',
+			destination: '/Resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=employee_access_build_in_public&utm_content=resume_comment',
 			permanent: false,
 		},
 		{
 			source: '/salesforce-resume',
-			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=salesforce_intelligence_social&utm_content=resume_comment',
+			destination: '/Resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=salesforce_intelligence_social&utm_content=resume_comment',
 			permanent: false,
 		},
 		// Open to work / hiring outreach redirects
 		{
 			source: '/hiring-resume',
-			destination: '/resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=open_to_work&utm_content=hiring_post',
+			destination: '/Resume?utm_source=linkedin&utm_medium=organic_social&utm_campaign=open_to_work&utm_content=hiring_post',
 			permanent: false,
 		},
 		{
@@ -123,7 +129,7 @@ const nextConfig = {
 		// LinkedIn profile featured section
 		{
 			source: '/linkedin-featured',
-			destination: '/resume?utm_source=linkedin&utm_medium=profile&utm_campaign=featured_resume&utm_content=profile_section',
+			destination: '/Resume?utm_source=linkedin&utm_medium=profile&utm_campaign=featured_resume&utm_content=profile_section',
 			permanent: false,
 		},
 	],

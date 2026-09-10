@@ -15,7 +15,7 @@ const rajdhani = Rajdhani({
 const siteUrl = 'https://www.brianshimkus.com'
 const siteTitle = 'Brian Shimkus | Applied AI Engineer'
 const siteDescription =
-	'Applied AI and integration engineer with 12+ years delivering customer-facing software and enterprise integrations. Combines hands-on engineering with discovery, workflow mapping, POV delivery, and stakeholder alignment. Building production AI systems with Python, FastAPI, Salesforce APIs, and OAuth. Based in Chicago, IL.'
+	'Applied AI Engineer with 12+ years fintech experience. Build production AI systems end-to-end: RAG, LLMs, FastAPI, Salesforce integrations. Seeking Applied AI Engineer, Customer Integration Engineer, or AI Implementation Engineer roles. Actively hiring. Chicago-based, remote available.'
 const isProduction = process.env.VERCEL_ENV === 'production'
 
 export const metadata = {

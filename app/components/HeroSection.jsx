@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { track } from '@vercel/analytics'
-import { FaBolt } from 'react-icons/fa'
+import { FaBolt, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { btnCta, btnOutline, eyebrowPill, gradientText } from '../utils'
 
 const container = {
@@ -71,11 +71,15 @@ export default function HeroSection() {
 					</motion.p>
 					<motion.p
 						variants={item}
-						className='text-base sm:text-base mb-4 lg:text-lg text-muted-foreground'>
-						{`Seeking Applied AI Engineer, Customer Integration Engineer, or
-						AI Implementation Engineer roles. End-to-end ownership from
-						discovery through customer delivery. Based in Chicago, open to
-						remote, available immediately.`}
+						className='text-base sm:text-base mb-4 lg:text-lg text-brand-text font-semibold'>
+						{`Actively seeking roles in Applied AI, Customer Integration, or AI
+						Implementation. Available immediately, remote-friendly.`}
+					</motion.p>
+					<motion.p
+						variants={item}
+						className='text-sm sm:text-base mb-4 lg:text-base text-muted-foreground'>
+						{`End-to-end ownership from discovery through customer delivery. Based
+						in Chicago.`}
 					</motion.p>
 					<motion.div
 						variants={item}
@@ -87,7 +91,7 @@ export default function HeroSection() {
 							week to 10 minutes through automation
 						</span>
 					</motion.div>
-					<motion.div variants={item} className='flex flex-row flex-wrap items-start gap-3 sm:gap-4'>
+					<motion.div variants={item} className='flex flex-row flex-wrap items-center gap-3 sm:gap-4'>
 						<a
 							href='mailto:brian@brianshimkus.com'
 							onClick={() => track('Contact Click', { location: 'hero' })}
@@ -99,6 +103,24 @@ export default function HeroSection() {
 							onClick={() => track('Resume Click', { location: 'hero' })}
 							className={btnOutline}>
 							View Resume
+						</a>
+						<a
+							href='https://linkedin.com/in/brianshimkus1'
+							target='_blank'
+							rel='noopener noreferrer'
+							onClick={() => track('LinkedIn Click', { location: 'hero' })}
+							className='inline-flex items-center justify-center w-10 h-10 rounded-full border border-brand/30 hover:bg-brand/10 transition-colors'
+							aria-label='LinkedIn profile'>
+							<FaLinkedin className='text-lg text-brand-text' />
+						</a>
+						<a
+							href='https://github.com/brianshimkus'
+							target='_blank'
+							rel='noopener noreferrer'
+							onClick={() => track('GitHub Click', { location: 'hero' })}
+							className='inline-flex items-center justify-center w-10 h-10 rounded-full border border-brand/30 hover:bg-brand/10 transition-colors'
+							aria-label='GitHub profile'>
+							<FaGithub className='text-lg text-brand-text' />
 						</a>
 					</motion.div>
 				</motion.div>

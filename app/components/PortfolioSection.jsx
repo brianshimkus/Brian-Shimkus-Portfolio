@@ -10,6 +10,16 @@ import { FaExternalLinkAlt, FaArrowRight, FaBolt } from 'react-icons/fa'
 
 const aiProjects = [
 	{
+		title: 'Deskline',
+		thumbnail: '/images/deskline.png',
+		description:
+			'An inbound phone menu system built with Python FastAPI and Telnyx Voice API. Routes customers through DTMF keypad prompts, plays business information via text-to-speech, and collects menu decisions. Handles state across multiple webhook events with SQLite persistence, webhook signature verification, and deterministic call testing before going live.',
+		impact: 'Complete call workflow from incoming call to menu response through call completion, fully tested without spending call credit.',
+		badge: 'In Progress',
+		caseStudyLink: '/case-studies/deskline',
+		githubLink: 'https://github.com/brianshimkus/Deskline',
+	},
+	{
 		title: 'SupportFlow Mini',
 		thumbnail: '/images/supportflow-mini.png',
 		description:
@@ -28,16 +38,6 @@ const aiProjects = [
 		badge: 'In Progress',
 		caseStudyLink: '/case-studies/relayops',
 		githubLink: 'https://github.com/brianshimkus/RelayOps',
-	},
-	{
-		title: 'Deskline',
-		thumbnail: '/images/deskline.png',
-		description:
-			'An inbound phone menu system built with Python FastAPI and Telnyx Voice API. Routes customers through DTMF keypad prompts, plays business information via text-to-speech, and collects menu decisions. Handles state across multiple webhook events with SQLite persistence, webhook signature verification, and deterministic call testing before going live.',
-		impact: 'Complete call workflow from incoming call to menu response through call completion, fully tested without spending call credit.',
-		badge: 'In Progress',
-		caseStudyLink: '/case-studies/deskline',
-		githubLink: 'https://github.com/brianshimkus/Deskline',
 	},
 	{
 		title: 'Salesforce Intelligence',
